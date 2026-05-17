@@ -1,0 +1,70 @@
+site_name: AIxPM Watch
+site_url: https://jeffused.github.io/aixpm-watch/
+site_description: Veille AI × Project Management — articles courts en français sur l'usage de l'IA dans le conseil et la gestion de projet.
+site_author: Jeff Lavigne
+repo_url: https://github.com/jeffused/aixpm-watch
+repo_name: jeffused/aixpm-watch
+
+theme:
+  name: material
+  language: fr
+  palette:
+    - scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Mode sombre
+    - scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Mode clair
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.action.edit
+    - toc.follow
+
+plugins:
+  - search:
+      lang: fr
+  - blog:
+      blog_dir: .
+      post_dir: posts
+      post_url_format: "{date}/{slug}"
+      post_date_format: long
+      archive: true
+      archive_name: Archives
+      archive_date_format: yyyy
+      categories: true
+      categories_name: Catégories
+      categories_url_format: "category/{slug}"
+      categories_toc: true
+      pagination: true
+      pagination_per_page: 10
+  - tags
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/jeffused/aixpm-watch
+  generator: false
+
+copyright: AIxPM Watch — curation Jeff Lavigne
