@@ -1,0 +1,96 @@
+{#
+  AIxPM custom sidebar.
+  Replaces Material's default nav.html. Renders:
+    Latest -> homepage
+    Favorites -> /favorites/
+    -- separator --
+    For each L1 (canonical order): clickable parent + expand toggle, L2 children.
+  Counts come from config.extra.aixpm_taxonomy (built by hooks/categories.py).
+#}
+{% set tax = config.extra.aixpm_taxonomy | default({"total": 0, "l1_order": [], "l1": {}}) %}
+{% set class = "md-nav md-nav--primary" %}
+{% if "toc.integrate" in features %}
+  {% set class = class ~ " md-nav--integrated" %}
+{% endif %}
+<nav class="{{ class }}" aria-label="{{ lang.t('nav') }}" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="{{ nav.homepage.url | url }}" title="{{ config.site_name | e }}" class="md-nav__button md-logo" aria-label="{{ config.site_name }}" data-md-component="logo">
+      {% include "partials/logo.html" %}
+    </a>
+    {{ config.site_name }}
+  </label>
+  {% if config.repo_url %}
+    <div class="md-nav__source">
+      {% include "partials/source.html" %}
+    </div>
+  {% endif %}
+  <ul class="md-nav__list" data-md-scrollfix>
+
+    {# Latest #}
+    {% set is_latest = page and page.is_homepage %}
+    <li class="md-nav__item aixpm-nav__top{% if is_latest %} md-nav__item--active{% endif %}">
+      <a href="{{ nav.homepage.url | url }}" class="md-nav__link{% if is_latest %} md-nav__link--active{% endif %}">
+        <span class="md-ellipsis">Latest <span class="aixpm-count">({{ tax.total }})</span></span>
+      </a>
+    </li>
+
+    {# Favorites #}
+    {% set fav_path = "favorites/" %}
+    {% set is_fav = page and page.url == fav_path %}
+    <li class="md-nav__item aixpm-nav__top{% if is_fav %} md-nav__item--active{% endif %}">
+      <a href="{{ fav_path | url }}" class="md-nav__link{% if is_fav %} md-nav__link--active{% endif %}">
+        <span class="md-ellipsis">Favorites <span class="aixpm-count" data-aixpm-fav-count>(0)</span></span>
+      </a>
+    </li>
+
+    <li class="aixpm-nav__separator" aria-hidden="true"></li>
+
+    {# L1s with collapsible L2 children #}
+    {% for l1_key in tax.l1_order %}
+      {% set l1 = tax.l1[l1_key] %}
+      {% set l1_path = "category/" ~ l1.slug ~ "/" %}
+      {% set ns = namespace(active = (page and page.url == l1_path)) %}
+      {% for l2 in l1.l2 %}
+        {% if page and page.url == ("category/" ~ l2.slug ~ "/") %}
+          {% set ns.active = true %}
+        {% endif %}
+      {% endfor %}
+      {% set is_l1_active = ns.active %}
+      {% set toggle_id = "__aixpm_l1_" ~ loop.index %}
+
+      <li class="md-nav__item md-nav__item--nested aixpm-nav__l1">
+        <input class="md-nav__toggle md-toggle" type="checkbox" id="{{ toggle_id }}"{% if is_l1_active %} checked{% endif %}>
+        <div class="md-nav__link md-nav__container">
+          <a href="{{ l1_path | url }}" class="md-nav__link{% if page and page.url == l1_path %} md-nav__link--active{% endif %}">
+            <span class="md-ellipsis">{{ l1.label }} <span class="aixpm-count">({{ l1.count }})</span></span>
+          </a>
+          {% if l1.l2 %}
+            <label class="md-nav__link" for="{{ toggle_id }}">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          {% endif %}
+        </div>
+        {% if l1.l2 %}
+          <nav class="md-nav" data-md-level="1" aria-expanded="{{ is_l1_active | tojson }}">
+            <label class="md-nav__title" for="{{ toggle_id }}">
+              <span class="md-nav__icon md-icon"></span>
+              {{ l1.label }}
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              {% for l2 in l1.l2 %}
+                {% set l2_path = "category/" ~ l2.slug ~ "/" %}
+                {% set l2_active = page and page.url == l2_path %}
+                <li class="md-nav__item{% if l2_active %} md-nav__item--active{% endif %}">
+                  <a href="{{ l2_path | url }}" class="md-nav__link{% if l2_active %} md-nav__link--active{% endif %}">
+                    <span class="md-ellipsis">{{ l2.label }} <span class="aixpm-count">({{ l2.count }})</span></span>
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </nav>
+        {% endif %}
+      </li>
+    {% endfor %}
+
+  </ul>
+</nav>

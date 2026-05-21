@@ -7,6 +7,7 @@ repo_name: jeffused/aixpm-watch
 
 theme:
   name: material
+  custom_dir: overrides
   language: fr
   palette:
     - scheme: default
@@ -66,5 +67,14 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/jeffused/aixpm-watch
   generator: false
+
+extra_css:
+  - stylesheets/aixpm.css
+
+extra_javascript:
+  - javascripts/aixpm.js
+
+hooks:
+  - hooks/categories.py
 
 copyright: AIxPM Watch — curation Jeff Lavigne

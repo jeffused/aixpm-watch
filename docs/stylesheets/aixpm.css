@@ -1,0 +1,148 @@
+/* AIxPM custom styling — sidebar, read/favorite buttons, hide-read toggle, favorites page. */
+
+/* ============================================================
+   Sidebar nav
+   ============================================================ */
+
+.aixpm-nav__separator {
+  height: 1px;
+  background: var(--md-default-fg-color--lightest);
+  margin: 0.6rem 0;
+  list-style: none;
+}
+
+.aixpm-count {
+  font-size: 0.75em;
+  color: var(--md-default-fg-color--light);
+  font-weight: 400;
+  margin-left: 0.25em;
+}
+
+.aixpm-nav__top > .md-nav__link,
+.aixpm-nav__l1 > .md-nav__container > .md-nav__link:first-child {
+  font-weight: 600;
+}
+
+/* ============================================================
+   Read / Favorite buttons on article cards and article pages
+   ============================================================ */
+
+.aixpm-actions {
+  display: inline-flex;
+  gap: 0.4rem;
+  margin-left: 0.6rem;
+  vertical-align: middle;
+}
+
+.aixpm-btn {
+  background: none;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 1em;
+  padding: 0.05em 0.55em;
+  font-size: 0.75em;
+  cursor: pointer;
+  color: var(--md-default-fg-color--light);
+  transition: background-color 0.15s, color 0.15s, border-color 0.15s;
+  line-height: 1.6;
+  font-family: inherit;
+}
+.aixpm-btn:hover {
+  background: var(--md-default-fg-color--lightest);
+  color: var(--md-default-fg-color);
+}
+.aixpm-btn[aria-pressed="true"] {
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  border-color: var(--md-primary-fg-color);
+}
+
+.aixpm-btn--fav::before { content: "\2661"; margin-right: 0.3em; }
+.aixpm-btn--fav[aria-pressed="true"]::before { content: "\2665"; }
+
+.aixpm-btn--read::before { content: "\25CB"; margin-right: 0.3em; }
+.aixpm-btn--read[aria-pressed="true"]::before { content: "\25CF"; }
+
+/* Article-page versions are slightly larger */
+.md-content .aixpm-actions--article {
+  margin: 0 0 1rem 0;
+}
+.md-content .aixpm-actions--article .aixpm-btn {
+  font-size: 0.85em;
+  padding: 0.2em 0.7em;
+}
+
+/* ============================================================
+   Read state on post cards (list views)
+   ============================================================ */
+
+.md-post[data-aixpm-read="true"] {
+  opacity: 0.55;
+  transition: opacity 0.2s;
+}
+.md-post[data-aixpm-read="true"]:hover {
+  opacity: 1;
+}
+
+/* ============================================================
+   "Hide read" toolbar at top of list pages
+   ============================================================ */
+
+.aixpm-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0 0 1.2rem 0;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.4rem;
+  font-size: 0.85em;
+  color: var(--md-default-fg-color--light);
+}
+.aixpm-toolbar label {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  user-select: none;
+}
+.aixpm-toolbar input[type="checkbox"] {
+  cursor: pointer;
+}
+
+body.aixpm-hide-read .md-post[data-aixpm-read="true"] {
+  display: none;
+}
+
+/* ============================================================
+   Favorites page
+   ============================================================ */
+
+.aixpm-favorites-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+.aixpm-favorites-list li {
+  margin: 0.6rem 0;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+}
+.aixpm-favorites-list a {
+  font-weight: 500;
+  flex: 1;
+}
+.aixpm-favorites-list .aixpm-fav-meta {
+  font-size: 0.8em;
+  color: var(--md-default-fg-color--light);
+  white-space: nowrap;
+}
+.aixpm-favorites-empty {
+  color: var(--md-default-fg-color--light);
+  font-style: italic;
+  margin: 1rem 0;
+}
