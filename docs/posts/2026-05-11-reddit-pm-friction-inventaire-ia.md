@@ -8,6 +8,7 @@ tags:
   - praticien
   - pmo
   - change-management
+  - project-management
 authors:
   - jeff
 sources:

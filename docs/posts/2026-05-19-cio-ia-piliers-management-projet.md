@@ -8,6 +8,7 @@ tags:
   - change-management
   - decision-making
   - praticien
+  - project-management
 authors:
   - jeff
 sources:

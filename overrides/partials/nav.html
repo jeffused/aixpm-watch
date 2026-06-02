@@ -43,6 +43,15 @@
       </a>
     </li>
 
+    {# Project Management filter — scoped tag index at /pm/ (tag: project-management) #}
+    {% set pm_path = "pm/" %}
+    {% set is_pm = page and page.url == pm_path %}
+    <li class="md-nav__item aixpm-nav__top{% if is_pm %} md-nav__item--active{% endif %}">
+      <a href="{{ pm_path | url }}" class="md-nav__link{% if is_pm %} md-nav__link--active{% endif %}">
+        <span class="md-ellipsis">Gestion de projet <span class="aixpm-count">({{ tax.pm_count | default(0) }})</span></span>
+      </a>
+    </li>
+
     <li class="aixpm-nav__separator" aria-hidden="true"></li>
 
     {# L1s with collapsible L2 children #}

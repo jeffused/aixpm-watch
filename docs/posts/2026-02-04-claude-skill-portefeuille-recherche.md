@@ -9,6 +9,7 @@ tags:
   - pmo
   - portfolio
   - reporting
+  - project-management
 authors:
   - jeff
 sources:

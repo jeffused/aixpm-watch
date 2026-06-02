@@ -45,11 +45,15 @@ def on_config(config, **kwargs):
     l1_count = {l1: 0 for l1 in L1_ORDER}
     l2_count = {l1: {} for l1 in L1_ORDER}
     total = 0
+    pm_count = 0
 
     for post_file in sorted(posts_dir.glob("*.md")):
         fm = _parse_frontmatter(post_file.read_text(encoding="utf-8"))
         if not fm:
             continue
+        tags = fm.get("tags") or []
+        if isinstance(tags, list) and "project-management" in tags:
+            pm_count += 1
         cats = fm.get("categories") or []
         if not isinstance(cats, list) or not cats:
             continue
@@ -81,6 +85,7 @@ def on_config(config, **kwargs):
     config["extra"] = dict(config.get("extra") or {})
     config["extra"]["aixpm_taxonomy"] = {
         "total": total,
+        "pm_count": pm_count,
         "l1_order": L1_ORDER,
         "l1": l1_payload,
     }

@@ -8,6 +8,7 @@ tags:
   - praticien
   - pmo
   - reporting
+  - project-management
 authors:
   - jeff
 sources:

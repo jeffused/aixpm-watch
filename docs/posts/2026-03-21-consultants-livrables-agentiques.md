@@ -9,6 +9,7 @@ tags:
   - deliverable-slides
   - deliverable-reports
   - comite-pilotage
+  - project-management
 authors:
   - jeff
 sources:

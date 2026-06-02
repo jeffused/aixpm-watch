@@ -8,6 +8,7 @@ tags:
   - praticien
   - deliverable-slides
   - comite-pilotage
+  - project-management
 authors:
   - jeff
 sources:

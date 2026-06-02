@@ -8,6 +8,7 @@ tags:
   - praticien
   - corporate
   - friction-praticien
+  - project-management
 authors:
   - jeff
 sources:

@@ -8,6 +8,7 @@ tags:
   - praticien
   - prompt-pattern
   - reporting
+  - project-management
 authors:
   - jeff
 sources:

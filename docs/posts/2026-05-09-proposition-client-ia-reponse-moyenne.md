@@ -9,6 +9,7 @@ tags:
   - deliverable-reports
   - deliverable-slides
   - prompt-pattern
+  - project-management
 authors:
   - jeff
 sources:

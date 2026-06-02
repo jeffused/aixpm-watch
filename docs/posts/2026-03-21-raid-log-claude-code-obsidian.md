@@ -10,6 +10,7 @@ tags:
   - raid
   - reporting
   - roi-chiffre
+  - project-management
 authors:
   - jeff
 sources:

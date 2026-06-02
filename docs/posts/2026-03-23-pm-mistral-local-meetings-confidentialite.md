@@ -10,6 +10,7 @@ tags:
   - praticien
   - reporting
   - meetings
+  - project-management
 authors:
   - jeff
 sources:

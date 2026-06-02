@@ -7,6 +7,7 @@ categories:
 tags:
   - praticien
   - signal-faible
+  - project-management
 authors:
   - jeff
 sources:
