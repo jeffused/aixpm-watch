@@ -34,6 +34,15 @@
       </a>
     </li>
 
+    {# Synthèses — long-form digests at /syntheses/ #}
+    {% set synth_path = "syntheses/" %}
+    {% set is_synth = page and page.url.startswith(synth_path) %}
+    <li class="md-nav__item aixpm-nav__top{% if is_synth %} md-nav__item--active{% endif %}">
+      <a href="{{ synth_path | url }}" class="md-nav__link{% if is_synth %} md-nav__link--active{% endif %}">
+        <span class="md-ellipsis">Synthèses</span>
+      </a>
+    </li>
+
     {# Favorites #}
     {% set fav_path = "favorites/" %}
     {% set is_fav = page and page.url == fav_path %}
