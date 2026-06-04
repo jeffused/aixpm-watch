@@ -146,3 +146,8 @@ body.aixpm-hide-read .md-post[data-aixpm-read="true"] {
   font-style: italic;
   margin: 1rem 0;
 }
+
+/* Hide author avatar/reference in article headers (feed + post pages) */
+.md-post__authors {
+  display: none;
+}
