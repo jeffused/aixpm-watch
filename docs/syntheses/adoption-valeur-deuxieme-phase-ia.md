@@ -49,4 +49,16 @@ Cette dernière métrique vient d'un chiffre qui dérange : selon Sinch, 74 % de
 
 ---
 
-*Synthèse de la veille AIxPM — mai 2026, à partir de 9 articles publiés sur ce site (Reddit r/projectmanagement & r/consulting, Journal du Net, Business Insider, Uber/The Information, Les Echos, Sinch, HCLTech, CIO.com).*
+## Sources
+
+Cette synthèse s'appuie sur neuf articles de la veille AIxPM (avril–mai 2026), publiés sur ce site :
+
+- [Le mirage des gains de productivité IA : trois signaux qui convergent](../posts/2026-04-17-mirage-gains-productivite-trois-signaux.md)
+- [KPMG : le tableau de bord d'adoption IA et sa faille mesurable](../posts/2026-05-04-kpmg-dashboard-75-pourcent-gameable.md)
+- [Uber : l'adoption de l'IA grimpe, son ROI reste introuvable](../posts/2026-05-26-uber-coo-doute-roi-ia.md)
+- [Microsoft plafonne Claude Code : le coût au token rattrape l'adoption](../posts/2026-05-25-microsoft-plafond-claude-code-couts.md)
+- [Quand l'inférence IA devient un poste budgétaire incontrôlable](../posts/2026-05-12-lesechos-developpeurs-tokens-finops.md)
+- [L'IA reformule les piliers du management de projet : l'acceptation devient le livrable](../posts/2026-05-19-cio-ia-piliers-management-projet.md)
+- [43 % des projets d'IA menacés : l'écart entre ambition et exécution](../posts/2026-05-21-hcltech-43-pourcent-echec-ia.md)
+- [Le sticky et le flashy : la taxonomie pratique des usages IA en PMO](../posts/2026-05-11-pmo-sticky-vs-flashy-ai.md)
+- [Sinch : 74 % des entreprises ont déjà retiré un agent IA mis en production](../posts/2026-05-15-sinch-rollback-74-pourcent-agents-ia.md)
