@@ -147,7 +147,9 @@ body.aixpm-hide-read .md-post[data-aixpm-read="true"] {
   margin: 1rem 0;
 }
 
-/* Hide author avatar/reference in article headers (feed + post pages) */
+/* Hide author avatar/reference in article headers (feed + post pages).
+   !important is required: Material's `.md-post--excerpt .md-post__authors`
+   (specificity 0,2,0) sets display on the Latest feed and would otherwise win. */
 .md-post__authors {
-  display: none;
+  display: none !important;
 }
