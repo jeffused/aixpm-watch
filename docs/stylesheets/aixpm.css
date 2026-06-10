@@ -147,6 +147,47 @@ body.aixpm-hide-read .md-post[data-aixpm-read="true"] {
   margin: 1rem 0;
 }
 
+/* ============================================================
+   Cross-device sync panel (favorites page)
+   ============================================================ */
+
+.aixpm-sync {
+  margin: 0 0 1.4rem 0;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.4rem;
+  font-size: 0.85em;
+}
+.aixpm-sync__status {
+  color: var(--md-default-fg-color--light);
+  margin-bottom: 0.5rem;
+}
+.aixpm-sync__status--err {
+  color: var(--md-error-fg-color, #d32f2f);
+}
+.aixpm-sync__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+.aixpm-sync__input {
+  flex: 1;
+  min-width: 14rem;
+  padding: 0.3em 0.55em;
+  font-size: 0.95em;
+  font-family: inherit;
+  color: var(--md-default-fg-color);
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 0.3rem;
+}
+.aixpm-sync__help {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: 0.95em;
+}
+
 /* Hide author avatar/reference in article headers (feed + post pages).
    !important is required: Material's `.md-post--excerpt .md-post__authors`
    (specificity 0,2,0) sets display on the Latest feed and would otherwise win. */
