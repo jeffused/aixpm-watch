@@ -1,11 +1,10 @@
-/* AIxPM personal layer — UI (Sessions 1-2 scope).
+/* AIxPM personal layer — UI (Sessions 1-3 scope).
    Replaces the old aixpm.js. Renders on top of window.AIxPMStore.
 
    Session 1:
    - « Lu » button kept verbatim (manual, never auto-set by rating).
    - « Favori » replaced by a 5-star rating widget on cards + article pages.
-   - /favorites/ interim: lists rated articles from the store + sync panel.
-   - Nav count fed from the store (rated-article count).
+   - Nav count fed from the store.
 
    Session 2:
    - Article personal panel: note box (autosave + flush, URLs auto-linkified)
@@ -13,6 +12,14 @@
    - Archive: button on article pages + icon button on cards, archived banner,
      « Afficher les articles archivés » toggle + « (n masqués) » count.
    - Card indicators: ✎ when a note exists.
+
+   Session 3:
+   - Article personal panel gains a « Mes sections » row (assign to custom
+     sections, datalist of existing names, create-on-type with confirm).
+   - Nav: « Favorites » → « Ma bibliothèque » with data-aixpm-lib-count, plus
+     runtime section sub-links (data-aixpm-nav-sections, capped at 8).
+   - The /favorites/ list + sync panel moved to the hub (aixpm-library.js);
+     /favorites/ is now a redirect stub.
 
    XSS discipline (binding): personal data (note, tags, title, status) only ever
    reaches the DOM via textContent / createTextNode — never innerHTML.
@@ -465,14 +472,16 @@
     if (h1 && h1.parentNode) h1.parentNode.insertBefore(wrap, h1.nextSibling);
     else content.insertBefore(wrap, content.firstChild);
 
-    // Personal panel: note editor + personal tags (capture meta so they display elsewhere)
+    // Personal panel: note editor + personal tags + sections (capture meta so they display elsewhere)
     S.touchMeta(url, title);
     var notePanel = buildNotePanel(url);
     var tagsPanel = buildTagsPanel(url);
+    var sectionsPanel = buildSectionsPanel(url);
     var panel = document.createElement('div');
     panel.className = 'aixpm-panel';
     panel.appendChild(notePanel.el);
     panel.appendChild(tagsPanel.el);
+    panel.appendChild(sectionsPanel.el);
     wrap.parentNode.insertBefore(panel, wrap.nextSibling);
 
     renderArchivedBanner(url, content);
@@ -556,134 +565,151 @@
     updateMaskedCount();
   }
 
-  // ---------- /favorites/ interim — rated articles list ----------
-  function isFavoritesPage() { return /\/favorites\/?$/.test(location.pathname); }
+  // ---------- Personal sections (article pages) ----------
+  // Diacritic-/case-insensitive fold for matching a typed name to an existing
+  // section (mirrors the store's foldKey; sections have no separate registry).
+  function foldName(s) {
+    var x = String(s == null ? '' : s).toLowerCase();
+    try { x = x.normalize('NFD').replace(/[̀-ͯ]/g, ''); } catch (e) {}
+    return x.replace(/\s+/g, ' ').trim();
+  }
+  function ensureSectionDatalist() {
+    var dl = document.getElementById('aixpm-section-vocab');
+    if (!dl) { dl = document.createElement('datalist'); dl.id = 'aixpm-section-vocab'; document.body.appendChild(dl); }
+    dl.textContent = '';
+    S.liveSections().forEach(function (s) {
+      var o = document.createElement('option');
+      o.value = s.name;                       // DOM property, not HTML — safe
+      dl.appendChild(o);
+    });
+  }
+  function buildSectionsPanel(url) {
+    var wrap = document.createElement('div');
+    wrap.className = 'aixpm-sections-panel';
 
-  function renderFavoritesPage() {
-    if (!isFavoritesPage()) return;
-    var host = document.querySelector('.md-content article') || document.querySelector('.md-content');
-    if (!host) return;
-
-    host.querySelectorAll('.aixpm-favorites-list, .aixpm-favorites-empty').forEach(function (n) { n.remove(); });
-
-    var entries = S.allArticles().filter(function (a) { return a.rating >= 1 && !a.archived; })
-      .sort(function (a, b) {
-        if (b.rating !== a.rating) return b.rating - a.rating;
-        return (b.date || '').localeCompare(a.date || '');
-      });
-
-    if (entries.length === 0) {
-      var p = document.createElement('p');
-      p.className = 'aixpm-favorites-empty';
-      p.textContent = 'Aucun article noté pour le moment. Attribuez des étoiles à un article pour le retrouver ici.';
-      host.appendChild(p);
-      return;
+    // Assign to an existing section (match by folded name) or create on confirm.
+    function commitValue(raw, keepFocus) {
+      var name = (raw || '').replace(/,\s*$/, '').replace(/\s+/g, ' ').trim();
+      if (!name) return;
+      var fold = foldName(name);
+      var existing = S.liveSections().filter(function (s) { return foldName(s.name) === fold; })[0];
+      if (existing) {
+        S.setMember(existing.id, url, true);
+        render();
+      } else if (window.confirm('Créer la section « ' + name + ' » ?')) {
+        var id = S.createSection(name);
+        S.setMember(id, url, true);
+        render();
+      } else {
+        // Cancelled the create prompt — restore the typed name (the callers
+        // pre-clear the input to prevent an Enter-then-blur double commit).
+        var nc = wrap.querySelector('.aixpm-section__input');
+        if (nc) { nc.value = name; if (keepFocus) nc.focus(); }
+        return;
+      }
+      if (keepFocus) { var ni = wrap.querySelector('.aixpm-section__input'); if (ni) ni.focus(); }
     }
 
-    var ul = document.createElement('ul');
-    ul.className = 'aixpm-favorites-list';
-    entries.forEach(function (e) {
-      var li = document.createElement('li');
+    function render() {
+      wrap.textContent = '';
+      var label = document.createElement('span');
+      label.className = 'aixpm-sections-panel__label';
+      label.textContent = 'Mes sections';
+      wrap.appendChild(label);
 
-      var a = document.createElement('a');
-      a.href = (e.url || '').replace(/^\//, '/aixpm-watch/');    // back to a navigable URL
-      a.textContent = e.title || e.url;
+      S.sectionsForArticle(url).forEach(function (s) {
+        var chip = document.createElement('span');
+        chip.className = 'aixpm-section-chip';
+        var t = document.createElement('span');
+        t.textContent = s.name || '(sans nom)';     // textContent — no innerHTML
+        chip.appendChild(t);
+        var rm = document.createElement('button');
+        rm.type = 'button';
+        rm.className = 'aixpm-section-chip__rm';
+        rm.textContent = '×';
+        rm.setAttribute('aria-label', 'Retirer de la section ' + (s.name || ''));
+        rm.addEventListener('click', function () { S.setMember(s.id, url, false); render(); });
+        chip.appendChild(rm);
+        wrap.appendChild(chip);
+      });
 
-      var stars = makeStars(e.url, e.title);
-
-      var meta = document.createElement('span');
-      meta.className = 'aixpm-fav-meta';
-      if (e.date) {
-        var parts = e.date.split('-');
-        meta.textContent = parts.length === 3 ? parts[2] + '/' + parts[1] + '/' + parts[0] : e.date;
-      }
-      if (e.note) {
-        var flag = makeNoteIndicator(e.note);
-        if (flag) meta.appendChild(flag);
-      }
-
-      li.appendChild(a);
-      li.appendChild(stars);
-      li.appendChild(meta);
-      ul.appendChild(li);
-    });
-    host.appendChild(ul);
+      var input = document.createElement('input');
+      input.className = 'aixpm-section__input';
+      input.setAttribute('list', 'aixpm-section-vocab');
+      input.setAttribute('aria-label', 'Ajouter à une section');
+      input.placeholder = 'Ajouter à une section…';
+      input.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ',') {
+          e.preventDefault();
+          var v = input.value; input.value = ''; commitValue(v, true);
+        }
+      });
+      input.addEventListener('blur', function () {
+        if (input.value.trim()) { var v = input.value; input.value = ''; commitValue(v, false); }
+      });
+      wrap.appendChild(input);
+      ensureSectionDatalist();
+    }
+    render();
+    return { el: wrap, rerender: render };
   }
 
-  // ---------- Nav count ----------
+  // ---------- Nav: « Ma bibliothèque » count + section sub-links ----------
   function updateNavCount() {
-    var nodes = document.querySelectorAll('[data-aixpm-fav-count]');
+    var nodes = document.querySelectorAll('[data-aixpm-lib-count]');
     if (!nodes.length) return;
-    var n = S.counts().rated;
+    var n = S.counts().libCount;
     nodes.forEach(function (el) { el.textContent = '(' + n + ')'; });
   }
 
-  // ---------- Sync panel (/favorites/) ----------
-  function attachSyncPanel() {
-    if (!isFavoritesPage()) return;
-    var host = document.querySelector('.md-content article') || document.querySelector('.md-content');
-    if (!host) return;
-    var prior = host.querySelector('.aixpm-sync');
-    if (prior) prior.remove();
-
-    var hasToken = S.hasToken();
-    var panel = document.createElement('div');
-    panel.className = 'aixpm-sync';
-
-    var statusEl = document.createElement('div');
-    statusEl.className = 'aixpm-sync__status';
-    var st = S.getStatus();
-    statusEl.textContent = st.msg;
-    if (st.state === 'error' || st.state === 'suspended') statusEl.classList.add('aixpm-sync__status--err');
-
-    var row = document.createElement('div');
-    row.className = 'aixpm-sync__row';
-
-    if (hasToken) {
-      var off = document.createElement('button');
-      off.type = 'button';
-      off.className = 'aixpm-btn';
-      off.textContent = 'Déconnecter cet appareil';
-      off.addEventListener('click', function () { S.disconnect(); attachSyncPanel(); });
-      row.appendChild(off);
-    } else {
-      var help = document.createElement('a');
-      help.className = 'aixpm-sync__help';
-      help.href = 'https://github.com/settings/tokens/new?scopes=gist&description=AIxPM%20personal%20data%20sync';
-      help.target = '_blank';
-      help.rel = 'noopener';
-      help.textContent = 'Créer un token (scope « gist »)';
-      panel.appendChild(help);
-
-      var input = document.createElement('input');
-      input.type = 'password';
-      input.className = 'aixpm-sync__input';
-      input.placeholder = 'Collez votre token GitHub (scope gist)';
-      input.setAttribute('aria-label', 'Token GitHub (scope « gist »)');
-      input.autocomplete = 'off';
-      var on = document.createElement('button');
-      on.type = 'button';
-      on.className = 'aixpm-btn';
-      on.textContent = 'Connecter';
-      on.addEventListener('click', function () {
-        var t = input.value.trim();
-        if (!t) return;
-        S.setToken(t);
-        attachSyncPanel();
-        S.pull();
+  // Replace the [data-aixpm-nav-sections] placeholder with one link per live
+  // section (capped at 8 + « Toutes les sections… »). Runs on every page since
+  // the sidebar is global. The base href is read from the « Ma bibliothèque »
+  // nav link so it stays page-relative (and survives a base/domain change).
+  function updateNavSections() {
+    var hosts = document.querySelectorAll('[data-aixpm-nav-sections]');
+    if (!hosts.length) return;
+    var sections = S.liveSections();
+    hosts.forEach(function (host) {
+      host.textContent = '';
+      if (!sections.length) { host.hidden = true; return; }
+      host.hidden = false;
+      var li = host.closest ? host.closest('.md-nav__item') : null;
+      var baseA = li ? li.querySelector('a.md-nav__link') : null;
+      var base = baseA ? baseA.getAttribute('href') : 'bibliotheque/';
+      var shown = sections.slice(0, 8);
+      shown.forEach(function (s) {
+        var item = document.createElement('li');
+        item.className = 'md-nav__item aixpm-nav__section';
+        var a = document.createElement('a');
+        a.className = 'md-nav__link';
+        a.href = base + '#sections/' + s.id;
+        var span = document.createElement('span');
+        span.className = 'md-ellipsis';
+        span.textContent = s.name || '(sans nom)';
+        var c = document.createElement('span');
+        c.className = 'aixpm-count';
+        c.textContent = '(' + s.members.length + ')';
+        span.appendChild(document.createTextNode(' '));
+        span.appendChild(c);
+        a.appendChild(span);
+        item.appendChild(a);
+        host.appendChild(item);
       });
-      row.appendChild(input);
-      row.appendChild(on);
-    }
-
-    panel.appendChild(statusEl);
-    panel.appendChild(row);
-
-    var h1 = host.querySelector('h1');
-    if (h1 && h1.parentNode) h1.parentNode.insertBefore(panel, h1.nextSibling);
-    else host.insertBefore(panel, host.firstChild);
-
-    if (hasToken) S.pull();
+      if (sections.length > shown.length) {
+        var more = document.createElement('li');
+        more.className = 'md-nav__item aixpm-nav__section';
+        var ma = document.createElement('a');
+        ma.className = 'md-nav__link';
+        ma.href = base;
+        var ms = document.createElement('span');
+        ms.className = 'md-ellipsis';
+        ms.textContent = 'Toutes les sections…';
+        ma.appendChild(ms);
+        more.appendChild(ma);
+        host.appendChild(more);
+      }
+    });
   }
 
   // ---------- Refresh on store change (cross-tab, post-sync) ----------
@@ -733,16 +759,8 @@
       var content2 = document.querySelector('.md-content');   // reconcile the archived banner (same-tab + cross-tab)
       if (content2) renderArchivedBanner(u, content2);
     }
-    if (isFavoritesPage()) {
-      renderFavoritesPage();
-      var st = S.getStatus();
-      var statusEl = document.querySelector('.aixpm-sync__status');
-      if (statusEl) {
-        statusEl.textContent = st.msg;
-        statusEl.classList.toggle('aixpm-sync__status--err', st.state === 'error' || st.state === 'suspended');
-      }
-    }
     updateNavCount();
+    updateNavSections();
     updateMaskedCount();
   }
 
@@ -756,9 +774,8 @@
     document.querySelectorAll('.md-post--excerpt').forEach(attachToPostCard);
     attachToArticlePage();
     attachListToolbar();
-    renderFavoritesPage();
-    attachSyncPanel();
     updateNavCount();
+    updateNavSections();
     updateMaskedCount();
     if (!subscribed) {
       subscribed = true;

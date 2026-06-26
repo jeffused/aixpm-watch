@@ -1,14 +1,16 @@
 ---
-title: Favorites
-description: Articles que vous avez marqués comme favoris.
+title: Ma bibliothèque
+description: Cette page a déménagé vers « Ma bibliothèque ».
 search:
   exclude: true
+hide:
+  - toc
 ---
 
-# Favorites
+<meta http-equiv="refresh" content="0; url=../bibliotheque/">
 
-Articles que vous avez notés (★). Par défaut, vos données personnelles sont stockées sur cet appareil. Connectez la synchro ci-dessous pour les retrouver sur vos autres appareils.
+# Cette page a déménagé
 
-<noscript>
-Vos données personnelles sont stockées dans votre navigateur — activez JavaScript pour les voir.
-</noscript>
+Les favoris sont devenus **[Ma bibliothèque](bibliotheque.md)** : étoiles, notes, tags personnels, sections et synchronisation.
+
+Si la redirection ne se fait pas automatiquement, cliquez sur le lien ci-dessus.

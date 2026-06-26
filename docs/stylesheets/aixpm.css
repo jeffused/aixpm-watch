@@ -372,3 +372,145 @@ body:not(.aixpm-show-archived) .md-post[data-aixpm-archived="true"] {
   font-size: 0.9em;
   color: var(--md-default-fg-color--light);
 }
+
+/* ============================================================
+   Session 3 — sections, « Ma bibliothèque » hub, nav sub-links
+   ============================================================ */
+
+/* Nav: runtime section sub-links under « Ma bibliothèque » */
+.aixpm-nav__sections {
+  margin: 0.1rem 0 0.3rem 0.6rem;
+  padding: 0;
+  list-style: none;
+}
+.aixpm-nav__section > .md-nav__link {
+  font-size: 0.92em;
+  padding-top: 0.18rem;
+  padding-bottom: 0.18rem;
+}
+
+/* Article personal panel: « Mes sections » row */
+.aixpm-sections-panel {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.8rem;
+}
+.aixpm-sections-panel__label {
+  font-size: 0.8em;
+  font-weight: 600;
+  color: var(--md-default-fg-color--light);
+  margin-right: 0.2rem;
+}
+/* Section chip = SOLID border + ⊞ prefix (distinct from dashed personal tags) */
+.aixpm-section-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25em;
+  padding: 0.05em 0.5em;
+  font-size: 0.78em;
+  color: var(--md-primary-fg-color);
+  background: transparent;
+  border: 1px solid var(--md-primary-fg-color);
+  border-radius: 1em;
+}
+.aixpm-section-chip::before { content: "\229E"; margin-right: 0.15em; }   /* ⊞ */
+.aixpm-section-chip__rm {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  color: inherit;
+  font-size: 1.1em;
+  line-height: 1;
+}
+.aixpm-section__input {
+  padding: 0.1em 0.5em;
+  font: inherit;
+  font-size: 0.8em;
+  min-width: 11rem;
+  color: var(--md-default-fg-color);
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 1em;
+}
+
+/* Hub: « Ma bibliothèque » */
+.aixpm-sync__intro {
+  margin: 0 0 0.6rem 0;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.95em;
+}
+.aixpm-lib-presets {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 1.4rem 0;
+  font-size: 0.85em;
+}
+.aixpm-lib-presets__label { color: var(--md-default-fg-color--light); }
+.aixpm-lib-preset {
+  padding: 0.1em 0.7em;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 1em;
+}
+.aixpm-lib-block { margin: 0 0 1.6rem 0; }
+.aixpm-lib-block__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  margin-bottom: 0.6rem;
+}
+.aixpm-lib-block__title { margin: 0; font-size: 1.1rem; }
+.aixpm-lib-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.6rem 0;
+}
+.aixpm-lib-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  margin: 0.5rem 0;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.4rem;
+}
+.aixpm-lib-list__main {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  min-width: 0;
+}
+.aixpm-lib-list__main .aixpm-lib-link { font-weight: 500; }
+.aixpm-lib-list__actions { display: inline-flex; gap: 0.4rem; flex-shrink: 0; }
+.aixpm-lib-date { font-size: 0.8em; color: var(--md-default-fg-color--light); white-space: nowrap; }
+.aixpm-lib-badge {
+  font-size: 0.7em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.05em 0.45em;
+  border-radius: 0.8em;
+  background: var(--md-default-fg-color--lightest);
+  color: var(--md-default-fg-color--light);
+}
+/* Archived members stay listed, dimmed (§4.2) */
+.aixpm-lib-archived { opacity: 0.6; }
+.aixpm-lib-archived:hover { opacity: 1; }
+.aixpm-lib-empty {
+  color: var(--md-default-fg-color--light);
+  font-style: italic;
+  margin: 0.6rem 0;
+}
+.aixpm-lib-archlink { margin: 0.4rem 0 1rem 0; }
+.aixpm-lib-back {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+  font-size: 0.9em;
+}

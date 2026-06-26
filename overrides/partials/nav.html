@@ -2,10 +2,14 @@
   AIxPM custom sidebar.
   Replaces Material's default nav.html. Renders:
     Latest -> homepage
-    Favorites -> /favorites/
+    Recherche -> /recherche/
+    Ma bibliothèque -> /bibliotheque/  (data-aixpm-lib-count + runtime data-aixpm-nav-sections sub-links)
+    Synthèses -> /syntheses/
+    Gestion de projet -> /pm/
     -- separator --
     For each L1 (canonical order): clickable parent + expand toggle, L2 children.
-  Counts come from config.extra.aixpm_taxonomy (built by hooks/categories.py).
+  Build-time counts come from config.extra.aixpm_taxonomy (hooks/categories.py).
+  Runtime personal counts + section sub-links are injected by docs/javascripts/aixpm-ui.js.
 #}
 {% set tax = config.extra.aixpm_taxonomy | default({"total": 0, "l1_order": [], "l1": {}}) %}
 {% set class = "md-nav md-nav--primary" %}
@@ -34,21 +38,31 @@
       </a>
     </li>
 
+    {# Recherche — unified personal search at /recherche/ #}
+    {% set rech_path = "recherche/" %}
+    {% set is_rech = page and page.url == rech_path %}
+    <li class="md-nav__item aixpm-nav__top{% if is_rech %} md-nav__item--active{% endif %}">
+      <a href="{{ rech_path | url }}" class="md-nav__link{% if is_rech %} md-nav__link--active{% endif %}">
+        <span class="md-ellipsis">Recherche</span>
+      </a>
+    </li>
+
+    {# Ma bibliothèque — personal hub at /bibliotheque/ (+ runtime section sub-links) #}
+    {% set bib_path = "bibliotheque/" %}
+    {% set is_bib = page and page.url == bib_path %}
+    <li class="md-nav__item aixpm-nav__top{% if is_bib %} md-nav__item--active{% endif %}">
+      <a href="{{ bib_path | url }}" class="md-nav__link{% if is_bib %} md-nav__link--active{% endif %}">
+        <span class="md-ellipsis">Ma bibliothèque <span class="aixpm-count" data-aixpm-lib-count>(0)</span></span>
+      </a>
+      <ul class="md-nav__list aixpm-nav__sections" data-aixpm-nav-sections hidden></ul>
+    </li>
+
     {# Synthèses — long-form digests at /syntheses/ #}
     {% set synth_path = "syntheses/" %}
     {% set is_synth = page and page.url.startswith(synth_path) %}
     <li class="md-nav__item aixpm-nav__top{% if is_synth %} md-nav__item--active{% endif %}">
       <a href="{{ synth_path | url }}" class="md-nav__link{% if is_synth %} md-nav__link--active{% endif %}">
         <span class="md-ellipsis">Synthèses</span>
-      </a>
-    </li>
-
-    {# Favorites #}
-    {% set fav_path = "favorites/" %}
-    {% set is_fav = page and page.url == fav_path %}
-    <li class="md-nav__item aixpm-nav__top{% if is_fav %} md-nav__item--active{% endif %}">
-      <a href="{{ fav_path | url }}" class="md-nav__link{% if is_fav %} md-nav__link--active{% endif %}">
-        <span class="md-ellipsis">Favorites <span class="aixpm-count" data-aixpm-fav-count>(0)</span></span>
       </a>
     </li>
 
