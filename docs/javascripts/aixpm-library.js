@@ -307,12 +307,15 @@
     render();
   }
 
-  function render() {
+  // hash arg (optional): when re-rendering from a navigation event, pass the
+  // EVENT's target hash rather than reading window.location.hash, which can lag
+  // a History-API update by a tick. Absent → parseHash reads location.hash.
+  function render(hash) {
     if (!isLibraryPage()) return;
     var host = mount();
     if (!host) return;
     host.textContent = '';
-    var route = parseHash();
+    var route = parseHash(hash);
     if (route.kind === 'section') renderSection(host, route.id);
     else if (route.kind === 'archives') renderArchives(host);
     else renderOverview(host);
@@ -335,7 +338,17 @@
     if (!wired) {
       wired = true;
       S.subscribe(onStoreChange);
-      window.addEventListener('hashchange', render);
+      // Hash routing under Material instant navigation: clicking a same-page hash
+      // link (e.g. a section from the hub or the sidebar) is handled via the
+      // History API, which does NOT fire a native 'hashchange'. So also react to
+      // Material's location$ (fed by clicks + popstate), rendering with the
+      // EMITTED url's hash. Keep 'hashchange' for the non-instant fallback.
+      window.addEventListener('hashchange', function () { render(); });
+      if (typeof location$ !== 'undefined' && location$.subscribe) {
+        location$.subscribe(function (u) {
+          try { if (u && /\/bibliotheque\/?$/.test(u.pathname)) render(u.hash); } catch (e) {}
+        });
+      }
     }
   }
 
