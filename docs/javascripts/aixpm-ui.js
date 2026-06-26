@@ -497,7 +497,10 @@
 
   function attachListToolbar() {
     if (!document.querySelector('.md-post--excerpt')) return;
-    var host = document.querySelector('.md-content article') || document.querySelector('.md-content');
+    // Anchor to the stable content wrapper (a <div> on the blog index, an <article>
+    // on regular pages) — NOT `.md-content article`, which on the index matches the
+    // first post CARD and would let hide-read/show-archived hide the toolbar with it.
+    var host = document.querySelector('.md-content__inner') || document.querySelector('.md-content');
     if (!host) return;
     if (host.querySelector('.aixpm-toolbar')) return;
 
@@ -539,9 +542,16 @@
       updateMaskedCount();
     });
 
-    var h1 = host.querySelector('h1');
-    if (h1 && h1.parentNode) h1.parentNode.insertBefore(toolbar, h1.nextSibling);
-    else host.insertBefore(toolbar, host.firstChild);
+    // Insert OUTSIDE any post card — as a sibling right before the first card —
+    // so the hide-read / show-archived rules can never hide the toolbar itself.
+    var firstPost = host.querySelector('.md-post');
+    if (firstPost && firstPost.parentNode) {
+      firstPost.parentNode.insertBefore(toolbar, firstPost);
+    } else {
+      var h1 = host.querySelector('h1');
+      if (h1 && h1.parentNode) h1.parentNode.insertBefore(toolbar, h1.nextSibling);
+      else host.insertBefore(toolbar, host.firstChild);
+    }
 
     updateMaskedCount();
   }
@@ -757,8 +767,13 @@
     }
   }
 
-  // Exposed for tests (pure linkify split + DOM-safe builder)
-  window.AIxPMUI = { _splitLinkify: splitLinkify, _buildLinkified: buildLinkified };
+  // Exposed for tests (pure linkify split + DOM-safe builder + toolbar placement)
+  window.AIxPMUI = {
+    _splitLinkify: splitLinkify,
+    _buildLinkified: buildLinkified,
+    _attachListToolbar: attachListToolbar,
+    _updateMaskedCount: updateMaskedCount
+  };
 
   if (typeof document$ !== 'undefined' && document$.subscribe) {
     document$.subscribe(onPageReady);
