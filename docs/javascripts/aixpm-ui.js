@@ -1,12 +1,21 @@
-/* AIxPM personal layer — UI (Session 1 scope).
+/* AIxPM personal layer — UI (Sessions 1-2 scope).
    Replaces the old aixpm.js. Renders on top of window.AIxPMStore.
 
+   Session 1:
    - « Lu » button kept verbatim (manual, never auto-set by rating).
    - « Favori » replaced by a 5-star rating widget on cards + article pages.
-   - Archived attribute plumbed onto cards (toggle UI lands in Session 2).
-   - Hide-read toolbar kept.
    - /favorites/ interim: lists rated articles from the store + sync panel.
    - Nav count fed from the store (rated-article count).
+
+   Session 2:
+   - Article personal panel: note box (autosave + flush, URLs auto-linkified)
+     and personal-tag chips with a native datalist.
+   - Archive: button on article pages + icon button on cards, archived banner,
+     « Afficher les articles archivés » toggle + « (n masqués) » count.
+   - Card indicators: ✎ when a note exists.
+
+   XSS discipline (binding): personal data (note, tags, title, status) only ever
+   reaches the DOM via textContent / createTextNode — never innerHTML.
 
    Re-runs on every Material soft-nav via the document$ observable. */
 
@@ -17,6 +26,8 @@
   var S = window.AIxPMStore;
 
   var KEY_HIDE_READ = 'aixpm:hideRead';
+  var KEY_SHOW_ARCHIVED = 'aixpm:showArchived';
+  var activeNoteFlush = null;   // flush fn of the article note editor currently on screen
 
   function loadJSON(key, fallback) {
     try { var raw = localStorage.getItem(key); return raw ? JSON.parse(raw) : fallback; }
@@ -133,12 +144,14 @@
     });
 
     var stars = makeStars(info.url, info.title);
+    var archiveBtn = makeCardArchiveBtn(info.url, article);
     var noteFlag = makeNoteIndicator(state.note);
 
     var wrap = document.createElement('span');
     wrap.className = 'aixpm-actions';
     wrap.appendChild(readBtn);
     wrap.appendChild(stars);
+    wrap.appendChild(archiveBtn);
     if (noteFlag) wrap.appendChild(noteFlag);
 
     var metaList = article.querySelector('.md-post__meta .md-meta__list');
@@ -164,6 +177,260 @@
     return span;
   }
 
+  // ---------- Note rendering — auto-linkify URLs (DOM-built, never innerHTML) ----------
+  // Split into plain-text / link segments. Pure + testable.
+  var URL_RE = /(https?:\/\/[^\s<>()]+[^\s<>().,;:!?'"\]])/g;
+  function splitLinkify(text) {
+    var segs = [], last = 0, m;
+    URL_RE.lastIndex = 0;
+    while ((m = URL_RE.exec(text)) !== null) {
+      if (m.index > last) segs.push({ t: 'text', v: text.slice(last, m.index) });
+      segs.push({ t: 'link', v: m[0] });
+      last = m.index + m[0].length;
+    }
+    if (last < text.length) segs.push({ t: 'text', v: text.slice(last) });
+    return segs;
+  }
+  function buildLinkified(text) {
+    var frag = document.createDocumentFragment();
+    splitLinkify(text || '').forEach(function (s) {
+      if (s.t === 'link') {
+        var a = document.createElement('a');
+        a.href = s.v;                       // only https?:// matched → safe scheme
+        a.textContent = s.v;                // textContent, not innerHTML
+        a.target = '_blank';
+        a.rel = 'noopener nofollow';
+        frag.appendChild(a);
+      } else {
+        frag.appendChild(document.createTextNode(s.v));
+      }
+    });
+    return frag;
+  }
+  function autoGrow(ta) { ta.style.height = 'auto'; ta.style.height = ta.scrollHeight + 'px'; }
+
+  // ---------- Note panel (article pages only) ----------
+  // Self-managing editor: debounced autosave (1.5s) + immediate flush on blur,
+  // on tab-hide (via store pre-flush), and at the top of every onPageReady
+  // (covers Material instant-nav away mid-typing). Saving empty deletes the note.
+  function buildNotePanel(url) {
+    var box = document.createElement('div');
+    box.className = 'aixpm-note';
+    var label = document.createElement('span');
+    label.className = 'aixpm-note__label';
+    label.textContent = 'Ma note';                 // §4.2 canonical string (mirrors « Mes tags »)
+    var inner = document.createElement('div');
+    inner.className = 'aixpm-note__body';
+    box.appendChild(label);
+    box.appendChild(inner);
+    var statusEl = document.createElement('span');
+    statusEl.className = 'aixpm-note__status';
+    var saveTimer = null;
+    var pending = null;                      // text awaiting save, or null when clean
+
+    function doSave(text) {
+      pending = null;
+      S.setNote(url, text);
+      statusEl.textContent = 'Enregistré ✓';
+    }
+    function schedule(text) {
+      pending = text;
+      statusEl.textContent = 'Enregistrement…';
+      if (saveTimer) clearTimeout(saveTimer);
+      saveTimer = setTimeout(function () { saveTimer = null; doSave(text); }, 1500);
+    }
+    function flush() {
+      if (saveTimer) { clearTimeout(saveTimer); saveTimer = null; }
+      if (pending !== null) doSave(pending);
+    }
+
+    function renderView() {
+      flush();                                // never lose an in-progress edit on rerender
+      inner.textContent = '';
+      box.classList.remove('aixpm-note--editing');
+      var note = S.get(url).note;
+      if (note) {
+        var content = document.createElement('div');
+        content.className = 'aixpm-note__content';
+        content.appendChild(buildLinkified(note));
+        var edit = document.createElement('button');
+        edit.type = 'button';
+        edit.className = 'aixpm-btn aixpm-note__edit';
+        edit.textContent = 'Modifier';
+        edit.addEventListener('click', function () { renderEdit(note); });
+        inner.appendChild(content);
+        inner.appendChild(edit);
+      } else {
+        var add = document.createElement('button');
+        add.type = 'button';
+        add.className = 'aixpm-btn aixpm-note__add';
+        add.textContent = '+ Ajouter une note';
+        add.addEventListener('click', function () { renderEdit(''); });
+        inner.appendChild(add);
+      }
+    }
+    function renderEdit(initial) {
+      inner.textContent = '';
+      box.classList.add('aixpm-note--editing');
+      var ta = document.createElement('textarea');
+      ta.className = 'aixpm-note__input';
+      ta.value = initial;
+      ta.placeholder = 'Vos notes personnelles sur cet article…';
+      ta.setAttribute('aria-label', 'Vos notes personnelles sur cet article');
+      ta.addEventListener('input', function () { autoGrow(ta); schedule(ta.value); });
+      ta.addEventListener('blur', function () { flush(); });
+      var done = document.createElement('button');
+      done.type = 'button';
+      done.className = 'aixpm-btn';
+      done.textContent = 'Terminer';
+      done.addEventListener('click', function () { flush(); renderView(); });
+      var row = document.createElement('div');
+      row.className = 'aixpm-note__editrow';
+      row.appendChild(done);
+      row.appendChild(statusEl);
+      inner.appendChild(ta);
+      inner.appendChild(row);
+      autoGrow(ta);
+      ta.focus();
+    }
+
+    activeNoteFlush = flush;                   // registered for tab-hide / nav flush
+    renderView();
+    return { el: box, flush: flush, isEditing: function () { return box.classList.contains('aixpm-note--editing'); } };
+  }
+
+  // ---------- Personal tags (article pages) ----------
+  function ensureTagDatalist() {
+    var dl = document.getElementById('aixpm-tag-vocab');
+    if (!dl) { dl = document.createElement('datalist'); dl.id = 'aixpm-tag-vocab'; document.body.appendChild(dl); }
+    dl.textContent = '';
+    S.customTagVocabulary().forEach(function (t) {
+      var o = document.createElement('option');
+      o.value = t;                            // DOM property, not HTML — safe
+      dl.appendChild(o);
+    });
+  }
+  function buildTagsPanel(url) {
+    var wrap = document.createElement('div');
+    wrap.className = 'aixpm-tags';
+
+    function commit(input, raw) {
+      var val = (raw || '').replace(/,\s*$/, '').replace(/\s+/g, ' ').trim();
+      if (!val) return;
+      var cur = S.get(url).tags.slice();
+      cur.push(val);
+      S.setTags(url, cur);                    // store normalizes + dedupes
+      render();
+      var ni = wrap.querySelector('.aixpm-tag__input');
+      if (ni) ni.focus();
+    }
+    function render() {
+      wrap.textContent = '';
+      var label = document.createElement('span');
+      label.className = 'aixpm-tags__label';
+      label.textContent = 'Mes tags';
+      wrap.appendChild(label);
+
+      S.get(url).tags.forEach(function (t) {
+        var chip = document.createElement('span');
+        chip.className = 'aixpm-tag';
+        var txt = document.createElement('span');
+        txt.textContent = t;                  // textContent — no innerHTML
+        chip.appendChild(txt);
+        var rm = document.createElement('button');
+        rm.type = 'button';
+        rm.className = 'aixpm-tag__rm';
+        rm.textContent = '×';
+        rm.setAttribute('aria-label', 'Retirer le tag ' + t);
+        rm.addEventListener('click', function () {
+          var next = S.get(url).tags.filter(function (x) { return x !== t; });
+          S.setTags(url, next);
+          render();
+        });
+        chip.appendChild(rm);
+        wrap.appendChild(chip);
+      });
+
+      var input = document.createElement('input');
+      input.className = 'aixpm-tag__input';
+      input.setAttribute('list', 'aixpm-tag-vocab');
+      input.setAttribute('aria-label', 'Ajouter un tag');
+      input.placeholder = 'Ajouter un tag…';
+      input.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ',') { e.preventDefault(); commit(input, input.value); }
+      });
+      input.addEventListener('blur', function () { if (input.value.trim()) commit(input, input.value); });
+      wrap.appendChild(input);
+      ensureTagDatalist();
+    }
+    render();
+    return { el: wrap, rerender: render };
+  }
+
+  // ---------- Archive controls ----------
+  function makeArchiveBtn(url, onChange) {
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'aixpm-btn aixpm-btn--archive';
+    function paint() {
+      var arch = S.get(url).archived;
+      btn.setAttribute('aria-pressed', arch ? 'true' : 'false');
+      btn.textContent = arch ? 'Désarchiver' : 'Archiver';
+    }
+    btn.addEventListener('click', function () {
+      S.setArchived(url, !S.get(url).archived);
+      paint();
+      if (onChange) onChange();
+    });
+    paint();
+    return btn;
+  }
+  function makeCardArchiveBtn(url, article) {
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'aixpm-btn aixpm-btn--archive-icon';
+    btn.textContent = '⤓';                                  // ⤓
+    function paint() {
+      var arch = S.get(url).archived;
+      btn.setAttribute('aria-pressed', arch ? 'true' : 'false');
+      btn.setAttribute('aria-label', arch ? 'Désarchiver' : 'Archiver');
+      btn.title = arch ? 'Désarchiver' : 'Archiver';
+    }
+    btn.addEventListener('click', function () {
+      var now = !S.get(url).archived;
+      S.setArchived(url, now);
+      paint();
+      if (now) article.setAttribute('data-aixpm-archived', 'true');
+      else article.removeAttribute('data-aixpm-archived');
+      updateMaskedCount();
+    });
+    paint();
+    return btn;
+  }
+  function renderArchivedBanner(url, content) {
+    var existing = content.querySelector('.aixpm-archived-banner');
+    var arch = S.get(url).archived;
+    if (arch && !existing) {
+      var banner = document.createElement('div');
+      banner.className = 'aixpm-archived-banner';
+      var span = document.createElement('span');
+      span.textContent = 'Article archivé';
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'aixpm-btn';
+      btn.textContent = 'Désarchiver';
+      btn.addEventListener('click', function () {
+        S.setArchived(url, false);
+        banner.remove();
+      });
+      banner.appendChild(span);
+      banner.appendChild(btn);
+      content.insertBefore(banner, content.firstChild);
+    } else if (!arch && existing) {
+      existing.remove();
+    }
+  }
+
   // ---------- Attach to a single article page ----------
   function attachToArticlePage() {
     if (!/\/\d{4}\/\d{2}\/\d{2}\//.test(location.pathname)) return;
@@ -187,18 +454,48 @@
     });
 
     var stars = makeStars(url, title);
+    var archiveBtn = makeArchiveBtn(url, function () { renderArchivedBanner(url, content); });
 
     var wrap = document.createElement('div');
     wrap.className = 'aixpm-actions aixpm-actions--article';
     wrap.appendChild(readBtn);
     wrap.appendChild(stars);
+    wrap.appendChild(archiveBtn);
 
     if (h1 && h1.parentNode) h1.parentNode.insertBefore(wrap, h1.nextSibling);
     else content.insertBefore(wrap, content.firstChild);
+
+    // Personal panel: note editor + personal tags (capture meta so they display elsewhere)
+    S.touchMeta(url, title);
+    var notePanel = buildNotePanel(url);
+    var tagsPanel = buildTagsPanel(url);
+    var panel = document.createElement('div');
+    panel.className = 'aixpm-panel';
+    panel.appendChild(notePanel.el);
+    panel.appendChild(tagsPanel.el);
+    wrap.parentNode.insertBefore(panel, wrap.nextSibling);
+
+    renderArchivedBanner(url, content);
   }
 
-  // ---------- "Hide read" toolbar ----------
-  function attachHideReadToggle() {
+  // ---------- List toolbar: hide-read + show-archived + masked count ----------
+  function applyHideRead(on) { document.body.classList.toggle('aixpm-hide-read', !!on); }
+  function applyShowArchived(on) { document.body.classList.toggle('aixpm-show-archived', !!on); }
+
+  function updateMaskedCount() {
+    var count = document.querySelector('.aixpm-toolbar__count');
+    if (!count) return;
+    var hideRead = document.body.classList.contains('aixpm-hide-read');
+    var showArch = document.body.classList.contains('aixpm-show-archived');
+    var n = 0;
+    document.querySelectorAll('.md-post--excerpt[data-aixpm-url]').forEach(function (article) {
+      var st = S.get(article.dataset.aixpmUrl);
+      if ((hideRead && st.read) || (!showArch && st.archived)) n++;
+    });
+    count.textContent = n > 0 ? '(' + n + ' masqués)' : '';
+  }
+
+  function attachListToolbar() {
     if (!document.querySelector('.md-post--excerpt')) return;
     var host = document.querySelector('.md-content article') || document.querySelector('.md-content');
     if (!host) return;
@@ -207,23 +504,46 @@
     var toolbar = document.createElement('div');
     toolbar.className = 'aixpm-toolbar';
 
-    var label = document.createElement('label');
-    var cb = document.createElement('input');
-    cb.type = 'checkbox';
-    cb.checked = loadJSON(KEY_HIDE_READ, false);
-    label.appendChild(cb);
-    label.appendChild(document.createTextNode(' Masquer les articles lus'));
-    toolbar.appendChild(label);
+    var l1 = document.createElement('label');
+    var cb1 = document.createElement('input');
+    cb1.type = 'checkbox';
+    cb1.checked = !!loadJSON(KEY_HIDE_READ, false);
+    l1.appendChild(cb1);
+    l1.appendChild(document.createTextNode(' Masquer les articles lus'));
 
-    document.body.classList.toggle('aixpm-hide-read', !!cb.checked);
-    cb.addEventListener('change', function () {
-      saveJSON(KEY_HIDE_READ, cb.checked);
-      document.body.classList.toggle('aixpm-hide-read', !!cb.checked);
+    var l2 = document.createElement('label');
+    var cb2 = document.createElement('input');
+    cb2.type = 'checkbox';
+    cb2.checked = !!loadJSON(KEY_SHOW_ARCHIVED, false);
+    l2.appendChild(cb2);
+    l2.appendChild(document.createTextNode(' Afficher les articles archivés'));
+
+    var count = document.createElement('span');
+    count.className = 'aixpm-toolbar__count';
+
+    toolbar.appendChild(l1);
+    toolbar.appendChild(l2);
+    toolbar.appendChild(count);
+
+    applyHideRead(cb1.checked);
+    applyShowArchived(cb2.checked);
+
+    cb1.addEventListener('change', function () {
+      saveJSON(KEY_HIDE_READ, cb1.checked);
+      applyHideRead(cb1.checked);
+      updateMaskedCount();
+    });
+    cb2.addEventListener('change', function () {
+      saveJSON(KEY_SHOW_ARCHIVED, cb2.checked);
+      applyShowArchived(cb2.checked);
+      updateMaskedCount();
     });
 
     var h1 = host.querySelector('h1');
     if (h1 && h1.parentNode) h1.parentNode.insertBefore(toolbar, h1.nextSibling);
     else host.insertBefore(toolbar, host.firstChild);
+
+    updateMaskedCount();
   }
 
   // ---------- /favorites/ interim — rated articles list ----------
@@ -369,6 +689,18 @@
       else article.removeAttribute('data-aixpm-archived');
       var grp = article.querySelector('.aixpm-stars');
       if (grp) paintStars(grp, state.rating);
+      var ab = article.querySelector('.aixpm-btn--archive-icon');
+      if (ab) {
+        ab.setAttribute('aria-pressed', state.archived ? 'true' : 'false');
+        ab.setAttribute('aria-label', state.archived ? 'Désarchiver' : 'Archiver');
+        ab.title = state.archived ? 'Désarchiver' : 'Archiver';
+      }
+      var wrapEl = article.querySelector('.aixpm-actions');
+      if (wrapEl) {
+        var flag = wrapEl.querySelector('.aixpm-note-flag');
+        if (state.note && !flag) { var nf = makeNoteIndicator(state.note); if (nf) wrapEl.appendChild(nf); }
+        else if (!state.note && flag) flag.remove();
+      }
     });
     if (/\/\d{4}\/\d{2}\/\d{2}\//.test(location.pathname)) {
       var u = S.canon(location.pathname);
@@ -382,7 +714,14 @@
         }
         var grp2 = wrap.querySelector('.aixpm-stars');
         if (grp2) paintStars(grp2, state2.rating);
+        var arb = wrap.querySelector('.aixpm-btn--archive');
+        if (arb) {
+          arb.setAttribute('aria-pressed', state2.archived ? 'true' : 'false');
+          arb.textContent = state2.archived ? 'Désarchiver' : 'Archiver';
+        }
       }
+      var content2 = document.querySelector('.md-content');   // reconcile the archived banner (same-tab + cross-tab)
+      if (content2) renderArchivedBanner(u, content2);
     }
     if (isFavoritesPage()) {
       renderFavoritesPage();
@@ -394,21 +733,32 @@
       }
     }
     updateNavCount();
+    updateMaskedCount();
   }
 
   var subscribed = false;
 
   // ---------- Main wiring ----------
   function onPageReady() {
+    if (activeNoteFlush) activeNoteFlush();       // save any in-progress note before re-render / soft-nav
+    activeNoteFlush = null;
     ensureLiveRegion();                          // register the SR live region before any interaction
     document.querySelectorAll('.md-post--excerpt').forEach(attachToPostCard);
     attachToArticlePage();
-    attachHideReadToggle();
+    attachListToolbar();
     renderFavoritesPage();
     attachSyncPanel();
     updateNavCount();
-    if (!subscribed) { subscribed = true; S.subscribe(refreshFromStore); }
+    updateMaskedCount();
+    if (!subscribed) {
+      subscribed = true;
+      S.subscribe(refreshFromStore);
+      S.registerPreFlush(function () { if (activeNoteFlush) activeNoteFlush(); });
+    }
   }
+
+  // Exposed for tests (pure linkify split + DOM-safe builder)
+  window.AIxPMUI = { _splitLinkify: splitLinkify, _buildLinkified: buildLinkified };
 
   if (typeof document$ !== 'undefined' && document$.subscribe) {
     document$.subscribe(onPageReady);

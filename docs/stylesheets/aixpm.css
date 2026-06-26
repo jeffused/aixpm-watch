@@ -239,3 +239,136 @@ body.aixpm-hide-read .md-post[data-aixpm-read="true"] {
 .md-post__authors {
   display: none !important;
 }
+
+/* ============================================================
+   Session 2 — note panel, personal tags, archive
+   ============================================================ */
+
+/* Archive: hidden by default on list views (inverse of hide-read) */
+body:not(.aixpm-show-archived) .md-post[data-aixpm-archived="true"] {
+  display: none;
+}
+
+/* Toolbar masked-count + second checkbox */
+.aixpm-toolbar { flex-wrap: wrap; }
+.aixpm-toolbar__count {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.95em;
+  margin-left: auto;
+}
+
+/* Card archive icon button (⤓) */
+.aixpm-btn--archive-icon {
+  padding: 0.05em 0.4em;
+  line-height: 1.4;
+}
+
+/* Note indicator already styled in §stars block (.aixpm-note-flag) */
+
+/* Personal panel container (article pages) */
+.aixpm-panel {
+  margin: 0 0 1.4rem 0;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.5rem;
+  background: var(--md-default-fg-color--lightest);
+  background: color-mix(in srgb, var(--md-primary-fg-color) 4%, transparent);
+}
+
+/* Note box */
+.aixpm-note { margin-bottom: 0.8rem; }
+.aixpm-note__label {
+  display: block;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: var(--md-default-fg-color--light);
+  margin-bottom: 0.3rem;
+}
+.aixpm-note__content {
+  white-space: pre-wrap;            /* preserve the note's line breaks */
+  word-break: break-word;
+  margin-bottom: 0.4rem;
+}
+.aixpm-note__content a { word-break: break-all; }
+.aixpm-note__input {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 4.5rem;
+  resize: vertical;
+  padding: 0.5em 0.6em;
+  font: inherit;
+  color: var(--md-default-fg-color);
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 0.3rem;
+}
+.aixpm-note__editrow {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.4rem;
+}
+.aixpm-note__status {
+  font-size: 0.8em;
+  color: var(--md-default-fg-color--light);
+}
+.aixpm-note__add { font-size: 0.85em; }
+
+/* Personal tags */
+.aixpm-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+}
+.aixpm-tags__label {
+  font-size: 0.8em;
+  font-weight: 600;
+  color: var(--md-default-fg-color--light);
+  margin-right: 0.2rem;
+}
+.aixpm-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25em;
+  padding: 0.05em 0.5em;
+  font-size: 0.78em;
+  color: var(--md-primary-fg-color);
+  background: transparent;
+  border: 1px dashed var(--md-primary-fg-color);   /* dashed = personal, vs solid curated .md-tag */
+  border-radius: 1em;
+}
+.aixpm-tag__rm {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  color: inherit;
+  font-size: 1.1em;
+  line-height: 1;
+}
+.aixpm-tag__input {
+  padding: 0.1em 0.5em;
+  font: inherit;
+  font-size: 0.8em;
+  min-width: 9rem;
+  color: var(--md-default-fg-color);
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 1em;
+}
+
+/* Archived banner on a directly-visited archived article */
+.aixpm-archived-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 0 0 1rem 0;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 0.4rem;
+  background: var(--md-default-fg-color--lightest);
+  font-size: 0.9em;
+  color: var(--md-default-fg-color--light);
+}

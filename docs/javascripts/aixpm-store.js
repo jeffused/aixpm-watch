@@ -681,10 +681,17 @@
     if (pushTimer) { clearTimeout(pushTimer); pushTimer = null; }
   }
 
+  // Pre-flush hooks let the UI commit a pending edit (e.g. an open note textarea)
+  // synchronously BEFORE the keepalive PATCH reads localStorage — otherwise the
+  // tab-hide push could race the autosave and ship the doc without the note.
+  var preFlush = [];
+  function registerPreFlush(fn) { if (typeof fn === 'function') preFlush.push(fn); }
+
   // Best-effort last-write on tab hide / pagehide (iOS tab-kill case, CF-5).
   // No GET — keepalive can't read a response; push the local doc as-is.
   // Honor the same invariant as syncNow: never push over an unreadable remote.
   function flush() {
+    for (var i = 0; i < preFlush.length; i++) { try { preFlush[i](); } catch (e) {} }
     if (!getToken() || !isDirty() || status.state === 'suspended') return;
     try { patchGist(readLocal() || getDoc(), true); } catch (e) {}
   }
@@ -732,6 +739,7 @@
     pull: pull,
     push: push,
     flush: flush,
+    registerPreFlush: registerPreFlush,
     hasToken: hasToken,
     getToken: getToken,
     setToken: setToken,
