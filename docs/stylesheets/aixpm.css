@@ -56,11 +56,56 @@
   border-color: var(--md-primary-fg-color);
 }
 
-.aixpm-btn--fav::before { content: "\2661"; margin-right: 0.3em; }
-.aixpm-btn--fav[aria-pressed="true"]::before { content: "\2665"; }
-
 .aixpm-btn--read::before { content: "\25CB"; margin-right: 0.3em; }
 .aixpm-btn--read[aria-pressed="true"]::before { content: "\25CF"; }
+
+/* ============================================================
+   5-star rating widget (replaces « Favori »)
+   ============================================================ */
+
+.aixpm-stars {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  line-height: 1;
+}
+.aixpm-star {
+  background: none;
+  border: none;
+  padding: 0 0.04em;
+  margin: 0;
+  font-size: 1.05em;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--md-default-fg-color--lighter);
+  font-family: inherit;
+  transition: color 0.12s, transform 0.08s;
+}
+.aixpm-star:hover { transform: scale(1.15); }
+.aixpm-star--on { color: var(--md-primary-fg-color); }
+
+/* Article-page rating sits a touch larger, next to the read button */
+.md-content .aixpm-actions--article .aixpm-stars { margin-left: 0.4rem; }
+.md-content .aixpm-actions--article .aixpm-star { font-size: 1.25em; }
+
+/* Note indicator (✎) on cards / lists */
+.aixpm-note-flag {
+  margin-left: 0.4em;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.9em;
+  cursor: default;
+}
+
+/* Screen-reader-only live region */
+.aixpm-sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 
 /* Article-page versions are slightly larger */
 .md-content .aixpm-actions--article {

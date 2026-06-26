@@ -72,7 +72,8 @@ extra_css:
   - stylesheets/aixpm.css
 
 extra_javascript:
-  - javascripts/aixpm.js
+  - javascripts/aixpm-store.js
+  - javascripts/aixpm-ui.js
 
 hooks:
   - hooks/categories.py
