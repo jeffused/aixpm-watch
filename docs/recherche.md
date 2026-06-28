@@ -9,6 +9,8 @@ hide:
 
 # Recherche
 
-La recherche unifiée — articles, vos notes, étoiles, tags et sections, avec filtres — arrive prochainement.
+Recherchez dans le texte des articles **et** dans vos données personnelles — vos notes, vos étoiles, vos tags et vos sections — avec des filtres combinables.
 
-En attendant, retrouvez vos sections et vos articles archivés depuis **[Ma bibliothèque](bibliotheque.md)**.
+<div data-aixpm-search>
+  <noscript>La recherche unifiée nécessite JavaScript. Retrouvez vos sections et vos articles archivés depuis <a href="bibliotheque/">Ma bibliothèque</a>.</noscript>
+</div>
