@@ -30,7 +30,3 @@ Plusieurs voix convergent sur les memes points de friction. Hallucinations quoti
 Le fil livre aussi deux signaux faibles utiles. La gouvernance comme dette : « si vous n'avez pas mature vos politiques IA et vos controles type DLP, vous etes deja trop en retard ». Et le rappel economique : quand le vrai cout des tokens se materialisera (« 10 a 100 fois plus »), la conversation sur le ROI ne sera plus la meme. Un inventaire praticien a relire avant la prochaine reunion de pilotage IA.
 
 [Source : Reddit r/projectmanagement, 11 mai 2026 →](https://www.reddit.com/r/projectmanagement/comments/1t9w4mk/ai_is_transforming_the_work_finally_hit/)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

@@ -34,7 +34,3 @@ Le mecanisme reste assistance plutot que substitution. L'agent propose des liste
 L'episode est lisible a deux niveaux. Premier niveau : une firme MBB instrumentalise sa fonction d'allocation des ressources — le coeur du metier consulting — par l'IA, avec un calendrier serre et des metriques de productivite chiffrees. Second niveau : « I don't think [clients] will really care », observe Miller. Le seuil d'acceptabilite a bouge ; l'IA en amont du staffing n'est plus presentee comme un sujet sensible vis-a-vis des clients, mais comme un detail d'execution.
 
 [Source : Consultor.fr (relayant Bloomberg, Matthew Boyle), 9 mai 2026 →](https://www.consultor.fr/articles/mckinsey-va-confier-le-staffing-des-consultants-a-une-ia)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

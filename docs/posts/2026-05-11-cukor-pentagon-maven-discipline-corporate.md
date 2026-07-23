@@ -31,7 +31,3 @@ Sa thèse est que Maven a réussi parce que ce n'était pas un pilote mais une t
 Le contraste est utile pour challenger un sponsor C-level qui revendique d'« aller plus vite que les régulés ». La discipline du DoD — ownership exécutif nommé, refonte des workflows, mesure par l'outcome — est précisément ce qui a permis d'aller vite. Le signal rejoint le cluster « deliberate slowdown » (Whirlpool, Duke, Cleveland Clinic, HBR Microsoft) : la vitesse soutenable passe par la gate, pas par son contournement.
 
 [Source : Fortune, 11 mai 2026, Drew Cukor →](https://fortune.com/2026/05/11/drew-cukor-project-maven-ai-adoption-china-corporate-transformation/)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

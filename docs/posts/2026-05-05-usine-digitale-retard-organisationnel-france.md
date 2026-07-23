@@ -33,7 +33,3 @@ L'écart de pratique, lui, n'a rien de marginal. 49 % des utilisateurs français
 La conclusion est simple à formuler, difficile à actionner. Les dirigeants mesurent l'adoption — comptes Copilot ouverts, formations dispensées, postes IA recrutés — mais pas la refonte des workflows, des incitations et des critères d'évaluation. Triangulé avec les remontées de Consultancy.uk et des Echos sur la même période, le signal est cohérent : l'écart se paiera six à douze mois plus tard, quand les gains attendus ne se matérialiseront pas.
 
 [Source : L'Usine Digitale, 5 mai 2026, Célia Séramour →](http://web.archive.org/web/20260506093018/https://www.usine-digitale.fr/intelligence-artificielle/ia-generative/lia-au-travail-le-vrai-retard-organisationnel-que-les-dirigeants-francais-nont-pas-encore-mesure.MWDD7T3RHBEIXBCIVJXCZALXPY.html)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

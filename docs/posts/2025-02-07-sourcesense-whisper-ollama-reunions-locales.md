@@ -31,7 +31,3 @@ La chaîne s'articule en trois étages. Whisper (modèle `medium.en` d'OpenAI) a
 Sur une dizaine d'heures d'audio testées, l'auteur juge le résultat solide — « particulièrement bon dans les contextes où les voix ne se chevauchent pas trop » — tout en prévenant qu'« un travail manuel reste nécessaire entre la phase de transcription et celle de retraitement du texte. Et le texte généré doit toujours être évalué. » Le signal intéresse moins pour la pile choisie que pour la démonstration : en 2026, la stack locale est assez mature pour absorber un cas d'usage standard de PMO — comptes rendus de réunions confidentielles — sans qu'un octet ne quitte le poste.
 
 [Source : Sourcesense TechBlog, 07 février 2025, Mirko Panagrosso →](https://medium.com/sourcesense-techblog/ai-powered-transcripts-and-summaries-with-llms-d475b742e854)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

@@ -30,8 +30,3 @@ La séquence visible décrite par l'auteur est récurrente : les ingénieurs mai
 Le retournement utile pour un comité d'achat n'est pas dans la grille de features. Il est dans la métrique manquante : le **poids opérationnel** du quotidien, mesuré par le comportement à six mois et non par la richesse fonctionnelle de la démo. La meilleure plateforme PM sur le papier ne vaut rien si la moitié de l'organisation la contourne silencieusement après le honeymoon. Pour un sponsor qui prépare un appel d'offres PM, la question à poser à chaque éditeur n'est plus « qu'est-ce que vous savez faire », mais « qu'est-ce que mes équipes ne feront *pas* en dehors de votre outil dans six mois, et pourquoi ».
 
 [Source : Reddit r/projectmanagement, 20 mai 2026 →](https://www.reddit.com/r/projectmanagement/comments/1tih2l2/most_enterprise_pm_tool_rollouts_fail_because_the/)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->
-<!-- Tag note: routed AI-impacts/analyse because the analytical frame covers PM-tool category dynamics including but not limited to AI. Alt route: AI-limites/friction-praticien — the AI-feature opt-out signal is strong in the comments. Judgment call on whether the takeaway is the operational-weight thesis (analyse) or the practitioner rejection of bolted-on AI (friction). -->

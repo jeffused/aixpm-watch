@@ -31,7 +31,3 @@ L'évaluation reste holistique — les objectifs financiers et de qualité demeu
 Le calcul managérial est explicite : « Si je mets la pression sur les partners, ça redescend très vite. Si tu n'es pas dans le bateau, choisis un autre bateau. » Grant Thornton rejoint Disney (tableau de bord d'adoption interne) et KPMG (cible des 75 %) : trois mécanismes distincts — bonus, observabilité, objectif chiffré — pour faire passer l'IA du toléré au rétribué au sommet de la pyramide.
 
 [Source : Business Insider via AOL, 23 avril 2026, Polly Thompson →](https://www.aol.com/articles/8-5-billion-consulting-firm-120906927.html)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

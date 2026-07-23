@@ -33,7 +33,3 @@ Deux employés interrogés par Business Insider décrivent un compteur facilemen
 KPMG complète un triptyque déjà documenté : Grant Thornton indexe le bonus partner sur l'IA, Disney suit la génération de tokens, JPMorgan classe ses ingénieurs par usage. Trois firmes, trois métriques distinctes — bonus, volume, fréquence — pour faire passer l'IA du toléré au mesuré. Reste la loi de Goodhart, qui rappelle qu'une mesure devenue cible cesse d'être une bonne mesure : KPMG en fait la démonstration en direct.
 
 [Source : Business Insider via AOL, 4 mai 2026, Lakshmi Varanasi →](https://www.aol.com/articles/kpmg-now-dashboard-where-consultants-154532000.html)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

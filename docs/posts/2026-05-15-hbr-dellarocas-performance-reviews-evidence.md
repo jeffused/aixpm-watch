@@ -29,7 +29,3 @@ Le risque est précis. Une review mieux écrite n'est pas une review plus juste.
 Dellarocas oppose à cette dérive un autre usage : l'IA comme *agrégateur de preuves*. Plutôt qu'écrire mieux, faire remonter ce que la personne a réellement décidé, influencé, mentoré, résolu — sur douze mois. Cela suppose des journaux structurés d'événements, des traces de décisions, des artefacts liés aux résultats. Le déplacement est lourd : la review cesse d'être un exercice narratif pour devenir une lecture de signaux comportementaux vérifiables. Trois banques d'affaires automatisent déjà le mauvais bout du problème.
 
 [Source : Harvard Business Review, 15 mai 2026, Chrysanthos Dellarocas →](https://hbr.org/2026/05/gen-ai-could-fix-performance-reviews-or-make-them-even-worse)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

@@ -34,7 +34,3 @@ Deuxième rupture, plus profonde : la responsabilité ne se laisse plus tracer. 
 D'où le pivot du rôle DSI vers la *stewardship* : gouvernance des modèles et des données, gestion du cycle de vie, auditabilité. La traçabilité ne porte plus seulement sur le code, mais aussi sur le jeu de données, le réentraînement et les sorties. Et le point de fuite le plus coûteux n'est pas le déploiement — visible, daté — mais l'écart entre déploiement et adoption réelle : « C'est là que la valeur fuit, parce que c'est invisible dans le reporting standard ». Pour le PMO, le signal est clair : redessiner les instruments de contrôle avant que l'écart ne se chiffre en mois de valeur perdue.
 
 [Source : InformationWeek, 5 mai 2026, John Edwards →](https://www.informationweek.com/machine-learning-ai/as-ai-makes-projects-harder-to-track-will-cios-need-new-controls-)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

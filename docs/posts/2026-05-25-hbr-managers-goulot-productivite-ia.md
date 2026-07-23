@@ -31,8 +31,3 @@ Le diagnostic prolonge directement une analyse Les Echos déjà capitalisée dan
 Pour un comité de direction qui pilote un programme IA, la conclusion est inconfortable. Les outils ont été distribués, les usages individuels accélèrent, les chiffres d'adoption sont bons. Mais si le rôle managérial n'est pas explicitement redessiné — *comment* on revoit, *comment* on donne du feedback, *comment* on coordonne dans une équipe où chaque membre génère désormais en heures ce qu'il rendait en jours — alors le programme produit mécaniquement un goulot supérieur, douloureux pour les managers et coûteux pour l'organisation. Le redesign n'est pas un sujet de RH-confort. C'est un livrable de programme.
 
 [Source : Harvard Business Review, 25 mai 2026, Liz Fosslien et Mollie West Duffy →](https://hbr.org/2026/05/managers-are-struggling-to-keep-up-with-the-ai-productivity-boom)
-
-## Editor notes
-
-<!-- WARN: HBR article body is paywalled. Wayback Machine returned the article header (title, authors, May 25 2026 date, opening quote) but not the body. Article grounded on inbox summary + the one direct quote retrieved via Wayback + the explicit thematic pairing with the existing Les Echos "cadre intermédiaire" piece in the May veille. The thesis attributed to Fosslien & Duffy should be re-verified against the original HBR body before this article counts as published. -->
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

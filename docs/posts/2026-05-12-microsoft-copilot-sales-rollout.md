@@ -30,9 +30,3 @@ La cause profonde, selon Bojinov, tient à la nature même de l'outil. Une IA g�
 Après correction, l'adoption est remontée à 80-90 % d'utilisateurs actifs quotidiens. Le signal pour les PMO et les sponsors : un déploiement d'IA générative n'est pas un projet technique à piloter en comité de pilotage outil ; c'est un programme de change management avec ses propres métriques d'adoption, sa gouvernance dédiée et sa couverture managériale de la courbe d'apprentissage. Le fait que Microsoft, sur son propre produit, ait dû le réapprendre rend l'argument plus difficile à esquiver lors d'un cadrage client.
 
 [Source : Harvard Business Review podcast, 12 mai 2026, Brian Kenny avec Iav Bojinov et Shunyuan Zhang →](https://hbr.org/podcast/2026/05/microsofts-path-to-adopting-and-scaling-ai-across-its-sales-organization)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->
-<!-- Tag note: routed to AI-prerequis/gouvernance — the takeaway is the deployment playbook (governance + change management framework). Alt route considered: AI-limites/echec-deploiement (the failure itself), but the article centers on the corrective mechanism rather than the failure narrative, hence prerequis. -->
-<!-- Date note: inbox card dated 2026-05-13 but HBR podcast pub date is 2026-05-12 (per article:published_time meta tag). Article uses 2026-05-12 = source pub date. -->

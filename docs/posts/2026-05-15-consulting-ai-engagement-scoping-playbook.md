@@ -30,7 +30,3 @@ Premier geste : un audit data **avant** le chiffrage, pas après la signature ni
 Le commentaire ajoute une lecture qui mérite d'arriver en comité de pilotage : « Le dépassement n'est presque jamais un problème technique déguisé, c'est un problème de cadrage. » Le coût de remise en état de la donnée est connu, mais il rend la proposition commerciale moins attractive — donc il finit enterré dans les hypothèses. D'autres commentateurs prolongent la même idée : le PoC qui tient son budget repose sur des lignes nettoyées à la main que personne ne re-chiffre côté production, et les missions « sous budget » se limitent en pratique aux chatbots étroits ou aux agents sans tête bien délimités. Pour un PMO qui prépare un gate review IA, le triptyque audit-rescope-quality-gate est un instrument défendable face à un sponsor qui veut « un POC en six semaines ».
 
 [Source : Reddit r/consulting, 15 mai 2026 →](https://www.reddit.com/r/consulting/comments/1tdttfc/has_anyone_here_seen_an_ai_engagement_come_in/)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

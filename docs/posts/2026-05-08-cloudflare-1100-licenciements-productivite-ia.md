@@ -30,7 +30,3 @@ La justification n'est pas euphémisée. Prince décrit un « point de bascule �
 Le cadrage tranche avec le discours dominant sur le « redesign de rôle ». Pas d'accompagnement narratif, pas de bridge vers la reconversion : le gain de productivité est monétisé en réduction d'effectif, assumé sur scène trimestrielle. À mettre en regard de GM (licenciements liés au déficit de compétences IA) et de ServiceNow (redesign sans coupe) : trois scénarios praticiens distincts pour la même bascule technologique.
 
 [Source : TechCrunch, 8 mai 2026, Julie Bort →](https://techcrunch.com/2026/05/08/cloudflare-says-ai-made-1100-jobs-obsolete-even-as-revenue-hit-a-record-high/)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

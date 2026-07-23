@@ -30,7 +30,3 @@ Cinq workflows ressortent. Le plus partage : alimenter Claude en narration struc
 Le cadrage qui revient le plus souvent est aussi le plus operant : « use it before PowerPoint and around PowerPoint, not instead of PowerPoint. » La valeur se loge dans la pensee narrative humaine — storyline, titres d'action, synthese de notes — et l'IA accelere la mise en mots, pas la mise en forme du livrable.
 
 [Source : Reddit r/consulting, 31 mars 2026 →](https://www.reddit.com/r/consulting/comments/1s8z3dk/have_you_ever_used_claude_for_ppt_to_create_decks/)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

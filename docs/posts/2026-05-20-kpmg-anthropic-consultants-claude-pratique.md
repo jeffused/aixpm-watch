@@ -32,7 +32,3 @@ Un consultant chez un compétiteur direct détaille une routine quotidienne : ci
 Le retournement intéressant arrive d'un senior chez Accenture : il décrit Claude (et ses pairs) comme « pas beaucoup pire qu'un junior ou un offshore non supervisé ». La phrase, qui sonne d'abord comme une dépréciation, est en réalité une grille d'usage : l'IA arrive à la qualité d'une production de premier niveau qui demande relecture, polissage et validation. Cela change la question — non plus « est-ce que ça remplace le consultant » mais « qui dans l'équipe assume désormais le rôle de supervision que personne ne facturait avant ». Pour un cabinet qui suit Teamsquare, le fil offre un test : si la liste des cinq workflows quotidiens du concurrent ne ressemble en rien à ce que ses propres consultants font de l'IA, c'est probablement que le déploiement n'a pas dépassé le stade de la curiosité individuelle.
 
 [Source : Reddit r/consulting, 20 mai 2026 →](https://www.reddit.com/r/consulting/comments/1tj0gih/kpmg_integrates_claude_across_its_core_business/)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

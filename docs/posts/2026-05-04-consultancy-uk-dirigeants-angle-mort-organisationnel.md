@@ -30,7 +30,3 @@ Le déséquilibre est lisible dans l'ordre des priorités. 62 % des entreprises 
 Le signal est utile en triangulation. Il rejoint, en contexte anglo-saxon, ce que les remontées françaises (Cognitive debt, L'Usine Digitale, Les Echos) décrivent déjà : la confiance des dirigeants devance la mesure, et l'écart se paye six à douze mois plus tard quand les gains attendus ne se matérialisent pas.
 
 [Source : Consultancy.uk, 4 mai 2026 →](https://www.consultancy.uk/news/43946/bosses-overlook-organisational-focus-in-ai-adoption)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

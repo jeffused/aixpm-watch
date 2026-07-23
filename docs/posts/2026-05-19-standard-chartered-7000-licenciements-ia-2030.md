@@ -37,8 +37,3 @@ Pour un comité de pilotage RH ou un PMO de transformation, le signal utile n'es
 
 [Source : Tom's Hardware, 19 mai 2026 →](https://www.tomshardware.com/tech-industry/standard-chartered-plans-to-cut-7-000-jobs-in-ai-push-lender-wants-to-replace-lower-value-human-capital-and-focus-on-automation)
 [Source : Fox Business, 20 mai 2026 (CEO walk-back) →](https://www.foxbusiness.com/technology/standard-chartered-ceo-walks-back-comments-about-replacing-lower-value-human-capital-ai)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->
-<!-- Source note: Reuters URL from the inbox (news.google.com redirect) blocked by crawler policy. Story corroborated via Tom's Hardware, Slashdot and Fox Business syndication coverage. The CEO walk-back is the secondary source. -->

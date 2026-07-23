@@ -30,8 +30,3 @@ Le constat provient du rapport « The AI Impact Imperatives, 2026 » de HCLTech,
 Le rapport déplace le centre de gravité du débat : le succès, écrit HCLTech, dépendra « less on adoption rates and more on an organisation's ability to align ambition, execution and accountability ». Autrement dit, le frein dominant n'est plus technologique mais organisationnel — droits de décision, structures, tolérance au risque. Un terrain où le pilotage de projet et la gouvernance pèsent davantage que le choix du modèle, et où l'échec se prépare bien en amont du déploiement.
 
 [Source : Storyboard18 — rapport HCLTech, 21 mai 2026 →](https://www.storyboard18.com/digital/hcltech-flags-43-enterprise-ai-failure-risk-as-leaders-face-shrinking-timelines-ws-l-98786.htm)
-
-## Editor notes
-
-<!-- Tag note: routed AI-limites/gouvernance-manquante — the 43% failure risk is attributed to organisational/leadership gaps (readiness, coordination, change mgmt, decision rights), not a single concrete failed deployment (echec-deploiement) nor pure cost (cout-cache). -->
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

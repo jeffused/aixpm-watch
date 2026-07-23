@@ -115,8 +115,8 @@
       if (anchor === '') {
         rec.title = doc.title || rec.title;
         if (doc.text) rec.texts.push(cleanText(doc.text));
-      } else if (anchor !== 'editor-notes' && anchor !== 'sources') {
-        // Merge sub-section text (heading + body); skip editor-notes + #sources.
+      } else if (anchor !== 'sources') {
+        // Merge sub-section text (heading + body); skip #sources.
         var t = (doc.title ? doc.title + ' ' : '') + (doc.text || '');
         if (t.trim()) rec.texts.push(cleanText(t));
       }

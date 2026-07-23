@@ -30,8 +30,3 @@ Le chiffre prend tout son sens lu côte à côte avec deux autres signaux récen
 Pour un sponsor ou un PMO, la conséquence n'est pas que l'adoption avance trop vite — elle est que l'écart se creuse entre **l'usage individuel** et **la capacité collective de l'organisation à transformer cet usage en valeur**. La métrique pertinente à six mois n'est plus « combien de cadres utilisent ChatGPT » (la réponse converge vers 100 %) mais « combien de processus internes ont été redessinés pour intégrer cet usage de manière auditable et reproductible ». La bascule 2025-2026 mesurée par l'APEC est l'invitation à se poser cette deuxième question pendant que la première s'éteint d'elle-même.
 
 [Source : L'Usine Digitale, mai 2026 →](https://news.google.com/rss/articles/CBMingJBVV95cUxOZlRnYVVON3NJQThMUTR3WHBTdmdyZ3Z2dVE3WHBkdk55V0ZrbVR4ak1yMlBLVUhqVGZtUzVPWjdTcUt6U2s5NERiWjl6RWFRRUoyUkRaWk5INWZjdVdSYjlNQVhXNzJEczZQVkJyX1FrZVhOd0VCYlNpTnVMaFNtbi04NG1FMFhLRjhZWFRaZmZLWkZHQTN3aFNta2pfWHpzUnZzTEJ5eFdNNDJfWS1nT19zN3JYbG1mdGRzOHZlQjhaRWlreWZnMkkyVF9LeEZwN25aQ2s0WkZOMVhKdnF0aXNhenExdkZHWnQzcHlQWEtLeWo0Y3N6eWd4TGs0ekEtQ0ROUnRfSlN3bWpvZXpNeUQ4cUE3elhBNWtFbnJn?oc=5)
-
-## Editor notes
-
-<!-- WARN: Source could not be re-fetched. Google News redirect URL resolves to consent shell. WebFetch on the closest candidate L'Usine Digitale URL returned 403 (DataDome-style paywall). WebSearch surfaced the APEC 50%/33% data point but not the source article body. Article grounded on inbox summary + WebSearch context. The 50%/33% statistic is the load-bearing claim and should be re-verified against the original L'Usine Digitale piece before this article counts as published. -->
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

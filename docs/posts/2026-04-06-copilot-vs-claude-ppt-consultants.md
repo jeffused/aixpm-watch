@@ -30,7 +30,3 @@ Trois usages concrets de Claude reviennent. Le premier consiste a partir de note
 Le diagnostic technique le plus precis du fil n'est pas que Copilot est mauvais en absolu mais qu'il « traite les slides comme des blocs de contenu isoles au lieu de comprendre l'arc narratif dont le deck a besoin » : il suggere des layouts et reformule des bullets en versions plus vagues, sans construire le « situation -> pourquoi c'est important -> que faire » qui persuade un comite. Conclusion praticien : sortir du logiciel pour la phase de redaction, rentrer dans PowerPoint pour la mise en forme.
 
 [Source : Reddit r/consulting, 6 avril 2026 →](https://www.reddit.com/r/consulting/comments/1sebgfa/has_anyone_had_success_with_edit_with_copilot_in/)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

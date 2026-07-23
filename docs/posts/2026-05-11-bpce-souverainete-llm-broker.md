@@ -32,9 +32,3 @@ L'aiguillage suit une cascade explicite : compatibilité d'abord avec les tenant
 Le signal pour les DSI et architectes en secteur régulé est net : la souveraineté n'est pas un slogan défensif, c'est une couche d'abstraction agnostique. « Il est essentiel pour nous, en matière de souveraineté mais aussi de coûts, de maîtriser notre gare de triage vers des partenaires que nous avons choisis », résume Barnaud. La même couche sert le FinOps (suivi quotidien des coûts par LLM), la mutualisation (point d'accès unique pour tous les produits GenAI internes) et l'agilité — changer de modèle se réduit à une virgule dans un appel API.
 
 [Source : CIO-online, 11 mai 2026, Emmanuelle Delsol →](https://www.cio-online.com/actualites/lire-interview-bpce--pour-la-genai-nous-avons-fait-un-choix-de-souverainete-pour-etre-en-capacite-de-maitriser-notre-destin-17020.html)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->
-<!-- Tag note: routed to AI-prerequis/architecture per pre-assignment. The takeaway is the broker-LLM architecture itself (an enabler design), not a use case mechanism. Cluster ENABLER signal — peers KPMG datalake + MIT Tech Review data sovereignty. -->
-<!-- Naming note: v1 card said "BPCE CIO". Actual interview is with the Chief AI & Data Officer (Luc Barnaud) + Director of Technological Expertise (Laurent Fernandez). The CIO Laurent Benatar is mentioned only as a working partner. The "CIO" in the card was likely the publisher (CIO-online), not the interviewee's title. -->

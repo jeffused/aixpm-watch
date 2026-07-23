@@ -34,9 +34,3 @@ Le texte s'organise autour d'un principe directeur : « L'IA soutient l'humain, 
 Le suivi est lui aussi institutionnalisé : une commission IA rattachée au CSE, douze membres, trois réunions annuelles, mandat de transparence sur les projets et leurs impacts. Pour Evelyne Llauro-Barrès, directrice générale adjointe en charge des ressources humaines, il s'agit d'« accompagner le déploiement en prolongeant le dialogue de la convention salariée et en définissant conjointement le cadre avec les partenaires sociaux ». La signature unanime coupe l'objection habituelle — « ça va passer en bras de fer » — et inscrit la négociation sociale comme prérequis d'architecture, pas comme étape de fin.
 
 [Source : L'Argus de l'assurance, 12 mai 2026 →](https://www.argusdelassurance.com/mutuelles/maif/maif-lensemble-des-organisations-syndicales-signent-un-accord-sur-les-conditions-de-deploiement-de-lintelligence-artificielle-dans-lentreprise.IYJW2G6AZRE55LJODDOVAQ7IMI.html)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->
-
-<!-- Grounding note: Argus de l'assurance original URL paywalled (HTTP 403). Article grounded via L'Assurance en Mouvement syndication (https://www.lassuranceenmouvement.com/2026/05/11/maif-accord-dentreprise, Antonia B., 11 mai 2026), cross-verified against Miroir Social (Jacky Lesueur), Le Journal des Entreprises (13 mai), and AEF Info snippet (Clémentine Maligorne, 12 mai). Quote Llauro-Barrès retraduite depuis paraphrase syndiquée — vérifier libellé exact si nécessaire. -->

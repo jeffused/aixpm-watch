@@ -31,8 +31,3 @@ Le skill ingère chaque semaine ces sources éparpillées et restitue, pour chaq
 Le signal intéressant tient à la combinaison rarement observée de trois fonctions dans un seul artefact automatisé : oversight portefeuille, allocation individuelle, et trace des décisions. Le format Claude Code skill — instructions réutilisables packageant un workflow spécifique — abaisse le coût marginal d'une revue hebdomadaire sur dix fronts simultanés. La reproductibilité reste moyenne : il faut un environnement Claude Code et la configuration du skill, mais le pattern lui-même est transposable à tout responsable de portefeuille opérant en multi-équipes avec des canaux d'entrée hétérogènes.
 
 [Source : X @cblatts, 4 février 2026 →](https://x.com/cblatts/status/2018889937198666196)
-
-## Editor notes
-
-<!-- WARN: Source could not be re-fetched. Content grounded on v1 card only. Verify before publishing. -->
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

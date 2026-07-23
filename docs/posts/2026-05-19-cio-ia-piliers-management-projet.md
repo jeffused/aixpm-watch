@@ -31,7 +31,3 @@ Shacklett identifie trois piliers du management de projet que l'IA force à refo
 Le déplacement est lourd pour un PMO. Les indicateurs classiques (jalons, taux d'avancement, coût terminal) supposent un objet livrable stable. Avec l'IA, l'objet livrable devient une *capacité opérée dans la durée* dont l'acceptation est aussi un livrable. Shacklett conclut que la question d'acceptation est désormais « humaniste » plus que technique : il faut aborder l'anxiété des collaborateurs sur la transformation de leur métier tout au long de l'adoption, pas seulement à la conduite du changement initiale.
 
 [Source : CIO.com, 19 mai 2026, Mary Shacklett →](https://www.cio.com/article/4172703/ai-upends-key-pillars-of-project-management.html)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

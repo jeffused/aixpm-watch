@@ -30,7 +30,3 @@ Conséquence directe sur les projets IA : 41 % testent les capacités, 39 % cons
 L'arbitrage devrait remonter en comité de pilotage : la migration ERP, perçue comme une dette technique non négociable, absorbe la capacité d'investissement et la capacité humaine que les sponsors souhaiteraient simultanément réorienter vers l'IA. Un membre Asug cité par CIO résume le piège : « Nous ne nous concentrons pas assez sur la création de valeur par l'IA, nous nous concentrons sur le fait d'en faire. Aujourd'hui, les résultats ne justifient pas les investissements. » Pour un sponsor qui pousse l'IA sur un client en migration S/4Hana, la question n'est plus « par où commencer » mais « lequel des deux chantiers porte vraiment la valeur cette année ».
 
 [Source : CIO Online, 19 mai 2026, Stephanie Overby (adaptation Reynald Fléchaux) →](https://www.cio-online.com/actualites/lire-la-migration-vers-s-4hana-greve-les-budgets-des-dsi-retardant-les-projets-d-ia-17030.html)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

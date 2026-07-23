@@ -31,7 +31,3 @@ Les chiffres d'adoption sont pourtant spectaculaires : environ 25 % des commits 
 Le point dur est la justification financière. « Somebody's paying the bill », rappelle-t-il : sans preuve que les fonctionnalités réellement livrées aux clients augmentent, l'investissement devient difficile à défendre — et les réductions d'effectifs censées le financer, plus encore. Uber rejoint ainsi Microsoft, qui vient de plafonner Claude Code, dans une deuxième phase de l'IA d'entreprise où la question n'est plus « faut-il déployer ? » mais « le déploiement se justifie-t-il ? ».
 
 [Source : The Information (via Gizmodo), 26 mai 2026, Ece Yildirim →](https://gizmodo.com/ai-investment-is-harder-to-justify-as-productivity-returns-lag-uber-coo-says-2000763514)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

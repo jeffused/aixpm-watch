@@ -33,7 +33,3 @@ Une PM raconte avoir branche Claude Code sur ses sources internes : conversion a
 Le contre-signal a retenir vient de la praticienne du dashboard elle-meme : « *But is it making the projects actually run better? Eh, I would not say that, actually.* » Le PMO devient le terrain ou les workflows IA sortent du prototype parce que l'eparpillement y coute le plus — mais le gain reste, pour l'instant, du cote de la productivite individuelle, pas de la performance projet.
 
 [Source : Reddit r/projectmanagement, 5 avril 2026 →](https://www.reddit.com/r/projectmanagement/comments/1sd6dbt/pmi_says_ai_is_reshaping_project_management_where/)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

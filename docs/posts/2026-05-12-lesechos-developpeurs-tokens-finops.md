@@ -33,7 +33,3 @@ Deux praticiens FR documentent le mécanisme. Charlotte Seguin (Magellan Consult
 Le signal opérationnel est clair : le ROI reste mesurable pour les développeurs, beaucoup moins pour les autres usages. Le narratif « per-seat license = coût total » s'effondre, et l'allocation des licences les plus coûteuses devient un arbitrage portefeuille. Pour les gate reviews IA, la conséquence est immédiate : un cas d'usage ne peut plus être validé sans modèle de coût par tâche ni mécanisme de pilotage de la consommation. La sobriété d'inférence devient une discipline de PMO, pas un détail FinOps.
 
 [Source : Les Echos via CCFI, 12 mai 2026, Jean-Philippe Behr →](https://www.ccfi.asso.fr/la-facture-de-lia-donne-des-sueurs-froides-aux-entreprises/)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

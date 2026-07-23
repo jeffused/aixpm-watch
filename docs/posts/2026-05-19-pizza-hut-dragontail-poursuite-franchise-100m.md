@@ -37,8 +37,3 @@ Le cas illustre une lacune que les comités de pilotage IA n'instituent presque 
 
 [Source : Fortune, 19 mai 2026 →](https://fortune.com/2026/05/19/pizza-hut-franchisee-lawsuit-ai-adoption-doordash-delivery-drivers/)
 [Source : Tom's Hardware, 19 mai 2026 →](https://www.tomshardware.com/tech-industry/artificial-intelligence/pizza-huts-ai-delivery-system-cooks-up-usd100-million-franchisee-lawsuit-deliveries-allegedly-shot-from-under-30-minutes-to-over-45-under-new-system)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->
-<!-- Inbox correction note: the original inbox capture summarised the story as "Pizza Hut lost $100M to AI routing." The factual story is a $100M franchisee LAWSUIT against Yum! Brands over the Dragontail AI deployment, not a $100M operational loss. The article reframes accordingly; the underlying signal (AI deployment at chain scale, catastrophic operational degradation, accountability deferred to courts) is the same. Original 01net article via Google News could not be re-fetched (Anthropic crawler block on 01net.com + GN consent shell); grounded on Fortune and Tom's Hardware syndication. -->

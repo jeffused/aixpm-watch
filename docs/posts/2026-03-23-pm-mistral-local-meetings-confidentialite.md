@@ -32,7 +32,3 @@ Le workflow est volontairement minimaliste. Apres chaque reunion, il colle son t
 L'argument confidentialite est explicite et a deux faces : « running it locally means I'm not sending anything anywhere and I don't need to deal with infosec reviews ». La premiere face est la politique formelle de l'entreprise sur le contenu de reunion. La seconde, plus interessante, est le cout personnel d'un examen infosec a chaque nouvel outil SaaS — un frein silencieux que beaucoup de praticiens absorbent sans le nommer. Mistral 7B sur materiel grand public, c'est moins une prouesse technique qu'une option d'architecture individuelle : un PM peut se rendre productif sur une tache de reporting recurrente sans declencher de processus interne. Le debat « 7B est-il depasse face a Qwen 3.5 4B ? » occupe les commentaires, mais il est secondaire — l'arbitrage du praticien porte sur l'acces, pas sur le benchmark.
 
 [Source : Reddit r/LocalLLaMA, 22 mars 2026 →](https://www.reddit.com/r/LocalLLaMA/comments/1s0en62/running_mistral_locally_for_meeting_notes_and_its/)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

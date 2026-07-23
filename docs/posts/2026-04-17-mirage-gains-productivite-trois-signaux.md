@@ -48,9 +48,3 @@ Le signal pour qui pilote une feuille de route IA : le goulot d'étranglement d'
 [Source : Reddit r/projectmanagement, 16 avril 2026 →](https://www.reddit.com/r/projectmanagement/comments/1smykxm/everyone_says_ai_is_speeding_things_up_but_our/)
 [Source : Journal du Net, 15 avril 2026, Cédric Legros →](https://www.journaldunet.com/intelligence-artificielle/1549533-ia-et-dette-organisationnelle-le-mirage-du-gain-de-temps/)
 [Source : Mediapart (via Google News), 17 avril 2026 →](https://news.google.com/rss/articles/CBMisAFBVV95cUxOelJjQ0R4SE9tYWtpaDhMLUlQTFZySnV2OUVHSU5NZVpOb0NQaHhJMWxtR09OalhwNDR4VkZSZ3ZGZ3ZmYXlVTW41Z3NJRDVTdC1YN1V2cTVyN3Nocjd2a093VFMxbmxJanowNkk5ZTAzcFRfUEZyVDNKalNqbk0ySGN1Z0t4Xy1odk5qNVpjVFhvWVNUOXhxblN5N3Z5SHNkOWNEMHhBZjJMYmltR0UtVA?oc=5)
-
-## Editor notes
-
-<!-- WARN: Mediapart source could not be re-fetched. The Google News URL is an opaque base64-encoded redirect that decrypts client-side; static curl + WebFetch + Wayback all return the Google News shell only. The Mediapart signal in the article is cited at the convergence level (no direct quote) and grounded on the v1 Use Case Card description. Verify the Mediapart angle before publishing. -->
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

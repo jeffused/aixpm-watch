@@ -30,7 +30,3 @@ Le commentaire le mieux noté pose l'inventaire des usages « sticky », ceux qu
 Le fil insiste sur une condition préalable rarement nommée par les éditeurs : « si le système PM sous-jacent est en désordre, l'IA résume le désordre plus vite ». Plusieurs voix prolongent le diagnostic — l'IA ne compense pas un processus PM immature, et la séquence PMO reste classique : énoncé du problème, validation exécutive, expression des besoins, puis sélection d'outil. L'IA n'est pas le point d'entrée, c'est une capacité qu'on évalue après.
 
 [Source : Reddit r/projectmanagement, 11 mai 2026 →](https://www.reddit.com/r/projectmanagement/comments/1t9zdo4/pmo_leader_evaluating_ai_pm_software_stack/)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

@@ -30,7 +30,3 @@ Le glissement est économique avant d'être technique. Nik Kale (Coalition for S
 Le signal a une portée stratégique au-delà de la finance. L'intégration d'un agent au réel d'une organisation — exceptions, systèmes legacy, droits de décision, workflows non documentés — réclame des experts sur site qui traduisent la capacité générique en livrable client-spécifique. Cette compétence, qui se vend à la journée et ne scale pas comme un modèle, est exactement celle que les cabinets de conseil portent depuis trente ans. Le modèle économique du conseil n'est pas court-circuité par l'IA agentique ; il en devient la condition de déploiement.
 
 [Source : CIO.com, 6 mai 2026, Evan Schuman →](https://www.cio.com/article/4167981/anthropics-financial-agents-expose-forward-deployed-engineers-as-new-ai-limiting-factor.html)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

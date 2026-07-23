@@ -34,7 +34,3 @@ Le second a installé Claude Code sur son coffre Obsidian, où il accumule notes
 Deux outillages opposés, un même geste : l'IA propose, le PM décide, et la valeur revendiquée se situe sur l'exhaustivité et la rigueur, pas sur le chrono.
 
 [Source : Reddit r/projectmanagement, 21 mars 2026 →](https://www.reddit.com/r/projectmanagement/comments/1rpf2rs/using_ai_to_create_and_update_tasks_and_raid_log/)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

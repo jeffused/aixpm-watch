@@ -30,7 +30,3 @@ Les 25 commentaires convergent sur l'absence. Une PM dans l'éducation décrit c
 Le diagnostic le plus fort vient en passant. « Tout cela est délibérément ambigu. La clarté menace ce que le brouillard protège. » Si la formulation est cynique, elle décrit avec précision un mécanisme observable : la responsabilité humaine, quand elle est nommée, devient une cible — politiquement, juridiquement, en termes de carrière. Le flou par défaut diffuse le coût d'erreur. Pour un PMO qui prépare un déploiement IA, ce fil offre une grille d'audit en une question : pour chaque agent IA en production, le système d'information possède-t-il, quelque part, la trace écrite *nominative* de qui répond quand il se trompe — et avez-vous demandé à cette personne si elle est au courant ?
 
 [Source : Reddit r/projectmanagement, 21 mai 2026 →](https://www.reddit.com/r/projectmanagement/comments/1tjdecj/intuit_just_cut_3000_jobs_to_focus_on_ai_for_pms/)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

@@ -30,7 +30,3 @@ Le workflow le plus etoffe vient d'un chef de projet TDAH inattentif. Il injecte
 Le signal commun n'est pas le choix d'outil, c'est le statut accorde a la sortie : aucun praticien ne traite la transcription comme livrable. « Je les traite comme un filet de securite, pas comme une source de verite », resume l'un d'eux. La fonctionnalite vraiment differenciante — au-dela du resume mono-reunion — n'est pas la transcription elle-meme, mais la couche d'extraction structuree posee par-dessus : actions, decisions, ecarts RAID, requete trans-comites. Le transcript brut, lui, reste un brouillon.
 
 [Source : Reddit r/projectmanagers, 26 mars 2026 →](https://www.reddit.com/r/projectmanagers/comments/1s4eduf/do_you_actually_rely_on_ai_transcription_for/)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

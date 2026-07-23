@@ -30,8 +30,3 @@ Le workflow tient en trois gestes. Vendredi apres-midi, l'auteur dicte a haute v
 Le signal interessant n'est pas la qualite du rapport produit, c'est l'inversion d'effort. Le PM agrege moins, juge plus. Un commentaire du fil resume la mecanique : « A clean prompt gives it one interpretation path. A messy wall of context gives it multiple signals to triangulate from. » Les 697 upvotes et 118 commentaires signalent que ce renversement parle a beaucoup de praticiens dans la meme situation.
 
 [Source : Reddit r/ChatGPT, 23 mars 2026 →](https://www.reddit.com/r/ChatGPT/comments/1s0eoqi/chatgpt_is_way_better_when_you_give_it_a_wall_of/)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->
-<!-- Source re-fetched fresh from Reddit JSON API (curl + browser UA) on 2026-05-18 — corrected counts to 697 upvotes / 118 comments (v1 card had 657/117), added the verbatim prompt and the dictation step. Test-3 caveat noted in the source archive: several commenters call out the "willow voice" mention as a hidden ad, so the article describes the technique without endorsing the specific tool. -->

@@ -31,7 +31,3 @@ La cause n'est pas la qualité de l'outil mais son économie. Contrairement à u
 Le signal dépasse Microsoft. Uber a épuisé en quatre mois son budget 2026 d'outils de codage IA ; chez Nvidia, un cadre observe que le coût de calcul de son équipe a déjà dépassé son coût salarial. La première vague d'adoption était portée par l'enthousiasme sur ce que l'IA sait faire ; la seconde est façonnée par ce qu'elle coûte. Pour un PMO, la leçon est un arbitrage FinOps : cadrer et mesurer la consommation avant de la généraliser.
 
 [Source : Storyboard18, 25 mai 2026 →](https://www.storyboard18.com/digital/microsoft-reins-in-claude-code-usage-as-soaring-ai-costs-expose-cracks-in-enterprise-adoption-99069.htm)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

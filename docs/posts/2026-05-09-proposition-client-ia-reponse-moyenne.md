@@ -31,7 +31,3 @@ Le pattern qui se dégage tient en quatre lignes de défense. **Cadrer avant de 
 Côté praxis, un répondant détaille une séquence reproductible pour les appels d'offres : demander d'abord la structure générale et les points clés, raffiner à la main, puis section par section transmettre les bullets et prompter « turn this into prose, focusing on these key client concerns and opportunities », et clore par « review this response against the client requirement and identify areas for improvement ». Le fil retourne ainsi l'intuition initiale : ce n'est pas l'IA qui doit ouvrir la page, c'est le cadrage manuel.
 
 [Source : Reddit r/consulting, 9 mai 2026 →](https://www.reddit.com/r/consulting/comments/1t7z4af/proposal_with_ai/)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

@@ -30,7 +30,3 @@ Le cadrage officiel du constructeur est net : « Nous avons pris la difficile d�
 Le signal pour les planificateurs RH et les directions de transformation est moins confortable que le récit dominant. La question ne porte plus sur le partage du dividende de productivité : elle porte sur l'alignement des compétences IT existantes avec la pile technique que le déploiement IA impose. Là où Cloudflare ou ServiceNow ont parlé de redesign de rôles ou de coupe productivité, GM nomme explicitement un déficit de compétences comme déclencheur. Le reskilling cesse d'être un confort post-déploiement ; il devient une variable de cadrage.
 
 [Source : CIO-online, 13 mai 2026, Emmanuelle Delsol →](https://www.cio-online.com/actualites/lire-general-motors-licencie-pres-de-600-informaticiens-pour-recruter-des-competences-ia-17026.html)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

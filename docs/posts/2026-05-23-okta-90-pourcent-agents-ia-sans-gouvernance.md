@@ -29,7 +29,3 @@ La conséquence opérationnelle est mesurée. **109 identités machines pour une
 L'écart se referme lentement, sous pression réglementaire. AI Act, NIS2 : les demandes d'accès ont été multipliées par plus de douze, les certifications d'accès par plus de neuf, en un an. Les solutions concrètes que pointe le rapport sont l'instrumentation pas la politique : automatisation de la gestion des certificats, unification des identités humaines et machines, surveillance comportementale en temps réel des agents autonomes, traçabilité complète de leurs actions. Pour un PMO ou un CISO qui prépare un comité IA, le chiffre à projeter en première slide n'est plus « combien d'agents nous avons déployés » mais « combien d'identités machines circulent dans notre système, et combien savent répondre à un audit régulateur ».
 
 [Source : Economie Matin, 23 mai 2026 →](https://www.economiematin.fr/gouvernance-agents-ia-entreprises-rapport)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

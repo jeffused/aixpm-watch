@@ -30,7 +30,3 @@ Premier niveau, la licence : payer une offre entreprise qui garantit l'absence d
 Un commentateur corrige un raccourci fréquent : les API payantes d'Anthropic et OpenAI n'entraînent pas leurs modèles sur les entrées par défaut. Beaucoup de politiques internes « pas d'IA » s'appuient sur une lecture obsolète du grand public et bloquent un usage qui, au niveau API, ne pose pas le risque qu'elles croient adresser.
 
 [Source : Reddit r/consulting, 5 mai 2026 →](https://www.reddit.com/r/consulting/comments/1t4pcxb/how_do_you_anonymize_company_data_to_be_used_in_ai/)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

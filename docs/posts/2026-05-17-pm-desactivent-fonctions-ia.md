@@ -31,8 +31,3 @@ Le fil de discussion part d'une question concrète — trouver une alternative �
 Le contre-signal est utile alors que les éditeurs poussent l'IA dans chaque produit. Pour une partie des clients, l'absence d'IA devient un critère d'achat à part entière ; pour les chefs de projet, la désactivation relève autant de la gouvernance que du confort. La maturité ne se mesure pas au nombre de fonctions IA activées, mais à leur utilité prouvée sur le terrain — un renversement que tout PMO gagnerait à intégrer à ses critères de sélection d'outils.
 
 [Source : Reddit r/projectmanagement, 17 mai 2026 →](https://www.reddit.com/r/projectmanagement/comments/1tfseqi/nonai_pm_software/)
-
-## Editor notes
-
-<!-- WARN: Source could not be re-fetched (Reddit JSON 403 + HTML shell on www + old.reddit, no Wayback snapshot, Chrome not active). Content grounded on inbox summary only. No usernames per house style. Verify quotes against the live thread before final publish. -->
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

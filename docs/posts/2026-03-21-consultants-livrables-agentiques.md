@@ -31,7 +31,3 @@ Le pattern dominant traite l'IA comme un analyste junior structurant. Plusieurs 
 Le signal contraire est tout aussi net sur la mise en page directe. Un consultant ayant tenté Claude Cowork pour produire des slides parle de « nightmare » et signale que l'outil a effacé du contenu existant malgré une consigne explicite de ne toucher qu'à certaines diapositives. Côté gouvernance, un participant note que son cabinet n'autorise que ChatGPT — confirmation que la question du périmètre d'outils reste verrouillée à la DSI dans bon nombre de structures.
 
 [Source : Reddit r/consulting, 21 mars 2026 →](https://www.reddit.com/r/consulting/comments/1rhgjth/how_are_you_all_using_claude_code_codex_or_other/)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

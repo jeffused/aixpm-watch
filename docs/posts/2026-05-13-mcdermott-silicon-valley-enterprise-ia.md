@@ -32,7 +32,3 @@ Le point est managérial avant d'être technique. Pour qu'un agent IA contribue 
 Le signal est contrariant dans un espace vendeur saturé de récits de succès. Il rejoint d'autres voix récentes (HBR, Pentagone) qui replacent la gouvernance et le redesign des rôles au rang de prérequis, pas de finition. Pour un sponsor qui pousse « donnons Copilot à tout le monde », l'argument McDermott offre une objection sourcée : la valeur ne suit pas le siège, elle suit l'intégration au workflow-of-record.
 
 [Source : Fast Company, 13 mai 2026, Victor Dey →](https://www.fastcompany.com/91540111/servicenows-bill-mcdermott-insists-silicon-valley-is-getting-enterprise-ai-wrong)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->

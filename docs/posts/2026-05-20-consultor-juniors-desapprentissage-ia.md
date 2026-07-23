@@ -30,7 +30,3 @@ Le profil à risque que Lacour décrit est précis : le junior qui manipule flui
 La conséquence est structurelle. Le modèle pyramidal des cabinets repose sur l'abondance d'un travail analytique junior qui formait les futurs managers et partners. Lacour est explicite : « Les cabinets qui coupent la base de la pyramide auront des gains à court terme et des problèmes majeurs à long terme — pas de managers qui pensent, pas de partners capables de piloter des missions, pas de moyen d'acculturer les consultants à la méthodologie maison. » Sa préconisation est inverse à la pente naturelle : ne pas lancer les juniors directement sur l'IA. D'abord analyser collectivement avec le manager sur page blanche, challenger la production comme avant ; ensuite seulement, discuter des usages ciblés de l'IA pour approfondir.
 
 [Source : Consultor, 20 mai 2026, Barbara Merle →](https://www.consultor.fr/articles/generation-chatgpt-le-grand-desapprentissage-des-jeunes-consultants)
-
-## Editor notes
-
-<!-- Add notes here for substantive rewrites. Direct edits to the body above are also fine. -->
