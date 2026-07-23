@@ -7,6 +7,7 @@ categories:
 tags:
   - corporate
   - roi-chiffre
+  - rollback
 authors:
   - jeff
 sources:

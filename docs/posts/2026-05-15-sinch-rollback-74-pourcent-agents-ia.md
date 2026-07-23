@@ -8,6 +8,7 @@ tags:
   - corporate
   - roi-chiffre
   - signal-faible
+  - rollback
 authors:
   - jeff
 sources:

@@ -75,6 +75,15 @@
       </a>
     </li>
 
+    {# AI Rollback filter — scoped tag index at /rollback/ (tag: rollback) #}
+    {% set rb_path = "rollback/" %}
+    {% set is_rb = page and page.url == rb_path %}
+    <li class="md-nav__item aixpm-nav__top{% if is_rb %} md-nav__item--active{% endif %}">
+      <a href="{{ rb_path | url }}" class="md-nav__link{% if is_rb %} md-nav__link--active{% endif %}">
+        <span class="md-ellipsis">AI Rollback <span class="aixpm-count">({{ tax.rollback_count | default(0) }})</span></span>
+      </a>
+    </li>
+
     <li class="aixpm-nav__separator" aria-hidden="true"></li>
 
     {# L1s with collapsible L2 children #}

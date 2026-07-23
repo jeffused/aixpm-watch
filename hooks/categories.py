@@ -76,6 +76,7 @@ def on_config(config, **kwargs):
     l2_count = {l1: {} for l1 in L1_ORDER}
     total = 0
     pm_count = 0
+    rollback_count = 0
 
     for post_file in sorted(posts_dir.glob("*.md")):
         fm = _parse_frontmatter(post_file.read_text(encoding="utf-8"))
@@ -84,6 +85,8 @@ def on_config(config, **kwargs):
         tags = fm.get("tags") or []
         if isinstance(tags, list) and "project-management" in tags:
             pm_count += 1
+        if isinstance(tags, list) and "rollback" in tags:
+            rollback_count += 1
         cats = fm.get("categories") or []
         if not isinstance(cats, list) or not cats:
             continue
@@ -116,6 +119,7 @@ def on_config(config, **kwargs):
     config["extra"]["aixpm_taxonomy"] = {
         "total": total,
         "pm_count": pm_count,
+        "rollback_count": rollback_count,
         "l1_order": L1_ORDER,
         "l1": l1_payload,
     }
