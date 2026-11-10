@@ -72,6 +72,15 @@
       'Vos données personnelles (notes, étoiles, tags, sections) sont stockées sur cet appareil. '
       + 'Connectez la synchro pour les retrouver sur vos autres appareils.');
     panel.appendChild(intro);
+    var st0 = S.getStatus();
+    var badToken = hasToken && st0.code === 'badToken';   // expired / revoked: offer to paste a new one
+    if (!hasToken || badToken) {
+      panel.appendChild(txt('p', 'aixpm-sync__intro',
+        'Comment : 1) ouvrez le lien ci-dessous (GitHub) ; 2) choisissez une expiration — « No expiration » évite '
+        + 'de recommencer — puis « Generate token » ; 3) copiez le token (ghp_…) et collez-le ici. '
+        + 'À faire une fois par navigateur. Ce token ne donne accès qu’à vos gists : il autorise ce navigateur '
+        + 'à lire et écrire votre fichier de données privé. Vos notes locales sont conservées et fusionnées.'));
+    }
 
     var statusEl = el('div', 'aixpm-sync__status');
     var st = S.getStatus();
@@ -80,7 +89,7 @@
 
     var row = el('div', 'aixpm-sync__row');
 
-    if (hasToken) {
+    if (hasToken && !badToken) {
       var off = btn('aixpm-btn', 'Déconnecter cet appareil');
       off.addEventListener('click', function () { S.disconnect(); render(); });
       row.appendChild(off);
@@ -98,7 +107,7 @@
       input.placeholder = 'Collez votre token GitHub (scope gist)';
       input.setAttribute('aria-label', 'Token GitHub (scope « gist »)');
       input.autocomplete = 'off';
-      var on = btn('aixpm-btn', 'Connecter');
+      var on = btn('aixpm-btn', badToken ? 'Reconnecter' : 'Connecter');
       on.addEventListener('click', function () {
         var t = input.value.trim();
         if (!t) return;

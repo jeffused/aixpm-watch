@@ -558,7 +558,7 @@
     syncing: 'Synchronisation…',
     ok: 'Synchronisé ✓',
     upToDate: 'Synchro active — à jour.',
-    badToken: 'Token invalide — reconnectez-vous.',
+    badToken: 'Token expiré ou invalide — collez un nouveau token ci-dessous.',
     network: 'Synchro indisponible (réseau).',
     suspended: 'Document distant illisible — synchro suspendue.'
   };
@@ -624,7 +624,7 @@
     setStatus({ state: 'syncing', msg: STR.syncing });
     return fetch(GH_API, { headers: ghHeaders(), cache: 'no-store' })
       .then(function (res) {
-        if (res.status === 401) { setStatus({ state: 'error', msg: STR.badToken }); throw new Error('401'); }
+        if (res.status === 401) { setStatus({ state: 'error', code: 'badToken', msg: STR.badToken }); throw new Error('401'); }
         if (!res.ok) throw new Error('HTTP ' + res.status);
         return res.json();
       })
@@ -649,7 +649,7 @@
         var remoteJSON = JSON.stringify(stripVolatile(remote));
         if (mergedJSON !== remoteJSON) {
           return patchGist(merged).then(function (res) {
-            if (res.status === 401) { setStatus({ state: 'error', msg: STR.badToken }); }
+            if (res.status === 401) { setStatus({ state: 'error', code: 'badToken', msg: STR.badToken }); }
             else if (res.ok) { setStatus({ state: 'ok', msg: STR.ok }); settle(true); }
             else { setStatus({ state: 'error', msg: 'Échec de la synchro (HTTP ' + res.status + ').' }); settle(false); }
           });
