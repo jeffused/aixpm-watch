@@ -15,6 +15,11 @@
    - Annotated blocks stay open and are marked with an accent rule.
    - /annotations/ lists every annotation (filter by personal tag, copy as
      Markdown) — the raw material for later writing.
+   - Notes live in this browser until the device is connected to the gist sync
+     (« Ma bibliothèque »). While it is not, every open panel and /annotations/
+     say so, with a link to connect.
+   - Microcopy on these pages is English (the editions are); the shared widgets
+     take the labels below.
 
    XSS discipline (binding): personal data only reaches the DOM via
    textContent / createTextNode — never innerHTML. */
@@ -25,6 +30,36 @@
   if (!window.AIxPMStore || !window.AIxPMUI || !window.AIxPMUI._buildNotePanel) { return; }
   var S = window.AIxPMStore;
   var UI = window.AIxPMUI;
+
+  var NOTE_EN = { label: 'My note', saved: 'Saved ✓', saving: 'Saving…',
+                  edit: 'Edit', add: '+ Add a note', done: 'Done' };
+  var TAGS_EN = { label: 'My tags', add: 'Add a tag', remove: 'Remove tag ' };
+
+  function siteBase() {
+    // Deployment base ('/aixpm-watch/' on GH Pages, '/' locally), from the logo link.
+    var a = document.querySelector('a.md-logo');
+    try { return a ? new URL(a.href).pathname : '/'; } catch (e) { return '/'; }
+  }
+  // "Not synced" notice: shown only while this device is not connected.
+  function buildSyncNotice() {
+    var p = el('p', 'aixpm-sync-note');
+    function paint() {
+      p.textContent = '';
+      var st = S.getStatus ? S.getStatus() : null;
+      var broken = !!st && (st.state === 'error' || st.state === 'suspended');
+      if (S.hasToken() && !broken) { p.hidden = true; return; }
+      p.hidden = false;
+      p.appendChild(document.createTextNode(broken
+        ? 'Sync problem — saved on this device only. '
+        : 'Saved on this device only. '));
+      var a = el('a', null, broken ? 'Check the connection' : 'Connect sync');
+      a.href = siteBase() + 'bibliotheque/';
+      p.appendChild(a);
+      p.appendChild(document.createTextNode(broken ? '.' : ' to find your notes on every device.'));
+    }
+    paint();
+    return { el: p, paint: paint };
+  }
 
   function el(tag, cls, text) {
     var e = document.createElement(tag);
@@ -56,20 +91,23 @@
 
     var toggle = el('button', 'aixpm-item__toggle', '✎');
     toggle.type = 'button';
-    toggle.title = 'Annoter ce paragraphe';
-    toggle.setAttribute('aria-label', 'Annoter ce paragraphe');
+    toggle.title = 'Add a note on this paragraph';
+    toggle.setAttribute('aria-label', 'Add a note on this paragraph');
     toggle.setAttribute('aria-expanded', 'false');
 
     var panel = el('div', 'aixpm-item__panel');
     panel.hidden = true;
     var notePanel = null;
+    var syncNote = null;
 
     function build() {
       if (notePanel) return;
-      notePanel = UI._buildNotePanel(key, 'Votre réaction sur ce paragraphe');
-      var tagsPanel = UI._buildTagsPanel(key);
+      notePanel = UI._buildNotePanel(key, 'Your reaction to this paragraph', NOTE_EN);
+      var tagsPanel = UI._buildTagsPanel(key, TAGS_EN);
+      syncNote = buildSyncNotice();
       panel.appendChild(notePanel.el);
       panel.appendChild(tagsPanel.el);
+      panel.appendChild(syncNote.el);
     }
     function paint() {
       var on = hasContent(key);
@@ -103,6 +141,7 @@
     node.appendChild(panel);
     node._aixpmRefresh = function () {
       if (hasContent(key) && panel.hidden) open(false);   // e.g. a note arriving from sync
+      if (syncNote) syncNote.paint();
       paint();
     };
     if (hasContent(key)) open(false);
@@ -156,7 +195,7 @@
   function copyText(text, btn) {
     function done() {
       var old = btn.textContent;
-      btn.textContent = 'Copié ✓';
+      btn.textContent = 'Copied ✓';
       setTimeout(function () { btn.textContent = old; }, 1800);
     }
     if (navigator.clipboard && navigator.clipboard.writeText) {
@@ -184,32 +223,33 @@
     var all = sortedAnnotations();
     if (!all.length) {
       mount.appendChild(el('p', 'aixpm-lib-empty',
-        'Aucune annotation pour le moment. Ouvrez une édition et cliquez sur ✎ à côté d’un paragraphe.'));
+        'No notes yet. Open an edition and click ✎ next to a paragraph.'));
       return;
     }
 
     var vocab = [];
     all.forEach(function (a) { a.tags.forEach(function (t) { if (vocab.indexOf(t) === -1) vocab.push(t); }); });
-    vocab.sort(function (x, y) { return x.localeCompare(y, 'fr'); });
+    vocab.sort(function (x, y) { return x.localeCompare(y, 'en'); });
     if (annFilter && vocab.indexOf(annFilter) === -1) annFilter = '';
     var list = annFilter ? all.filter(function (a) { return a.tags.indexOf(annFilter) !== -1; }) : all;
 
     var bar = el('div', 'aixpm-ann-bar');
     var sel = el('select', 'aixpm-search-select');
-    sel.setAttribute('aria-label', 'Filtrer par tag personnel');
-    var o0 = el('option', null, 'Tous les tags'); o0.value = ''; sel.appendChild(o0);
+    sel.setAttribute('aria-label', 'Filter by personal tag');
+    var o0 = el('option', null, 'All tags'); o0.value = ''; sel.appendChild(o0);
     vocab.forEach(function (t) {
       var o = el('option', null, t); o.value = t;
       if (t === annFilter) o.selected = true;
       sel.appendChild(o);
     });
     sel.addEventListener('change', function () { annFilter = sel.value; renderAnnotations(); });
-    var count = el('span', 'aixpm-ann-count', list.length + (list.length > 1 ? ' annotations' : ' annotation'));
-    var copy = el('button', 'aixpm-btn', 'Copier en Markdown');
+    var count = el('span', 'aixpm-ann-count', list.length + (list.length > 1 ? ' notes' : ' note'));
+    var copy = el('button', 'aixpm-btn', 'Copy as Markdown');
     copy.type = 'button';
     copy.addEventListener('click', function () { copyText(toMarkdown(list), copy); });
     bar.appendChild(sel); bar.appendChild(count); bar.appendChild(copy);
     mount.appendChild(bar);
+    mount.appendChild(buildSyncNotice().el);
 
     list.forEach(function (a) {
       var k = parseKey(a.url);

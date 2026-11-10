@@ -223,13 +223,18 @@
   // Self-managing editor: debounced autosave (1.5s) + immediate flush on blur,
   // on tab-hide (via store pre-flush), and at the top of every onPageReady
   // (covers Material instant-nav away mid-typing). Saving empty deletes the note.
-  function buildNotePanel(url, placeholder) {
+  var NOTE_FR = { label: 'Ma note', saved: 'Enregistré ✓', saving: 'Enregistrement…',
+                  edit: 'Modifier', add: '+ Ajouter une note', done: 'Terminer' };
+  var TAGS_FR = { label: 'Mes tags', add: 'Ajouter un tag', remove: 'Retirer le tag ' };
+  // `labels` (optional) overrides the French microcopy — the edition pages pass English.
+  function buildNotePanel(url, placeholder, labels) {
+    var T = labels || NOTE_FR;
     var ph = placeholder || 'Vos notes personnelles sur cet article';
     var box = document.createElement('div');
     box.className = 'aixpm-note';
     var label = document.createElement('span');
     label.className = 'aixpm-note__label';
-    label.textContent = 'Ma note';                 // §4.2 canonical string (mirrors « Mes tags »)
+    label.textContent = T.label;                   // §4.2 canonical string (mirrors « Mes tags »)
     var inner = document.createElement('div');
     inner.className = 'aixpm-note__body';
     box.appendChild(label);
@@ -242,11 +247,11 @@
     function doSave(text) {
       pending = null;
       S.setNote(url, text);
-      statusEl.textContent = 'Enregistré ✓';
+      statusEl.textContent = T.saved;
     }
     function schedule(text) {
       pending = text;
-      statusEl.textContent = 'Enregistrement…';
+      statusEl.textContent = T.saving;
       if (saveTimer) clearTimeout(saveTimer);
       saveTimer = setTimeout(function () { saveTimer = null; doSave(text); }, 1500);
     }
@@ -267,7 +272,7 @@
         var edit = document.createElement('button');
         edit.type = 'button';
         edit.className = 'aixpm-btn aixpm-note__edit';
-        edit.textContent = 'Modifier';
+        edit.textContent = T.edit;
         edit.addEventListener('click', function () { renderEdit(note); });
         inner.appendChild(content);
         inner.appendChild(edit);
@@ -275,7 +280,7 @@
         var add = document.createElement('button');
         add.type = 'button';
         add.className = 'aixpm-btn aixpm-note__add';
-        add.textContent = '+ Ajouter une note';
+        add.textContent = T.add;
         add.addEventListener('click', function () { renderEdit(''); });
         inner.appendChild(add);
       }
@@ -293,7 +298,7 @@
       var done = document.createElement('button');
       done.type = 'button';
       done.className = 'aixpm-btn';
-      done.textContent = 'Terminer';
+      done.textContent = T.done;
       done.addEventListener('click', function () { flush(); renderView(); });
       var row = document.createElement('div');
       row.className = 'aixpm-note__editrow';
@@ -321,7 +326,8 @@
       dl.appendChild(o);
     });
   }
-  function buildTagsPanel(url) {
+  function buildTagsPanel(url, labels) {
+    var T = labels || TAGS_FR;
     var wrap = document.createElement('div');
     wrap.className = 'aixpm-tags';
 
@@ -339,7 +345,7 @@
       wrap.textContent = '';
       var label = document.createElement('span');
       label.className = 'aixpm-tags__label';
-      label.textContent = 'Mes tags';
+      label.textContent = T.label;
       wrap.appendChild(label);
 
       S.get(url).tags.forEach(function (t) {
@@ -352,7 +358,7 @@
         rm.type = 'button';
         rm.className = 'aixpm-tag__rm';
         rm.textContent = '×';
-        rm.setAttribute('aria-label', 'Retirer le tag ' + t);
+        rm.setAttribute('aria-label', T.remove + t);
         rm.addEventListener('click', function () {
           var next = S.get(url).tags.filter(function (x) { return x !== t; });
           S.setTags(url, next);
@@ -365,8 +371,8 @@
       var input = document.createElement('input');
       input.className = 'aixpm-tag__input';
       input.setAttribute('list', 'aixpm-tag-vocab');
-      input.setAttribute('aria-label', 'Ajouter un tag');
-      input.placeholder = 'Ajouter un tag…';
+      input.setAttribute('aria-label', T.add);
+      input.placeholder = T.add + '…';
       input.addEventListener('keydown', function (e) {
         if (e.key === 'Enter' || e.key === ',') { e.preventDefault(); commit(input, input.value); }
       });

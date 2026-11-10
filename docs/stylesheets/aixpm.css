@@ -755,3 +755,12 @@ div.aixpm-item > .aixpm-item__toggle { margin-left: 0; margin-top: 0.2rem; }
 .aixpm-ann__title { font-weight: 600; }
 .aixpm-ann__meta { font-size: 0.75em; color: var(--md-default-fg-color--light); }
 .aixpm-ann__tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
+/* Editions — homepage link row + "not synced on this device" notice */
+.md-typeset .aixpm-home__links { font-size: 0.72rem; color: var(--md-default-fg-color--light); margin-top: -0.6rem; }
+.md-typeset .aixpm-sync-note {
+  font-size: 0.68rem;
+  color: var(--md-default-fg-color--light);
+  margin: 0.4rem 0 0;
+}
+.md-typeset .aixpm-sync-note[hidden] { display: none; }

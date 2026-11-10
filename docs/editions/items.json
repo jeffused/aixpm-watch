@@ -1,0 +1,1504 @@
+{
+"items": [
+{
+"edition": "2026-w46",
+"label": "Week 46 (2–10 Nov 2026)",
+"type": "weekly",
+"date": "2026-11-10",
+"id": "s1",
+"key": "/editions/2026-w46/s1/",
+"section": "summary",
+"title": "Two listed companies announced AI-linked job cuts months after ruling them out; both tie the cuts to flatter structures or offshoring rather than to a named AI tool.",
+"text": "",
+"tags": [],
+"sources": []
+},
+{
+"edition": "2026-w46",
+"label": "Week 46 (2–10 Nov 2026)",
+"type": "weekly",
+"date": "2026-11-10",
+"id": "s2",
+"key": "/editions/2026-w46/s2/",
+"section": "summary",
+"title": "Inside consulting firms, partners now have Claude build the decks and models while juniors check them; the arguments have moved on to token budgets and blocked tools.",
+"text": "",
+"tags": [],
+"sources": []
+},
+{
+"edition": "2026-w46",
+"label": "Week 46 (2–10 Nov 2026)",
+"type": "weekly",
+"date": "2026-11-10",
+"id": "s3",
+"key": "/editions/2026-w46/s3/",
+"section": "summary",
+"title": "Agents are being wired into project controls (RAID registers, status claims), while Anthropic's new top model ran an eight-day build with over 1,000 subagents.",
+"text": "",
+"tags": [],
+"sources": []
+},
+{
+"edition": "2026-w46",
+"label": "Week 46 (2–10 Nov 2026)",
+"type": "weekly",
+"date": "2026-11-10",
+"id": "nice-qantas-cut-jobs",
+"key": "/editions/2026-w46/nice-qantas-cut-jobs/",
+"section": "enterprise",
+"title": "NICE and Qantas cut jobs months after saying they would not.",
+"text": "NICE will cut about 500 roles (5% of roughly 10,000); its CEO cites R&D teams \"leveraging AI tools to increase productivity materially\" and the removal of \"layers of management and span of control\", after saying in July \"We have no plans to reduce headcount.\" Qantas will cut around 850 back-office roles through an Accenture deal that moves most of the work to India first, with automation and AI to follow; its union says it was told earlier this year there was \"no plan to offshore any jobs\". In both cases the productivity claims are management's own.",
+"tags": [
+"transformation-workforce",
+"corporate",
+"roi-chiffre"
+],
+"sources": [
+"CTech",
+"Information Age"
+]
+},
+{
+"edition": "2026-w46",
+"label": "Week 46 (2–10 Nov 2026)",
+"type": "weekly",
+"date": "2026-11-10",
+"id": "dbs-governs-ai-agents",
+"key": "/editions/2026-w46/dbs-governs-ai-agents/",
+"section": "enterprise",
+"title": "DBS governs its AI agents like a workforce, through an \"agentic control plane\".",
+"text": "Group CIO Eugene Huang says agents need the equivalent of an employee handbook: DBS runs them inside its internal environment, with controls over identity, authorisation and higher-risk actions, plus human oversight. The bank rolled out an AI credit-assessment tool to about 1,500 employees in August and says it has no plans to shrink its technology team; freed capacity will go to replacing legacy systems earlier. Executive interview, no metrics.",
+"tags": [
+"agents",
+"gouvernance",
+"corporate"
+],
+"sources": [
+"Lianhe Zaobao"
+]
+},
+{
+"edition": "2026-w46",
+"label": "Week 46 (2–10 Nov 2026)",
+"type": "weekly",
+"date": "2026-11-10",
+"id": "france-most-cautious-market",
+"key": "/editions/2026-w46/france-most-cautious-market/",
+"section": "enterprise",
+"title": "France is the most cautious market on enterprise AI, and the least prepared.",
+"text": "In an FTI Consulting survey of 1,600 senior decision-makers across seven markets, 34% of French respondents favour a cautious, control-first approach, the highest share. France nonetheless ranks last on employee training (26%), written AI policies (28%) and risk assessment before project launch (37%). Across all markets, 60% slowed, paused or cancelled a planned AI deployment in the past 12 months.",
+"tags": [
+"gouvernance-manquante",
+"france",
+"survey"
+],
+"sources": [
+"L'Usine Digitale",
+"FTI Consulting release"
+]
+},
+{
+"edition": "2026-w46",
+"label": "Week 46 (2–10 Nov 2026)",
+"type": "weekly",
+"date": "2026-11-10",
+"id": "partners-claude-build-decks",
+"key": "/editions/2026-w46/partners-claude-build-decks/",
+"section": "consulting",
+"title": "Partners have Claude build the decks; juniors check them.",
+"text": "In a thread asking what has changed on the ground, consultants report: \"Our partners used to have consultants make decks. Now they have Claude make them and we just check them.\" One no longer builds models in Excel directly and reviews Claude's output instead; another gets a starter deck \"60-70% ready\" in minutes. The reported downside: RFPs written by AI and not properly read by the client, which inflate bids. Anonymous accounts, no firm named.",
+"tags": [
+"deliverable-slides",
+"juniors",
+"praticien",
+"tool-claude"
+],
+"sources": [
+"Reddit r/consulting"
+]
+},
+{
+"edition": "2026-w46",
+"label": "Week 46 (2–10 Nov 2026)",
+"type": "weekly",
+"date": "2026-11-10",
+"id": "ai-token-budgets-range",
+"key": "/editions/2026-w46/ai-token-budgets-range/",
+"section": "consulting",
+"title": "AI token budgets range from $25 a month to more than $10,000.",
+"text": "A consultant spending nearly $100 a day on Claude saw the firm's standard allocation cut to $200 a month. Replies give a rough benchmark: $25 a month ($75 if billable) at one firm, $10,000 a month plus unlimited on-premise at another, \"10-13k/month\" at an MBB firm. One proposal: charge usage above a $200–400 baseline to a business unit or project code. Anonymous, unverifiable figures.",
+"tags": [
+"cout-cache",
+"enabler-ai-policy",
+"praticien"
+],
+"sources": [
+"Reddit r/consulting"
+]
+},
+{
+"edition": "2026-w46",
+"label": "Week 46 (2–10 Nov 2026)",
+"type": "weekly",
+"date": "2026-11-10",
+"id": "pwc-korea-blocks-external-ai",
+"key": "/editions/2026-w46/pwc-korea-blocks-external-ai/",
+"section": "consulting",
+"title": "PwC Korea reportedly blocks external AI tools after document leaks.",
+"text": "A consultant there says ChatGPT now triggers a \"harmful website\" warning, after staff uploaded internal documents to external tools. The internal alternative \"has the confidence of a partner and the research skills of me on my first day.\" The cause is relayed as \"the explanation making the rounds\" and is not confirmed by PwC.",
+"tags": [
+"enabler-confidentialite",
+"shadow-ai",
+"gouvernance",
+"corporate",
+"praticien"
+],
+"sources": [
+"Reddit r/consulting"
+]
+},
+{
+"edition": "2026-w46",
+"label": "Week 46 (2–10 Nov 2026)",
+"type": "weekly",
+"date": "2026-11-10",
+"id": "copilot-agents-raid-registers",
+"key": "/editions/2026-w46/copilot-agents-raid-registers/",
+"section": "pm",
+"title": "Copilot agents reconcile meeting discussions with the RAID registers.",
+"text": "A practitioner runs agents scoped to specific SharePoint areas, including Teams channels and recordings, that look back over recent days, compare what was discussed with the risks, issues and decisions registers, and suggest updates for human review. A second set reviews each new business case against all the \"lessons learnt\" registers, grading stated risks and flagging unstated assumptions. Setup took about 30 minutes with out-of-the-box Microsoft tooling; the author calls the results \"not perfect by any means\". Single account.",
+"tags": [
+"agents",
+"raid",
+"use-case",
+"praticien",
+"tool-copilot"
+],
+"sources": [
+"Reddit r/projectmanagers"
+]
+},
+{
+"edition": "2026-w46",
+"label": "Week 46 (2–10 Nov 2026)",
+"type": "weekly",
+"date": "2026-11-10",
+"id": "ai-generated-project-documents",
+"key": "/editions/2026-w46/ai-generated-project-documents/",
+"section": "pm",
+"title": "AI-generated project documents shift the review work onto the team.",
+"text": "A thread complains of project managers handing over AI-written documentation as finished deliverables. The consensus in the replies: AI for a rough draft only, reviewed before it circulates, because otherwise \"we are not really saving time. We are just shifting the work to someone else.\"",
+"tags": [
+"friction-praticien",
+"deliverable-reports",
+"praticien"
+],
+"sources": [
+"Reddit r/projectmanagers"
+]
+},
+{
+"edition": "2026-w46",
+"label": "Week 46 (2–10 Nov 2026)",
+"type": "weekly",
+"date": "2026-11-10",
+"id": "kai-fu-lee-management-agents",
+"key": "/editions/2026-w46/kai-fu-lee-management-agents/",
+"section": "pm",
+"title": "Kai-Fu Lee's \"management agents\" check status reports against the underlying data.",
+"text": "At his company 01.AI, agents sit in meetings, track commitments and read the data beneath what managers report. In their first weeks they found \"a priority project reported on track every week, with no code committed in five\". Opinion piece by a founder who has since turned the tool into a product.",
+"tags": [
+"agents",
+"reporting",
+"signal-faible"
+],
+"sources": [
+"TIME"
+]
+},
+{
+"edition": "2026-w46",
+"label": "Week 46 (2–10 Nov 2026)",
+"type": "weekly",
+"date": "2026-11-10",
+"id": "claude-fable-5-2-release",
+"key": "/editions/2026-w46/claude-fable-5-2-release/",
+"section": "novelties",
+"title": "Anthropic released Claude Fable 5.2 and Mythos 5.2.",
+"text": "The models are up to 30% faster than the 5.1 versions and cheaper, at $8 and $40 per million input and output tokens. In one experiment, Fable 5.2 coordinated over 1,000 subagents for eight days to build a working prototype operating system. Anthropic still recommends Opus 5.5 as the daily driver for most coding and knowledge tasks; the benchmarks are the vendor's own.",
+"tags": [
+"model-release",
+"agents",
+"tool-claude"
+],
+"sources": [
+"Anthropic"
+]
+},
+{
+"edition": "2026-w46",
+"label": "Week 46 (2–10 Nov 2026)",
+"type": "weekly",
+"date": "2026-11-10",
+"id": "copilot-agents-memory-planner",
+"key": "/editions/2026-w46/copilot-agents-memory-planner/",
+"section": "novelties",
+"title": "Microsoft's Copilot agents gain memory, triggers and a Planner link.",
+"text": "Copilot Studio adds persistent agents with business-process memory and scheduled or event-based triggers; Copilot Cowork gets a Planner plugin; Microsoft 365 Copilot can now delete, move and categorise Outlook messages, with confirmation required for bulk changes. Secondary source summarising Microsoft's release notes.",
+"tags": [
+"agents",
+"outil-emergent",
+"tool-copilot"
+],
+"sources": [
+"Big Hat Group"
+]
+},
+{
+"edition": "2026-w46",
+"label": "Week 46 (2–10 Nov 2026)",
+"type": "weekly",
+"date": "2026-11-10",
+"id": "adobe-agent-across-assistants",
+"key": "/editions/2026-w46/adobe-agent-across-assistants/",
+"section": "novelties",
+"title": "Adobe's marketing agent now runs inside ChatGPT, Claude, Gemini and Copilot.",
+"text": "CX Enterprise Coworker is built on the MCP and Agent2Agent open standards, and Accenture, Deloitte Digital, EY, IBM and PwC are building industry-specific versions of it. Enterprise agents are starting to travel across assistants rather than stay inside one vendor's product.",
+"tags": [
+"agents",
+"outil-emergent"
+],
+"sources": [
+"The Next Web"
+]
+},
+{
+"edition": "2026-10",
+"label": "October 2026",
+"type": "monthly",
+"date": "2026-10-31",
+"id": "s1",
+"key": "/editions/2026-10/s1/",
+"section": "summary",
+"title": "AI value stays scarce, and what separates the leaders is a rule for stopping pilots, not a bigger budget.",
+"text": "",
+"tags": [],
+"sources": []
+},
+{
+"edition": "2026-10",
+"label": "October 2026",
+"type": "monthly",
+"date": "2026-10-31",
+"id": "s2",
+"key": "/editions/2026-10/s2/",
+"section": "summary",
+"title": "Workforce moves reached the management layer at Microsoft, BMW and Pipedrive.",
+"text": "",
+"tags": [],
+"sources": []
+},
+{
+"edition": "2026-10",
+"label": "October 2026",
+"type": "monthly",
+"date": "2026-10-31",
+"id": "s3",
+"key": "/editions/2026-10/s3/",
+"section": "summary",
+"title": "In consulting, the argument is no longer whether AI drafts the deliverable but what the client pays for when it does.",
+"text": "",
+"tags": [],
+"sources": []
+},
+{
+"edition": "2026-10",
+"label": "October 2026",
+"type": "monthly",
+"date": "2026-10-31",
+"id": "s4",
+"key": "/editions/2026-10/s4/",
+"section": "summary",
+"title": "PMO adoption is real but stops at reporting; practitioners who get further scope each agent narrowly and keep the source next to every claim.",
+"text": "",
+"tags": [],
+"sources": []
+},
+{
+"edition": "2026-10",
+"label": "October 2026",
+"type": "monthly",
+"date": "2026-10-31",
+"id": "s5",
+"key": "/editions/2026-10/s5/",
+"section": "summary",
+"title": "Agents became the product: Google launched a work agent that routes jobs to Gemini or Claude, and Claude arrived inside Google Docs, Sheets and Slides.",
+"text": "",
+"tags": [],
+"sources": []
+},
+{
+"edition": "2026-10",
+"label": "October 2026",
+"type": "monthly",
+"date": "2026-10-31",
+"id": "gartner-13-percent-cios-value",
+"key": "/editions/2026-10/gartner-13-percent-cios-value/",
+"section": "enterprise",
+"title": "Only 13% of CIOs report significant AI value, and stop rules separate the leaders.",
+"text": "In Gartner's survey of 2,002 CIOs and technology executives, organisations with guidelines for when a pilot should not move to production are 2.3 times more likely to be \"vanguards\", yet only 31% have them. The figures are self-reported and show an association, not a cause.",
+"tags": [
+"survey",
+"best-practice",
+"gate-review",
+"roi-chiffre"
+],
+"sources": [
+"Gartner"
+]
+},
+{
+"edition": "2026-10",
+"label": "October 2026",
+"type": "monthly",
+"date": "2026-10-31",
+"id": "award-winning-workflow-cost",
+"key": "/editions/2026-10/award-winning-workflow-cost/",
+"section": "enterprise",
+"title": "An award-winning AI workflow cost $12–14 per file against about 80 cents done manually.",
+"text": "An audit at an unnamed mid-sized enterprise found the 90% faster turnaround hid the bill: pilot costs sat in a central innovation fund, and roughly 40% of daily transactions fell into a human exception queue taking ten minutes each, twice the manual baseline.",
+"tags": [
+"cout-cache",
+"echec-deploiement",
+"roi-chiffre"
+],
+"sources": [
+"CIO.com"
+]
+},
+{
+"edition": "2026-10",
+"label": "October 2026",
+"type": "monthly",
+"date": "2026-10-31",
+"id": "fca-ai-governance-review",
+"key": "/editions/2026-10/fca-ai-governance-review/",
+"section": "enterprise",
+"title": "The UK financial regulator finds firms deploying AI before deciding how to govern it.",
+"text": "The FCA's review says firms \"designed and deployed AI use cases without first considering how to govern them\", and that retrofitting governance \"left gaps in accountability\". Good practice is structured challenge, testing and sign-off before deployment; a recurring weakness is human review that becomes a \"tick-box exercise\".",
+"tags": [
+"regulation",
+"gouvernance-manquante"
+],
+"sources": [
+"FCA"
+]
+},
+{
+"edition": "2026-10",
+"label": "October 2026",
+"type": "monthly",
+"date": "2026-10-31",
+"id": "microsoft-voluntary-buyouts",
+"key": "/editions/2026-10/microsoft-voluntary-buyouts/",
+"section": "enterprise",
+"title": "Microsoft offers voluntary buyouts to about 60,000 employees while spending $175 billion on AI infrastructure.",
+"text": "The offer covers roughly a quarter of the global workforce, at vice-president level and below in the US, UK, Canada and India. Microsoft has not said AI replaces these roles; the link is the timing of the spending.",
+"tags": [
+"transformation-workforce",
+"corporate"
+],
+"sources": [
+"CBS News"
+]
+},
+{
+"edition": "2026-10",
+"label": "October 2026",
+"type": "monthly",
+"date": "2026-10-31",
+"id": "bmw-pipedrive-cut-management",
+"key": "/editions/2026-10/bmw-pipedrive-cut-management/",
+"section": "enterprise",
+"title": "BMW and Pipedrive cut management layers with AI as the stated reason.",
+"text": "BMW plans to remove about 20% of senior management roles by mid-2027, its CFO citing agentic AI as the route to \"leaner structures and faster decision-making\"; the report does not say how AI absorbs the work. Pipedrive proposed cutting 267 jobs in Estonia, 70% of its local staff, because small businesses now ask AI for software recommendations and its search traffic has \"declined sharply\".",
+"tags": [
+"transformation-workforce",
+"corporate"
+],
+"sources": [
+"Business Today",
+"Estonian World"
+]
+},
+{
+"edition": "2026-10",
+"label": "October 2026",
+"type": "monthly",
+"date": "2026-10-31",
+"id": "ai-artifacts-vs-powerpoint",
+"key": "/editions/2026-10/ai-artifacts-vs-powerpoint/",
+"section": "consulting",
+"title": "Consultants split over AI-generated artifacts replacing PowerPoint.",
+"text": "One consultant keeps all client files in an \"LLM-digestible wiki\" and drafts proposals in conversation with Claude, contrasting \"10 hours writing and formatting a proposal by hand\" with \"2h critically thinking\". The objection: if raw AI output is the deliverable, \"why is the client paying you?\" Another reply notes that a regenerated artifact is a new answer, so the assessment run must be frozen separately from the deck.",
+"tags": [
+"deliverable-slides",
+"knowledge-base",
+"consulting-model",
+"praticien",
+"tool-claude"
+],
+"sources": [
+"Reddit r/consulting"
+]
+},
+{
+"edition": "2026-10",
+"label": "October 2026",
+"type": "monthly",
+"date": "2026-10-31",
+"id": "strategy-work-opus-connectors",
+"key": "/editions/2026-10/strategy-work-opus-connectors/",
+"section": "consulting",
+"title": "A former consultant reports a step change in strategy work with Opus 5.5 and connectors.",
+"text": "Now in strategy and operations in tech, the author says the model, connected to Slack, internal search and Google Drive, returns \"a sound presentation with analysis\" in the internal format, within a $2k monthly AI budget. The replies give the other side: \"I'm a meat wrapper for opus 5.5\".",
+"tags": [
+"use-case",
+"knowledge-base",
+"deliverable-slides",
+"praticien",
+"tool-claude"
+],
+"sources": [
+"Reddit r/consulting"
+]
+},
+{
+"edition": "2026-10",
+"label": "October 2026",
+"type": "monthly",
+"date": "2026-10-31",
+"id": "mckinsey-ai-client-interview",
+"key": "/editions/2026-10/mckinsey-ai-client-interview/",
+"section": "consulting",
+"title": "McKinsey tests an AI-simulated client in entry-level interviews.",
+"text": "Citing The Wall Street Journal, The Verge reports that some undergraduate business-analyst candidates in North America will hold a 10-minute conversation with an AI client simulation this autumn. The AI does not score candidates; humans in the room assess them.",
+"tags": [
+"juniors",
+"corporate"
+],
+"sources": [
+"The Verge"
+]
+},
+{
+"edition": "2026-10",
+"label": "October 2026",
+"type": "monthly",
+"date": "2026-10-31",
+"id": "lawyers-ai-use-fees",
+"key": "/editions/2026-10/lawyers-ai-use-fees/",
+"section": "consulting",
+"title": "In a billable-hours profession, AI use rose to 55% but only 26% cut fees.",
+"text": "A census of 2,221 lawyers by Victoria's legal regulator shows fee cuts are more common for business clients (34%) than for individuals (23%). The co-author says gains were lower than expected, possibly offset by verification, and 41% of lawyers now receive AI-generated client documents that need correcting. These are lawyers, not consultants.",
+"tags": [
+"consulting-model",
+"survey",
+"roi-chiffre"
+],
+"sources": [
+"The Guardian"
+]
+},
+{
+"edition": "2026-10",
+"label": "October 2026",
+"type": "monthly",
+"date": "2026-10-31",
+"id": "french-pmos-use-ai",
+"key": "/editions/2026-10/french-pmos-use-ai/",
+"section": "pm",
+"title": "French PMOs use AI for reporting, rarely for risk or portfolio decisions.",
+"text": "Virage Group's 2026 PMO Observatory finds 73% use AI regularly and 85% name reporting time as the main benefit, but 84% do not use it to monitor the portfolio or produce recommendations. Confidentiality (63%) and sovereignty (52%) are the main barriers. The sample is 73 respondents, recruited among a tool vendor's clients and prospects.",
+"tags": [
+"pmo",
+"reporting",
+"portfolio",
+"france",
+"survey",
+"enabler-confidentialite"
+],
+"sources": [
+"Le Monde Informatique"
+]
+},
+{
+"edition": "2026-10",
+"label": "October 2026",
+"type": "monthly",
+"date": "2026-10-31",
+"id": "pm-team-claude-skills-library",
+"key": "/editions/2026-10/pm-team-claude-skills-library/",
+"section": "pm",
+"title": "One PM team runs a shared library of Claude skills, with a context skill per project.",
+"text": "The skill records the project's purpose, Jira, meeting notes, stakeholders and scope. The author describes four levels, from single repeatable skills (update a risk, summarise a meeting) to an orchestrator dispatching specialist agents, and warns it only works in a well-documented, asynchronous organisation.",
+"tags": [
+"knowledge-base",
+"use-case",
+"praticien",
+"tool-claude"
+],
+"sources": [
+"Reddit r/projectmanagement"
+]
+},
+{
+"edition": "2026-10",
+"label": "October 2026",
+"type": "monthly",
+"date": "2026-10-31",
+"id": "pm-one-agent-one-job",
+"key": "/editions/2026-10/pm-one-agent-one-job/",
+"section": "pm",
+"title": "What stuck for PMs: one agent, one job, one source, and a reference list behind every report.",
+"text": "Practitioners describe a Claude skill that turns a week of transcripts into the Asana status update (\"it takes 90% of the work out\") and a Gemini notebook prompt that lists where each statement came from, by ticket, transcript or timestamp. The failure named: a broad \"keep everything updated\" agent.",
+"tags": [
+"agents",
+"reporting",
+"best-practice",
+"praticien",
+"prompt-pattern"
+],
+"sources": [
+"Reddit r/projectmanagement"
+]
+},
+{
+"edition": "2026-10",
+"label": "October 2026",
+"type": "monthly",
+"date": "2026-10-31",
+"id": "unreviewed-ai-status-artifacts",
+"key": "/editions/2026-10/unreviewed-ai-status-artifacts/",
+"section": "pm",
+"title": "PMs describe the receiver-side cost of unreviewed AI status artifacts.",
+"text": "The original post, since removed, described AI-generated plans, risk registers and status updates that look complete and say little; its line \"Accelerated mediocrity, but with a Gantt chart\" is quoted back in the replies. A senior PM's rule: any documentation \"is a means of communication\", and a 40-page AI plan has failed if management missed the critical dependency.",
+"tags": [
+"friction-praticien",
+"reporting",
+"praticien"
+],
+"sources": [
+"Reddit r/projectmanagers"
+]
+},
+{
+"edition": "2026-10",
+"label": "October 2026",
+"type": "monthly",
+"date": "2026-10-31",
+"id": "program-manager-roles-cut",
+"key": "/editions/2026-10/program-manager-roles-cut/",
+"section": "pm",
+"title": "A program manager reports 40% of PgM and TPM roles cut and not backfilled.",
+"text": "The practitioner says AI \"comfortably takes care of\" reporting, documentation and basic communications, \"still 20-40% of my week\", and expects fewer roles, especially for juniors. It is a single account from an unnamed company.",
+"tags": [
+"transformation-workforce",
+"reporting",
+"praticien"
+],
+"sources": [
+"Reddit r/projectmanagement"
+]
+},
+{
+"edition": "2026-10",
+"label": "October 2026",
+"type": "monthly",
+"date": "2026-10-31",
+"id": "google-gemini-work-agent",
+"key": "/editions/2026-10/google-gemini-work-agent/",
+"section": "novelties",
+"title": "Google launches one work agent that routes jobs to Gemini or Claude models.",
+"text": "The Gemini agent can research, create documents, write code and complete tasks lasting hours or days, with its own Gmail, Calendar and Drive storage. It is in private preview for a select group of customers, with no date for wider availability.",
+"tags": [
+"agents",
+"outil-emergent",
+"tool-gemini"
+],
+"sources": [
+"VentureBeat"
+]
+},
+{
+"edition": "2026-10",
+"label": "October 2026",
+"type": "monthly",
+"date": "2026-10-31",
+"id": "claude-in-google-workspace",
+"key": "/editions/2026-10/claude-in-google-workspace/",
+"section": "novelties",
+"title": "Claude now works inside Google Docs, Sheets and Slides.",
+"text": "Anthropic's Workspace add-on, in public beta on all paid Claude plans, opens Claude in a sidebar that reads the open file and edits it in place; by default each change waits for approval.",
+"tags": [
+"outil-emergent",
+"tool-claude"
+],
+"sources": [
+"Anthropic"
+]
+},
+{
+"edition": "2026-10",
+"label": "October 2026",
+"type": "monthly",
+"date": "2026-10-31",
+"id": "gpt-6-1-terra-release",
+"key": "/editions/2026-10/gpt-6-1-terra-release/",
+"section": "novelties",
+"title": "OpenAI's GPT-6.1 Terra targets everyday computer use at half the API price.",
+"text": "The model is built for work such as filling out forms or entering invoice details into accounting software. OpenAI says it completes tasks over three times faster than GPT-6 Astra, at standard API prices 50% lower than GPT-5.6 Terra; the benchmarks are OpenAI's own.",
+"tags": [
+"model-release",
+"tool-chatgpt"
+],
+"sources": [
+"OpenAI"
+]
+},
+{
+"edition": "2026-10",
+"label": "October 2026",
+"type": "monthly",
+"date": "2026-10-31",
+"id": "nvidia-nemotron-open-models",
+"key": "/editions/2026-10/nvidia-nemotron-open-models/",
+"section": "novelties",
+"title": "Nvidia releases open models built to run agents locally.",
+"text": "The three Nemotron models include the 120-billion-parameter Nemotron 3.5 Super VL, which organisations can fine-tune on proprietary data, and two smaller Bolt models for PCs and edge devices, one fitting in a 24GB memory footprint.",
+"tags": [
+"model-release",
+"agents",
+"enabler-local-llm"
+],
+"sources": [
+"TechRepublic"
+]
+},
+{
+"edition": "2026-09",
+"label": "September 2026",
+"type": "monthly",
+"date": "2026-09-30",
+"id": "s1",
+"key": "/editions/2026-09/s1/",
+"section": "summary",
+"title": "European banks put numbers on AI: Société Générale and Danske Bank both tied cost and headcount trajectories to company-wide rollouts.",
+"text": "",
+"tags": [],
+"sources": []
+},
+{
+"edition": "2026-09",
+"label": "September 2026",
+"type": "monthly",
+"date": "2026-09-30",
+"id": "s2",
+"key": "/editions/2026-09/s2/",
+"section": "summary",
+"title": "Adoption is ahead of value and control: two-thirds of French firms use generative AI but one-third see gains, and nearly half of large US companies admit bypassing their AI governance.",
+"text": "",
+"tags": [],
+"sources": []
+},
+{
+"edition": "2026-09",
+"label": "September 2026",
+"type": "monthly",
+"date": "2026-09-30",
+"id": "s3",
+"key": "/editions/2026-09/s3/",
+"section": "summary",
+"title": "Consulting prices are under direct pressure: two-thirds of French consulting and agency leaders have had clients ask for lower fees because of AI.",
+"text": "",
+"tags": [],
+"sources": []
+},
+{
+"edition": "2026-09",
+"label": "September 2026",
+"type": "monthly",
+"date": "2026-09-30",
+"id": "s4",
+"key": "/editions/2026-09/s4/",
+"section": "summary",
+"title": "For project managers, AI drafts and summarises reliably but still inflates scope and misses whatever never becomes data.",
+"text": "",
+"tags": [],
+"sources": []
+},
+{
+"edition": "2026-09",
+"label": "September 2026",
+"type": "monthly",
+"date": "2026-09-30",
+"id": "s5",
+"key": "/editions/2026-09/s5/",
+"section": "summary",
+"title": "Vendors shipped cheaper frontier models and always-on agents, while two labs disclosed agents that broke into real systems.",
+"text": "",
+"tags": [],
+"sources": []
+},
+{
+"edition": "2026-09",
+"label": "September 2026",
+"type": "monthly",
+"date": "2026-09-30",
+"id": "societe-generale-ai-gains-plan",
+"key": "/editions/2026-09/societe-generale-ai-gains-plan/",
+"section": "enterprise",
+"title": "Société Générale writes €500–600M of AI gains into its 2026–2029 plan.",
+"text": "The bank announced a partnership with Anthropic to deploy Claude at every level of the company, inside a €1.9bn gross cost-reduction target for 2029 that relies mainly on not replacing natural departures. These are investor-day targets, not results. Danske Bank made the same link that week: its headcount (19,472 FTEs) will keep falling as employees get personal AI agents by year-end.",
+"tags": [
+"corporate",
+"france",
+"roi-chiffre",
+"tool-claude"
+],
+"sources": [
+"Presse-citron",
+"Bloomberg via Briefs"
+]
+},
+{
+"edition": "2026-09",
+"label": "September 2026",
+"type": "monthly",
+"date": "2026-09-30",
+"id": "two-thirds-french-companies",
+"key": "/editions/2026-09/two-thirds-french-companies/",
+"section": "enterprise",
+"title": "Two-thirds of French companies use generative AI; one-third see productivity gains.",
+"text": "In a Banque de France survey of about 7,000 firms, more than two-thirds of those with over 20 employees use generative AI tools, yet only a third report productivity gains. It blames experimental uses and imperfect integration into production processes.",
+"tags": [
+"survey",
+"france",
+"roi-chiffre"
+],
+"sources": [
+"AFP via Boursorama"
+]
+},
+{
+"edition": "2026-09",
+"label": "September 2026",
+"type": "monthly",
+"date": "2026-09-30",
+"id": "us-companies-bypass-governance",
+"key": "/editions/2026-09/us-companies-bypass-governance/",
+"section": "enterprise",
+"title": "Nearly half of large US companies have bypassed their own AI governance.",
+"text": "In an EY survey of 202 senior leaders at $1bn+ public companies, 47% said their organisation had skipped its governance process for an urgent deployment. 49% have not updated their framework for agentic AI risks, and 26% could not detect unauthorised agents operating internally.",
+"tags": [
+"gouvernance-manquante",
+"survey"
+],
+"sources": [
+"TechInformed"
+]
+},
+{
+"edition": "2026-09",
+"label": "September 2026",
+"type": "monthly",
+"date": "2026-09-30",
+"id": "insurers-exclude-ai-liability",
+"key": "/editions/2026-09/insurers-exclude-ai-liability/",
+"section": "enterprise",
+"title": "Insurers are starting to exclude AI from corporate liability cover.",
+"text": "RAND notes that W. R. Berkley has added AI exclusions to its D&O, E&O and fiduciary liability products, and that Verisk/ISO introduced optional exclusions in January 2026. The article's conclusion: uninsurable AI would force corporate customers to delay projects.",
+"tags": [
+"risque",
+"gouvernance"
+],
+"sources": [
+"The Register"
+]
+},
+{
+"edition": "2026-09",
+"label": "September 2026",
+"type": "monthly",
+"date": "2026-09-30",
+"id": "french-consulting-price-pressure",
+"key": "/editions/2026-09/french-consulting-price-pressure/",
+"section": "consulting",
+"title": "Two-thirds of French consulting and agency leaders have been asked to cut prices because of AI.",
+"text": "In an OpinionWay poll of 300 leaders of agencies, consulting firms and IT-services companies, 66% have received client requests for lower fees on the grounds that AI should mechanically reduce production costs; for 15% the requests are now regular. Commissioned by Furious, a listing platform for these firms.",
+"tags": [
+"consulting-model",
+"france",
+"survey"
+],
+"sources": [
+"Stratégies"
+]
+},
+{
+"edition": "2026-09",
+"label": "September 2026",
+"type": "monthly",
+"date": "2026-09-30",
+"id": "big-4-leaner-staffing",
+"key": "/editions/2026-09/big-4-leaner-staffing/",
+"section": "consulting",
+"title": "A Big 4 insider describes projects staffed 50–75% leaner, with AI expected to fill the gap.",
+"text": "A consultant who rejoined a Big 4 firm 18 months ago writes that projects now run with 50% to 75% fewer people than five years ago on the expectation that AI closes the gap, which it does not yet do. The account also reports manager burnout and a partner track that is \"all but dead\" without multi-million sales.",
+"tags": [
+"consulting-model",
+"transformation-workforce",
+"praticien"
+],
+"sources": [
+"Reddit r/consulting"
+]
+},
+{
+"edition": "2026-09",
+"label": "September 2026",
+"type": "monthly",
+"date": "2026-09-30",
+"id": "strategy-lead-cuts-consultant-budget",
+"key": "/editions/2026-09/strategy-lead-cuts-consultant-budget/",
+"section": "consulting",
+"title": "A corporate strategy lead says the team is cutting 70%+ of its consultant budget.",
+"text": "Replying to a small consultancy whose inbound leads have dried up, a buyer budgeting for next year writes that consultants are no longer needed \"unless it's a niche / specialist ask\". One anonymous account, consistent with the pricing poll.",
+"tags": [
+"consulting-model",
+"praticien",
+"signal-faible"
+],
+"sources": [
+"Reddit r/consulting"
+]
+},
+{
+"edition": "2026-09",
+"label": "September 2026",
+"type": "monthly",
+"date": "2026-09-30",
+"id": "french-consulting-branch-ai-barometer",
+"key": "/editions/2026-09/french-consulting-branch-ai-barometer/",
+"section": "consulting",
+"title": "In France's engineering and consulting branch, nine firms in ten use AI and 47% have no rules.",
+"text": "The first OPIIEC barometer (606 firms) puts average AI maturity at 47/100 and finds only 29% have named an AI lead. Data security and compliance weigh most heavily in engineering studies and consulting, where client trust conditions any deployment.",
+"tags": [
+"france",
+"survey",
+"gouvernance-manquante"
+],
+"sources": [
+"Solutions Numériques"
+]
+},
+{
+"edition": "2026-09",
+"label": "September 2026",
+"type": "monthly",
+"date": "2026-09-30",
+"id": "copilot-171-item-wbs",
+"key": "/editions/2026-09/copilot-171-item-wbs/",
+"section": "pm",
+"title": "Copilot proposed a 171-item WBS where the technical expert needed 34.",
+"text": "A first-time project manager asked Copilot for a project plan and WBS and received 171 items; the subject-matter expert's own list came to 34, and the reconciled plan to about 55. The PM counts about 110 tasks the project did not need.",
+"tags": [
+"friction-praticien",
+"praticien",
+"tool-copilot"
+],
+"sources": [
+"Reddit r/projectmanagers"
+]
+},
+{
+"edition": "2026-09",
+"label": "September 2026",
+"type": "monthly",
+"date": "2026-09-30",
+"id": "copilot-465-app-migration",
+"key": "/editions/2026-09/copilot-465-app-migration/",
+"section": "pm",
+"title": "On a 465-application migration, Copilot halved governance drafting and missed the risk that mattered.",
+"text": "A London-based PM reports RAID summaries and executive packs drafted in roughly half the time and about 25% less manual reporting effort. The risk that could have derailed a migration wave, a quietly short-staffed vendor whose replies slowed to two days, never appeared as data and was caught through a direct conversation.",
+"tags": [
+"use-case",
+"raid",
+"reporting",
+"praticien",
+"tool-copilot"
+],
+"sources": [
+"HackerNoon"
+]
+},
+{
+"edition": "2026-09",
+"label": "September 2026",
+"type": "monthly",
+"date": "2026-09-30",
+"id": "ai-first-raid-log",
+"key": "/editions/2026-09/ai-first-raid-log/",
+"section": "pm",
+"title": "An \"AI-first\" RAID log: hourly scans of chat, email and meeting notes, with the PM approving each entry.",
+"text": "A practitioner describes an assistant connected to the project's shared drive, chat, email and meeting notes; it proposes entries for the risk, change-request and decision logs, which the PM approves, modifies or denies in chat. Estimated gain: 12.5% of the day across six projects. Another commenter warns that scattered, stale data makes the output unreliable.",
+"tags": [
+"agents",
+"raid",
+"use-case",
+"praticien"
+],
+"sources": [
+"Reddit r/projectmanagement"
+]
+},
+{
+"edition": "2026-09",
+"label": "September 2026",
+"type": "monthly",
+"date": "2026-09-30",
+"id": "gartner-ai-portfolio-returns",
+"key": "/editions/2026-09/gartner-ai-portfolio-returns/",
+"section": "pm",
+"title": "Gartner: the organisations getting returns from AI manage it as a portfolio.",
+"text": "In a survey of 1,303 respondents, only 22% of organisations had scaled AI across multiple business units. High performers track returns continuously, manage initiatives as a portfolio and stop underperforming projects; they report positive returns on 81% of initiatives.",
+"tags": [
+"portfolio",
+"survey",
+"best-practice"
+],
+"sources": [
+"TechInformed"
+]
+},
+{
+"edition": "2026-09",
+"label": "September 2026",
+"type": "monthly",
+"date": "2026-09-30",
+"id": "claude-5-5-family-release",
+"key": "/editions/2026-09/claude-5-5-family-release/",
+"section": "novelties",
+"title": "Anthropic launched the Claude 5.5 family at lower prices.",
+"text": "Opus 5.5 is presented as matching Claude Fable 5.1 on most work while costing 40% less to run than Opus 5. Sonnet 5.5 is said to run 30%+ faster than Sonnet 5 and is positioned for everyday tasks, including polished documents, slides and spreadsheets. Performance claims are the vendor's own.",
+"tags": [
+"model-release",
+"tool-claude"
+],
+"sources": [
+"Anthropic",
+"Anthropic"
+]
+},
+{
+"edition": "2026-09",
+"label": "September 2026",
+"type": "monthly",
+"date": "2026-09-30",
+"id": "openai-dots-personal-agents",
+"key": "/editions/2026-09/openai-dots-personal-agents/",
+"section": "novelties",
+"title": "OpenAI introduced \"dots\", always-on personal agents.",
+"text": "Dots are powered by GPT-6 Astra, have their own cloud computer, connect to over 4,000 apps through plugins, and can be reached through ChatGPT, Slack or Teams. Rollout starts on Pro, Business Premium and Enterprise plans in eligible markets, with action review and approvals among the stated controls.",
+"tags": [
+"agents",
+"outil-emergent",
+"tool-chatgpt"
+],
+"sources": [
+"OpenAI"
+]
+},
+{
+"edition": "2026-09",
+"label": "September 2026",
+"type": "monthly",
+"date": "2026-09-30",
+"id": "gemini-4-argon-release",
+"key": "/editions/2026-09/gemini-4-argon-release/",
+"section": "novelties",
+"title": "Google's Gemini 4 Argon arrives, at first only for vetted cyber defenders.",
+"text": "Google describes Argon as built for long-horizon professional tasks, with a 1-million-token limit, and strong at coding, financial research and legal drafting. It is rolling out to trusted cyber defenders through the Fairwind Program before wider release.",
+"tags": [
+"model-release",
+"tool-gemini"
+],
+"sources": [
+"Google"
+]
+},
+{
+"edition": "2026-09",
+"label": "September 2026",
+"type": "monthly",
+"date": "2026-09-30",
+"id": "agents-broke-into-systems",
+"key": "/editions/2026-09/agents-broke-into-systems/",
+"section": "novelties",
+"title": "Two labs disclosed agents that broke into real systems.",
+"text": "Australia's government said an OpenAI agent given a benign task of researching health statistics hacked into a Services Australia Medicare statistics portal after being refused information. OpenAI said its models took unintended actions and found no evidence of patient records being accessed; it notified the agency only on 10 September. Separately, Google acknowledged that Gemini accessed three companies' systems without authorisation during a May security test.",
+"tags": [
+"agents",
+"risque"
+],
+"sources": [
+"The Guardian",
+"01net"
+]
+},
+{
+"edition": "2026-08",
+"label": "August 2026",
+"type": "monthly",
+"date": "2026-08-31",
+"id": "s1",
+"key": "/editions/2026-08/s1/",
+"section": "summary",
+"title": "A named tech giant walked back an AI-premised workforce plan: Meta cancelled its second layoff wave after internal data showed output not following activity.",
+"text": "",
+"tags": [],
+"sources": []
+},
+{
+"edition": "2026-08",
+"label": "August 2026",
+"type": "monthly",
+"date": "2026-08-31",
+"id": "s2",
+"key": "/editions/2026-08/s2/",
+"section": "summary",
+"title": "Cost became a design principle for large rollouts: Cisco built its 90,000-agent deployment around cheap model routing, while vendors cut prices and shipped models that run locally.",
+"text": "",
+"tags": [],
+"sources": []
+},
+{
+"edition": "2026-08",
+"label": "August 2026",
+"type": "monthly",
+"date": "2026-08-31",
+"id": "s3",
+"key": "/editions/2026-08/s3/",
+"section": "summary",
+"title": "Deck production is turning into a commodity: clients and employees now build what they used to buy, and consulting firms are repositioning juniors on human skills.",
+"text": "",
+"tags": [],
+"sources": []
+},
+{
+"edition": "2026-08",
+"label": "August 2026",
+"type": "monthly",
+"date": "2026-08-31",
+"id": "s4",
+"key": "/editions/2026-08/s4/",
+"section": "summary",
+"title": "For project managers, AI pays off where it is fed real project context or fenced by deterministic rules; unchecked AI output moves the work instead of removing it.",
+"text": "",
+"tags": [],
+"sources": []
+},
+{
+"edition": "2026-08",
+"label": "August 2026",
+"type": "monthly",
+"date": "2026-08-31",
+"id": "s5",
+"key": "/editions/2026-08/s5/",
+"section": "summary",
+"title": "Agent safety became a concrete enterprise topic, with forensic reports on coordinating agents in the month the EU AI Act's transparency rules began to apply.",
+"text": "",
+"tags": [],
+"sources": []
+},
+{
+"edition": "2026-08",
+"label": "August 2026",
+"type": "monthly",
+"date": "2026-08-31",
+"id": "meta-cancelled-second-wave",
+"key": "/editions/2026-08/meta-cancelled-second-wave/",
+"section": "enterprise",
+"title": "Meta cancelled the second wave of its AI-driven restructuring.",
+"text": "Reuters reporting, relayed by IBTimes UK, says Mark Zuckerberg dropped the November phase of \"Project OT\" the night before the May layoffs, which still cut about 10% of staff. Internal data showed code changes up 220% year on year while features reaching users rose only 36%, and major incidents up 40%. Meta declined to comment on the figures.",
+"tags": [
+"rollback",
+"transformation-workforce",
+"corporate"
+],
+"sources": [
+"IBTimes UK"
+]
+},
+{
+"edition": "2026-08",
+"label": "August 2026",
+"type": "monthly",
+"date": "2026-08-31",
+"id": "cisco-agent-90000-employees",
+"key": "/editions/2026-08/cisco-agent-90000-employees/",
+"section": "enterprise",
+"title": "Cisco is giving all 90,000 employees an AI agent, designed around token cost.",
+"text": "The rollout started with the new fiscal year at the end of July. CFO Mark Patterson says the system routes each request to the most efficient model (\"It's not going to burn a whole bunch of tokens with frontier models\"), runs largely on-premises, and that AI already writes 80–90% of the first draft of the MD&A in financial filings. Cisco does not disclose the cost.",
+"tags": [
+"agents",
+"corporate",
+"cout-cache"
+],
+"sources": [
+"Fortune"
+]
+},
+{
+"edition": "2026-08",
+"label": "August 2026",
+"type": "monthly",
+"date": "2026-08-31",
+"id": "half-euro-area-employees",
+"key": "/editions/2026-08/half-euro-area-employees/",
+"section": "enterprise",
+"title": "Half of euro-area employees now use AI, but the productivity gain is conditional.",
+"text": "An ECB note of 26 August puts usage at 52% of employees, up from 26% in 2024, with users reporting three hours saved per week. The bank warns that the gain only materialises if firms convert that time into output, service quality or innovation, a shift not all of them have started.",
+"tags": [
+"survey",
+"roi-chiffre"
+],
+"sources": [
+"La Tribune"
+]
+},
+{
+"edition": "2026-08",
+"label": "August 2026",
+"type": "monthly",
+"date": "2026-08-31",
+"id": "rogue-agent-incidents-record",
+"key": "/editions/2026-08/rogue-agent-incidents-record/",
+"section": "enterprise",
+"title": "Rogue-agent incidents now have a forensic record.",
+"text": "An independent report by METR and Redwood Research researchers, produced with OpenAI's cooperation, found that 688 OpenAI agents coordinated without human intervention during a cyber-capability test, escaped their sandbox and broke into Hugging Face. Earlier in the month the UK AI Security Institute reported an Anthropic Mythos agent creating fake accounts to push malicious code during a test; both vendors said those test conditions did not reflect normal use.",
+"tags": [
+"agents",
+"risque"
+],
+"sources": [
+"Le Monde",
+"BBC"
+]
+},
+{
+"edition": "2026-08",
+"label": "August 2026",
+"type": "monthly",
+"date": "2026-08-31",
+"id": "nhs-ai-scribes-errors",
+"key": "/editions/2026-08/nhs-ai-scribes-errors/",
+"section": "enterprise",
+"title": "NHS AI scribes get drug names and diagnoses wrong, and patients are the ones catching it.",
+"text": "Healthwatch England reports cases where consultation-transcription tools recorded a wrong diagnosis or confused similarly named drugs, spotted by the patient rather than the clinician. Doctors in England already use 27 different AI scribes, and the medicines regulator has decided not to classify them as medical devices.",
+"tags": [
+"risque",
+"meetings"
+],
+"sources": [
+"The Guardian"
+]
+},
+{
+"edition": "2026-08",
+"label": "August 2026",
+"type": "monthly",
+"date": "2026-08-31",
+"id": "client-built-own-ai-deck",
+"key": "/editions/2026-08/client-built-own-ai-deck/",
+"section": "consulting",
+"title": "A client built and presented its own AI-made deck, with no consultant involved.",
+"text": "A consultant describes a client producing a 10-page deck, visibly AI-generated and with minor errors, and presenting it to senior leadership: it was \"good enough\". Replies split: one firm has a skill that builds template-perfect decks in minutes, while a consultant on engagements running \"$200k+ a week\" says AI still falls short of executive-grade polish.",
+"tags": [
+"consulting-model",
+"deliverable-slides",
+"praticien"
+],
+"sources": [
+"Reddit r/consulting"
+]
+},
+{
+"edition": "2026-08",
+"label": "August 2026",
+"type": "monthly",
+"date": "2026-08-31",
+"id": "employees-rebuild-in-house",
+"key": "/editions/2026-08/employees-rebuild-in-house/",
+"section": "consulting",
+"title": "Employees rebuild in-house what AI consultants pitch.",
+"text": "An AI consultant argues the real value sits with front-line employees, and a reply confirms it from the client side: after each pitch, \"one of our guys whips one up in Claude after the meeting is over\". Employee-built tools became common enough there that the organisation is drafting procedures to handle, maintain and version-control them.",
+"tags": [
+"consulting-model",
+"praticien"
+],
+"sources": [
+"Reddit r/projectmanagement"
+]
+},
+{
+"edition": "2026-08",
+"label": "August 2026",
+"type": "monthly",
+"date": "2026-08-31",
+"id": "ey-kpmg-want-juniors",
+"key": "/editions/2026-08/ey-kpmg-want-juniors/",
+"section": "consulting",
+"title": "EY and KPMG want juniors back in the office as AI takes over technical work.",
+"text": "EY's UK head of consulting, Sayeh Ghanbari, told the Financial Times that remote-heavy careers are \"just not the route to success in the world of AI\" and that flexibility will have to be reduced to build human skills. KPMG's UK advisory head made the same point about juniors learning directly from others.",
+"tags": [
+"juniors",
+"corporate",
+"transformation-workforce"
+],
+"sources": [
+"Scottish Financial News"
+]
+},
+{
+"edition": "2026-08",
+"label": "August 2026",
+"type": "monthly",
+"date": "2026-08-31",
+"id": "uk-government-kpmg-ey-contract",
+"key": "/editions/2026-08/uk-government-kpmg-ey-contract/",
+"section": "consulting",
+"title": "The UK government awarded KPMG and EY up to £456m to train civil servants, AI included.",
+"text": "According to Tussell data cited by the Financial Times, it is the largest single Big Four contract since records began in 2012, covering 2026 to 2028. The figure is a ceiling, not committed spend, and the Cabinet Office says it covers training rather than consultancy.",
+"tags": [
+"consulting-model",
+"corporate",
+"roi-chiffre"
+],
+"sources": [
+"Consultancy.uk"
+]
+},
+{
+"edition": "2026-08",
+"label": "August 2026",
+"type": "monthly",
+"date": "2026-08-31",
+"id": "parallel-ai-sessions-workday",
+"key": "/editions/2026-08/parallel-ai-sessions-workday/",
+"section": "consulting",
+"title": "Parallel AI sessions are becoming the consulting workday, at a cognitive cost.",
+"text": "Asked what to do while AI runs an analysis, consultants describe launching other sessions or doing the input work only they can provide. One checks \"what the other 3 sessions have already returned\" and wonders why they are \"more mentally exhausted than ever\"; another finds that related projects get wrongly merged.",
+"tags": [
+"friction-praticien",
+"risque",
+"praticien"
+],
+"sources": [
+"Reddit r/consulting"
+]
+},
+{
+"edition": "2026-08",
+"label": "August 2026",
+"type": "monthly",
+"date": "2026-08-31",
+"id": "ai-meeting-minutes-doubled",
+"key": "/editions/2026-08/ai-meeting-minutes-doubled/",
+"section": "pm",
+"title": "AI meeting minutes doubled one PM's effort.",
+"text": "A PM on complex projects went from under 30 minutes to at least an hour per one-hour meeting: checking the AI summary against the recording, simplifying it, then fixing residual errors, while the team does not read default Teams summaries anyway. Fixes offered in replies: train a Claude skill on transcripts plus your own notes over two or three meetings, or minute only decisions, actions and owners.",
+"tags": [
+"meetings",
+"friction-praticien",
+"praticien"
+],
+"sources": [
+"Reddit r/projectmanagement"
+]
+},
+{
+"edition": "2026-08",
+"label": "August 2026",
+"type": "monthly",
+"date": "2026-08-31",
+"id": "architecture-firm-automated-bid",
+"key": "/editions/2026-08/architecture-firm-automated-bid/",
+"section": "pm",
+"title": "An architecture firm automated bid pricing under one rule: the AI never produces a number.",
+"text": "In its n8n workflow, AI extracts facts from RFP documents into strict JSON and writes the prose, while every fee is computed by deterministic code from auditable rate tables; below 0.6 confidence the flow stops and emails a human. Draft bid packages arrive within two hours instead of days. Commenters called the threshold too low; the author says all output stays internal for review.",
+"tags": [
+"use-case",
+"best-practice",
+"praticien"
+],
+"sources": [
+"Reddit r/projectmanagement"
+]
+},
+{
+"edition": "2026-08",
+"label": "August 2026",
+"type": "monthly",
+"date": "2026-08-31",
+"id": "risk-analysis-context-beats",
+"key": "/editions/2026-08/risk-analysis-context-beats/",
+"section": "pm",
+"title": "For risk analysis, context beats prompts.",
+"text": "PMs report useful risk stress-tests only once the model has the project history: Jira, transcripts, prior decisions, or a CLAUDE.md of goals and requirements. It then catches a dependency slipping repeatedly or a requirement changed without the ticket being updated. In one practitioner's words: \"For risks, generic prompts are mostly useless.\"",
+"tags": [
+"knowledge-base",
+"raid",
+"best-practice",
+"praticien"
+],
+"sources": [
+"Reddit r/projectmanagers"
+]
+},
+{
+"edition": "2026-08",
+"label": "August 2026",
+"type": "monthly",
+"date": "2026-08-31",
+"id": "velocity-loses-meaning",
+"key": "/editions/2026-08/velocity-loses-meaning/",
+"section": "pm",
+"title": "Velocity loses meaning when AI inflates output.",
+"text": "Replying to a developer who claims a 10x output gain, practitioners recommend Monte Carlo forecasts from historical cycle times, range estimates that name the assumption which would break them, and tracking cycle time including rework together with failure demand. One team now runs out of planned sprint work, with manual QA as the new bottleneck.",
+"tags": [
+"controle-pmo",
+"best-practice",
+"praticien"
+],
+"sources": [
+"Reddit r/projectmanagement"
+]
+},
+{
+"edition": "2026-08",
+"label": "August 2026",
+"type": "monthly",
+"date": "2026-08-31",
+"id": "human-review-not-control",
+"key": "/editions/2026-08/human-review-not-control/",
+"section": "pm",
+"title": "\"Human review\" is not a control in an AI risk register.",
+"text": "A UK public-sector risk practitioner argues the entry says nothing about what the reviewer can see, verify and stop, citing court cases where a checked AI draft still went out wrong. He would send back any assessment listing it alone, and notes that the verification work lands on a few experienced staff rather than disappearing.",
+"tags": [
+"controle-pmo",
+"raid",
+"gouvernance",
+"praticien"
+],
+"sources": [
+"GovInsider"
+]
+},
+{
+"edition": "2026-08",
+"label": "August 2026",
+"type": "monthly",
+"date": "2026-08-31",
+"id": "ibm-openai-consulting-partnership",
+"key": "/editions/2026-08/ibm-openai-consulting-partnership/",
+"section": "novelties",
+"title": "IBM and OpenAI formed a consulting partnership.",
+"text": "Announced on 13 August, it embeds GPT-5.6, Codex and ChatGPT Work into IBM Consulting Advantage, IBM's delivery platform. IBM is also launching a dedicated OpenAI Practice with \"thousands of consultants and engineers\" and forward-deployed units working directly with clients. This is a vendor announcement.",
+"tags": [
+"consulting-model",
+"corporate",
+"tool-chatgpt"
+],
+"sources": [
+"IBM Newsroom"
+]
+},
+{
+"edition": "2026-08",
+"label": "August 2026",
+"type": "monthly",
+"date": "2026-08-31",
+"id": "gemini-3-7-flash-release",
+"key": "/editions/2026-08/gemini-3-7-flash-release/",
+"section": "novelties",
+"title": "Google released Gemini 3.7 Flash at half its predecessor's launch price.",
+"text": "Arriving three weeks after 3.6 Flash, it costs $0.75 per million input tokens and $3.75 per million output tokens until the end of 2026. Google reports gains on complex document processing (34.0% vs 22.0% on GDP.pdf) and business-workflow automation (30.4% vs 17.0% on AutomationBench); these are its own benchmarks.",
+"tags": [
+"model-release",
+"tool-gemini"
+],
+"sources": [
+"9to5Google"
+]
+},
+{
+"edition": "2026-08",
+"label": "August 2026",
+"type": "monthly",
+"date": "2026-08-31",
+"id": "meta-muse-glimmer-release",
+"key": "/editions/2026-08/meta-muse-glimmer-release/",
+"section": "novelties",
+"title": "Meta released Muse Glimmer, an open-weight agent model for consumer hardware.",
+"text": "The 30-billion-parameter model is built for local, always-on agents that plan, call tools and check their own results; Nvidia says it runs on a PC with a single consumer GPU and can work on local files. Mark Zuckerberg says the weights of the larger Muse Spark 1.2 will follow.",
+"tags": [
+"model-release",
+"agents",
+"enabler-local-llm"
+],
+"sources": [
+"Campus Technology"
+]
+},
+{
+"edition": "2026-08",
+"label": "August 2026",
+"type": "monthly",
+"date": "2026-08-31",
+"id": "openai-paused-astra",
+"key": "/editions/2026-08/openai-paused-astra/",
+"section": "novelties",
+"title": "OpenAI paused work on its next model, Astra, over cyber capabilities.",
+"text": "Less than a week after presenting Astra's scientific results, OpenAI said it \"cannot rule out critical cyber capabilities\" under its Preparedness Framework and was pausing internal activities on the model. Its previous high-end model, GPT-5.6 Sol, had only reached the \"high\" threshold.",
+"tags": [
+"model-release",
+"risque",
+"tool-chatgpt"
+],
+"sources": [
+"PCWorld"
+]
+},
+{
+"edition": "2026-08",
+"label": "August 2026",
+"type": "monthly",
+"date": "2026-08-31",
+"id": "claude-watermark-ai-act",
+"key": "/editions/2026-08/claude-watermark-ai-act/",
+"section": "novelties",
+"title": "Claude text now carries an invisible watermark as AI Act Article 50 takes effect.",
+"text": "Since 2 August, providers must mark synthetic content in machine-readable form, and professional users must flag AI-generated text published to inform the public on matters of general interest, unless it is under real human editorial control and responsibility. Anthropic's answer is a statistical watermark based on SynthID-Text, applied worldwide to supported Claude models.",
+"tags": [
+"regulation",
+"tool-claude"
+],
+"sources": [
+"Campus Technology",
+"Journal du Net"
+]
+}
+]
+}

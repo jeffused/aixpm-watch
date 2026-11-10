@@ -1,18 +1,18 @@
 ---
-title: Mes annotations
-description: Vos réactions paragraphe par paragraphe sur les éditions — matière première pour vos futurs écrits.
+title: My notes
+description: Your paragraph-by-paragraph reactions to the editions — raw material for later writing.
 search:
   exclude: true
 hide:
   - toc
 ---
 
-# Mes annotations
+# My notes
 
-Vos réactions notées au fil de la lecture des éditions, paragraphe par paragraphe. Pour en ajouter une : ouvrez une [édition](editions/index.md) et cliquez sur ✎ à côté d'un paragraphe.
+Your reactions, noted paragraph by paragraph while reading the editions. To add one: open an [edition](editions/index.md) and click ✎ next to a paragraph.
 
 <noscript>
-Vos annotations sont stockées dans votre navigateur — activez JavaScript pour les voir.
+Your notes are stored in your browser — enable JavaScript to see them.
 </noscript>
 
 <div data-aixpm-annotations></div>

@@ -1,6 +1,6 @@
 site_name: AIxPM Watch
 site_url: https://jeffused.github.io/aixpm-watch/
-site_description: Veille AI × Project Management — articles courts en français sur l'usage de l'IA dans le conseil et la gestion de projet.
+site_description: AI at work, weekly — a sourced edition on enterprise AI adoption, consulting, project management and AI novelties.
 site_author: Jeff Lavigne
 repo_url: https://github.com/jeffused/aixpm-watch
 repo_name: jeffused/aixpm-watch
@@ -8,20 +8,20 @@ repo_name: jeffused/aixpm-watch
 theme:
   name: material
   custom_dir: overrides
-  language: fr
+  language: en
   palette:
     - scheme: default
       primary: teal
       accent: teal
       toggle:
         icon: material/weather-sunny
-        name: Mode sombre
+        name: Dark mode
     - scheme: slate
       primary: teal
       accent: teal
       toggle:
         icon: material/weather-night
-        name: Mode clair
+        name: Light mode
   features:
     - navigation.instant
     - navigation.tracking
@@ -34,7 +34,9 @@ theme:
 
 plugins:
   - search:
-      lang: fr
+      lang:
+        - en
+        - fr
   - blog:
       blog_dir: .
       post_dir: posts
