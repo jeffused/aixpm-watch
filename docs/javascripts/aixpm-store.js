@@ -508,9 +508,18 @@
     out.sort(function (x, y) { return x.localeCompare(y, 'fr'); });
     return out;
   }
+  // Edition paragraphs are annotated under pseudo-keys /editions/<edition>/<item>/
+  // (see aixpm-editions.js). They share this store but are not library articles.
+  function isItemKey(key) { return String(key || '').lastIndexOf('/editions/', 0) === 0; }
+  function annotations() {
+    return allArticles().filter(function (a) {
+      return isItemKey(a.url) && (a.note || a.tags.length > 0);
+    });
+  }
   function counts() {
     var rated = 0, rated4plus = 0, withNote = 0, archived = 0, tagged = 0, lib = 0;
     allArticles().forEach(function (a) {
+      if (isItemKey(a.url)) return;                      // paragraph annotations have their own count
       if (a.archived) { archived++; return; }            // archived excluded from positive counts
       var hasRating = a.rating >= 1;
       var hasNote = !!a.note;
@@ -733,6 +742,8 @@
     sectionsForArticle: sectionsForArticle,
     customTagVocabulary: customTagVocabulary,
     counts: counts,
+    annotations: annotations,
+    isItemKey: isItemKey,
     // reactivity
     subscribe: subscribe,
     // sync

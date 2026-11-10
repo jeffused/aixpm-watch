@@ -34,7 +34,10 @@
 
   var KEY_HIDE_READ = 'aixpm:hideRead';
   var KEY_SHOW_ARCHIVED = 'aixpm:showArchived';
-  var activeNoteFlush = null;   // flush fn of the article note editor currently on screen
+  var activeNoteFlushes = [];   // flush fns of every note editor currently on screen (article + edition items)
+  function flushActiveNotes() {
+    for (var i = 0; i < activeNoteFlushes.length; i++) { try { activeNoteFlushes[i](); } catch (e) {} }
+  }
 
   function loadJSON(key, fallback) {
     try { var raw = localStorage.getItem(key); return raw ? JSON.parse(raw) : fallback; }
@@ -220,7 +223,8 @@
   // Self-managing editor: debounced autosave (1.5s) + immediate flush on blur,
   // on tab-hide (via store pre-flush), and at the top of every onPageReady
   // (covers Material instant-nav away mid-typing). Saving empty deletes the note.
-  function buildNotePanel(url) {
+  function buildNotePanel(url, placeholder) {
+    var ph = placeholder || 'Vos notes personnelles sur cet article';
     var box = document.createElement('div');
     box.className = 'aixpm-note';
     var label = document.createElement('span');
@@ -282,8 +286,8 @@
       var ta = document.createElement('textarea');
       ta.className = 'aixpm-note__input';
       ta.value = initial;
-      ta.placeholder = 'Vos notes personnelles sur cet article…';
-      ta.setAttribute('aria-label', 'Vos notes personnelles sur cet article');
+      ta.placeholder = ph + '…';
+      ta.setAttribute('aria-label', ph);
       ta.addEventListener('input', function () { autoGrow(ta); schedule(ta.value); });
       ta.addEventListener('blur', function () { flush(); });
       var done = document.createElement('button');
@@ -301,7 +305,7 @@
       ta.focus();
     }
 
-    activeNoteFlush = flush;                   // registered for tab-hide / nav flush
+    activeNoteFlushes.push(flush);             // registered for tab-hide / nav flush
     renderView();
     return { el: box, flush: flush, isEditing: function () { return box.classList.contains('aixpm-note--editing'); } };
   }
@@ -768,8 +772,8 @@
 
   // ---------- Main wiring ----------
   function onPageReady() {
-    if (activeNoteFlush) activeNoteFlush();       // save any in-progress note before re-render / soft-nav
-    activeNoteFlush = null;
+    flushActiveNotes();                          // save any in-progress note before re-render / soft-nav
+    activeNoteFlushes = [];
     ensureLiveRegion();                          // register the SR live region before any interaction
     document.querySelectorAll('.md-post--excerpt').forEach(attachToPostCard);
     attachToArticlePage();
@@ -780,7 +784,7 @@
     if (!subscribed) {
       subscribed = true;
       S.subscribe(refreshFromStore);
-      S.registerPreFlush(function () { if (activeNoteFlush) activeNoteFlush(); });
+      S.registerPreFlush(flushActiveNotes);
     }
   }
 
@@ -788,6 +792,8 @@
   window.AIxPMUI = {
     _splitLinkify: splitLinkify,
     _buildLinkified: buildLinkified,
+    _buildNotePanel: buildNotePanel,     // reused by aixpm-editions.js (paragraph-level notes)
+    _buildTagsPanel: buildTagsPanel,
     _attachListToolbar: attachListToolbar,
     _updateMaskedCount: updateMaskedCount
   };
