@@ -9,7 +9,18 @@ description: "Steering committee"
 
 *Steering committee*
 
-0 edition items · 5 archive articles · [all themes](index.md)
+1 edition item · 5 archive articles · [all themes](index.md)
+
+## Edition items
+
+<div class="aixpm-item" id="2026-07-abbott-genai-steering-committee" data-aixpm-key="/editions/2026-07/abbott-genai-steering-committee/" data-aixpm-date="2026-07-31" data-aixpm-title="Abbott steers generative AI through an executive steering committee and standard financial measures." markdown>
+
+**Abbott steers generative AI through an executive steering committee and standard financial measures.** CIO Sabina Ewing says senior leaders are engaged in how capital is deployed on AI: "We're not going out with a thousand flowers blooming." AI investments are held to the company's traditional financial measures, with quantifiable outcomes identified and then measured in partnership with the business leaders requesting them. This is an executive interview, with no figures disclosed. [CIO.com, 29 Jul 2026](https://www.cio.com/article/4201873/exploring-abbotts-mission-lead-ai-strategy.html)
+
+[July 2026](../editions/2026-07.md#abbott-genai-steering-committee) · [comite-pilotage](comite-pilotage.md) · [portfolio](portfolio.md) · [gouvernance](gouvernance.md) · [corporate](corporate.md)
+{ .aixpm-item__tags }
+
+</div>
 
 ## Archive articles (French)
 

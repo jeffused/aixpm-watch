@@ -9,7 +9,7 @@ description: "Cost of AI: token budgets, inference bills, total cost of ownershi
 
 *Cost of AI: token budgets, inference bills, total cost of ownership*
 
-3 edition items · 4 archive articles · [all themes](index.md)
+7 edition items · 4 archive articles · [all themes](index.md)
 
 ## Edition items
 
@@ -36,6 +36,42 @@ description: "Cost of AI: token budgets, inference bills, total cost of ownershi
 **Cisco is giving all 90,000 employees an AI agent, designed around token cost.** The rollout started with the new fiscal year at the end of July. CFO Mark Patterson says the system routes each request to the most efficient model ("It's not going to burn a whole bunch of tokens with frontier models"), runs largely on-premises, and that AI already writes 80–90% of the first draft of the MD&A in financial filings. Cisco does not disclose the cost. [Fortune, 1 Jul 2026](https://fortune.com/2026/07/01/cisco-cfo-ai-agents-finance-employees-mark-patterson/)
 
 [August 2026](../editions/2026-08.md#cisco-agent-90000-employees) · [agents](agents.md) · [corporate](corporate.md) · [cout-cache](cout-cache.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-tokenmaxxing-fades-token-bills" data-aixpm-key="/editions/2026-07/tokenmaxxing-fades-token-bills/" data-aixpm-date="2026-07-31" data-aixpm-title="The corporate fad for maximising AI usage faded as bills rose without matching productivity." markdown>
+
+**The corporate fad for maximising AI usage faded as bills rose without matching productivity.** The Associated Press reports a summer backlash against "tokenmaxxing", the spring fashion for prizing high token consumption. Bain's Jue Wang says of the large companies her firm advises: "The token cost for them has been doubling, almost every other month." Companies are turning to model routing, which sends easy queries to cheaper models, and to low-cost Chinese open-source models. [AP via WTOP, 28 Jul 2026](https://wtop.com/news/2026/07/a-flex-in-corporate-america-ai-tokenmaxxing-fades-as-workplaces-look-to-cut-tech-spending/)
+
+[July 2026](../editions/2026-07.md#tokenmaxxing-fades-token-bills) · [cout-cache](cout-cache.md) · [analyse](analyse.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-consulting-proposal-prices-falling" data-aixpm-key="/editions/2026-07/consulting-proposal-prices-falling/" data-aixpm-date="2026-07-31" data-aixpm-title="Consultants report proposal prices falling as clients price in AI efficiency." markdown>
+
+**Consultants report proposal prices falling as clients price in AI efficiency.** An anonymous consultant at a boutique compliance firm says prices dropped sharply within six months, after a Big Four firm bid for a job "basically giving it away for free". Other anonymous accounts in the thread: a repeat client's annual assessment "had 5 people on it last year. Now there's 2, plus CoPilot", and one firm priced to AI efficiencies it was unsure of, "then figure it out as we go". A Big Four consultant in the UK reports the opposite: good margins, mostly fixed fees. [Reddit r/consulting, 30 Jul 2026](https://www.reddit.com/r/consulting/comments/1vaz5ex/pricing_downward_trends/)
+
+[July 2026](../editions/2026-07.md#consulting-proposal-prices-falling) · [consulting-model](consulting-model.md) · [cout-cache](cout-cache.md) · [praticien](praticien.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-consultant-ai-layoffs-cover" data-aixpm-key="/editions/2026-07/consultant-ai-layoffs-cover/" data-aixpm-date="2026-07-31" data-aixpm-title="An AI-implementation consultant says layoffs blamed on AI often relabel restructurings already planned." markdown>
+
+**An AI-implementation consultant says layoffs blamed on AI often relabel restructurings already planned.** Max Votek, cofounder of the 1,000-person firm Customertimes, writes in a first-person essay that "many companies are using AI to explain restructuring decisions they were already planning to make". He adds that CFOs and CIOs tell him they underestimated token costs and burned through AI budgets faster than expected. His firm sells AI implementation to large companies. [Business Insider, 18 Jul 2026](https://www.businessinsider.com/im-an-enterprise-consultant-heres-the-truth-about-ai-layoffs-2026-7)
+
+[July 2026](../editions/2026-07.md#consultant-ai-layoffs-cover) · [transformation-workforce](transformation-workforce.md) · [cout-cache](cout-cache.md) · [praticien](praticien.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-gemini-3-6-flash-release" data-aixpm-key="/editions/2026-07/gemini-3-6-flash-release/" data-aixpm-date="2026-07-31" data-aixpm-title="Google released Gemini 3.6 Flash, cheaper than 3.5 Flash and aimed at agents run at scale." markdown>
+
+**Google released Gemini 3.6 Flash, cheaper than 3.5 Flash and aimed at agents run at scale.** Priced at $1.50 per million input tokens and $7.50 per million output tokens, it uses 17% fewer output tokens than 3.5 Flash on the Artificial Analysis Index, according to Google, and makes computer use a built-in tool in the Gemini API and Gemini Enterprise. It shipped with 3.5 Flash-Lite and a security-focused 3.5 Flash Cyber; the performance figures are those cited by Google. [Google, 21 Jul 2026](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/)
+
+[July 2026](../editions/2026-07.md#gemini-3-6-flash-release) · [model-release](model-release.md) · [cout-cache](cout-cache.md) · [tool-gemini](tool-gemini.md)
 { .aixpm-item__tags }
 
 </div>

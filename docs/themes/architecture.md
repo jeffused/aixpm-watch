@@ -9,7 +9,18 @@ description: "Technical architecture choice (sovereignty, hosting, stack)"
 
 *Technical architecture choice (sovereignty, hosting, stack)*
 
-0 edition items · 7 archive articles · [all themes](index.md)
+1 edition item · 7 archive articles · [all themes](index.md)
+
+## Edition items
+
+<div class="aixpm-item" id="2026-07-airbus-scaleway-sovereign-cloud" data-aixpm-key="/editions/2026-07/airbus-scaleway-sovereign-cloud/" data-aixpm-date="2026-07-31" data-aixpm-title="Airbus chose Scaleway to host its sensitive applications and its Mistral-based AI tools." markdown>
+
+**Airbus chose Scaleway to host its sensitive applications and its Mistral-based AI tools.** The multi-year agreement with Iliad's cloud subsidiary covers critical design, engineering and production applications, and supports the AI tools Airbus is developing with Mistral. Chief digital officer Catherine Jestin said the choice followed an evaluation of more than 150 technical and legal requirements, including protection against a "kill switch" and extraterritorial laws. About 70 critical applications are to move by the end of 2028. [Reuters via Boursorama, 16 Jul 2026](https://www.boursorama.com/bourse/actualites-amp/airbus-choisit-scaleway-filiale-d-iliad-pour-ses-projets-d-ia-et-de-defense-dans-le-cadre-de-sa-strategie-de-souverainete-1f13931f0c120e376d9ed32c30be6179)
+
+[July 2026](../editions/2026-07.md#airbus-scaleway-sovereign-cloud) · [architecture](architecture.md) · [corporate](corporate.md) · [france](france.md)
+{ .aixpm-item__tags }
+
+</div>
 
 ## Archive articles (French)
 

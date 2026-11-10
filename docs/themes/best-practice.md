@@ -9,7 +9,7 @@ description: "Method, pattern or playbook that worked"
 
 *Method, pattern or playbook that worked*
 
-6 edition items · 12 archive articles · [all themes](index.md)
+8 edition items · 12 archive articles · [all themes](index.md)
 
 ## Edition items
 
@@ -63,6 +63,24 @@ description: "Method, pattern or playbook that worked"
 **Velocity loses meaning when AI inflates output.** Replying to a developer who claims a 10x output gain, practitioners recommend Monte Carlo forecasts from historical cycle times, range estimates that name the assumption which would break them, and tracking cycle time including rework together with failure demand. One team now runs out of planned sprint work, with manual QA as the new bottleneck. [Reddit r/projectmanagement, 25 Aug 2026](https://www.reddit.com/r/projectmanagement/comments/1vxxm0w/software_pms_how_do_you_measure_dev_velocity/)
 
 [August 2026](../editions/2026-08.md#velocity-loses-meaning) · [controle-pmo](controle-pmo.md) · [best-practice](best-practice.md) · [praticien](praticien.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-oil-gas-requirements-ai-check" data-aixpm-key="/editions/2026-07/oil-gas-requirements-ai-check/" data-aixpm-date="2026-07-31" data-aixpm-title="A waterfall project team in oil and gas uses AI to quality-check requirements and design documents." markdown>
+
+**A waterfall project team in oil and gas uses AI to quality-check requirements and design documents.** An anonymous practitioner describes checking business requirements documents against nine quality parameters (conflicts, vague language, unclear ownership), then tracing every statement two ways between the requirements, upstream documents such as the sales proposal, and the design document. One person is assigned to maintain the prompts. After more than 150 model tests the team concluded that "only Opus and GPT Think Deeper can be used for our work", with up to a 250% difference in the number of findings between models. A commenter from government software projects reports the opposite: AI caused more work than it prevented. [Reddit r/projectmanagers, 16 Jul 2026](https://www.reddit.com/r/projectmanagers/comments/1uyagw2/whats_one_ai_task_you_stopped_doing_manually/)
+
+[July 2026](../editions/2026-07.md#oil-gas-requirements-ai-check) · [use-case](use-case.md) · [best-practice](best-practice.md) · [praticien](praticien.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-atlassian-ai-change-management" data-aixpm-key="/editions/2026-07/atlassian-ai-change-management/" data-aixpm-date="2026-07-31" data-aixpm-title="Atlassian says its own AI rollout stalled until it was run as change management." markdown>
+
+**Atlassian says its own AI rollout stalled until it was run as change management.** In its own account, the vendor says that making tools available to roughly 12,000 employees left teams no better coordinated: "We were measuring logins and calling it progress." The turning point was moving AI enablement out of IT to the leader of the people function. Its survey data puts AI use at 85% of knowledge workers, with only 29% having embedded it in daily work. [diginomica, 23 Jul 2026](https://diginomica.com/most-ai-rollouts-fail-due-change-management-not-tech-we-learned)
+
+[July 2026](../editions/2026-07.md#atlassian-ai-change-management) · [change-management](change-management.md) · [best-practice](best-practice.md) · [corporate](corporate.md)
 { .aixpm-item__tags }
 
 </div>

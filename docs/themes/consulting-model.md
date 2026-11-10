@@ -9,7 +9,7 @@ description: "Consulting business model: pricing, fees, staffing ratios, clients
 
 *Consulting business model: pricing, fees, staffing ratios, clients doing the work themselves*
 
-9 edition items · 0 archive articles · [all themes](index.md)
+11 edition items · 0 archive articles · [all themes](index.md)
 
 ## Edition items
 
@@ -90,6 +90,24 @@ description: "Consulting business model: pricing, fees, staffing ratios, clients
 **IBM and OpenAI formed a consulting partnership.** Announced on 13 August, it embeds GPT-5.6, Codex and ChatGPT Work into IBM Consulting Advantage, IBM's delivery platform. IBM is also launching a dedicated OpenAI Practice with "thousands of consultants and engineers" and forward-deployed units working directly with clients. This is a vendor announcement. [IBM Newsroom, 13 Aug 2026](https://newsroom.ibm.com/2026-08-13-IBM-Partners-with-OpenAI-to-Accelerate-Secure-AI-Deployment-for-Enterprises-Across-Core-Operations)
 
 [August 2026](../editions/2026-08.md#ibm-openai-consulting-partnership) · [consulting-model](consulting-model.md) · [corporate](corporate.md) · [tool-chatgpt](tool-chatgpt.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-consulting-proposal-prices-falling" data-aixpm-key="/editions/2026-07/consulting-proposal-prices-falling/" data-aixpm-date="2026-07-31" data-aixpm-title="Consultants report proposal prices falling as clients price in AI efficiency." markdown>
+
+**Consultants report proposal prices falling as clients price in AI efficiency.** An anonymous consultant at a boutique compliance firm says prices dropped sharply within six months, after a Big Four firm bid for a job "basically giving it away for free". Other anonymous accounts in the thread: a repeat client's annual assessment "had 5 people on it last year. Now there's 2, plus CoPilot", and one firm priced to AI efficiencies it was unsure of, "then figure it out as we go". A Big Four consultant in the UK reports the opposite: good margins, mostly fixed fees. [Reddit r/consulting, 30 Jul 2026](https://www.reddit.com/r/consulting/comments/1vaz5ex/pricing_downward_trends/)
+
+[July 2026](../editions/2026-07.md#consulting-proposal-prices-falling) · [consulting-model](consulting-model.md) · [cout-cache](cout-cache.md) · [praticien](praticien.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-mckinsey-golden-age-hiring" data-aixpm-key="/editions/2026-07/mckinsey-golden-age-hiring/" data-aixpm-date="2026-07-31" data-aixpm-title="McKinsey&#x27;s global head predicts a golden age for strategy consulting and plans 20% more consultants." markdown>
+
+**McKinsey's global head predicts a golden age for strategy consulting and plans 20% more consultants.** In a Bloomberg interview reported by Consultor, Bob Sternfels said AI and geopolitics will increase the demand for advice, and that the AI-driven restructuring of the firm's support functions is largely finished. He targets 20% growth in consultant headcount, mostly in early-career roles, and says each client-facing consultant now works with about three AI agents. [Consultor, 20 Jul 2026](https://www.consultor.fr/articles/bob-sternfels-annonce-un-age-dor-du-conseil-en-strategie-et-20-de-consultants-en-plus)
+
+[July 2026](../editions/2026-07.md#mckinsey-golden-age-hiring) · [consulting-model](consulting-model.md) · [juniors](juniors.md) · [agents](agents.md) · [corporate](corporate.md)
 { .aixpm-item__tags }
 
 </div>

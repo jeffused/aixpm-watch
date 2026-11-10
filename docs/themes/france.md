@@ -9,7 +9,7 @@ description: "French context"
 
 *French context*
 
-6 edition items · 24 archive articles · [all themes](index.md)
+7 edition items · 24 archive articles · [all themes](index.md)
 
 ## Edition items
 
@@ -63,6 +63,15 @@ description: "French context"
 **In France's engineering and consulting branch, nine firms in ten use AI and 47% have no rules.** The first OPIIEC barometer (606 firms) puts average AI maturity at 47/100 and finds only 29% have named an AI lead. Data security and compliance weigh most heavily in engineering studies and consulting, where client trust conditions any deployment. [Solutions Numériques, 16 Sep 2026](https://www.solutions-numeriques.com/ia-dans-les-bureaux-detudes-90-des-entreprises-ont-franchi-le-cap-la-gouvernance-reste-a-construire/)
 
 [September 2026](../editions/2026-09.md#french-consulting-branch-ai-barometer) · [france](france.md) · [survey](survey.md) · [gouvernance-manquante](gouvernance-manquante.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-airbus-scaleway-sovereign-cloud" data-aixpm-key="/editions/2026-07/airbus-scaleway-sovereign-cloud/" data-aixpm-date="2026-07-31" data-aixpm-title="Airbus chose Scaleway to host its sensitive applications and its Mistral-based AI tools." markdown>
+
+**Airbus chose Scaleway to host its sensitive applications and its Mistral-based AI tools.** The multi-year agreement with Iliad's cloud subsidiary covers critical design, engineering and production applications, and supports the AI tools Airbus is developing with Mistral. Chief digital officer Catherine Jestin said the choice followed an evaluation of more than 150 technical and legal requirements, including protection against a "kill switch" and extraterritorial laws. About 70 critical applications are to move by the end of 2028. [Reuters via Boursorama, 16 Jul 2026](https://www.boursorama.com/bourse/actualites-amp/airbus-choisit-scaleway-filiale-d-iliad-pour-ses-projets-d-ia-et-de-defense-dans-le-cadre-de-sa-strategie-de-souverainete-1f13931f0c120e376d9ed32c30be6179)
+
+[July 2026](../editions/2026-07.md#airbus-scaleway-sovereign-cloud) · [architecture](architecture.md) · [corporate](corporate.md) · [france](france.md)
 { .aixpm-item__tags }
 
 </div>

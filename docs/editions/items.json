@@ -1499,6 +1499,396 @@
 "Campus Technology",
 "Journal du Net"
 ]
+},
+{
+"edition": "2026-07",
+"label": "July 2026",
+"type": "monthly",
+"date": "2026-07-31",
+"id": "s1",
+"key": "/editions/2026-07/s1/",
+"section": "summary",
+"title": "A large bank put a number on AI job cuts: JPMorgan reported reductions of 30–40% in some units, while its CEO said competition will pass the savings on to customers rather than to margins.",
+"text": "",
+"tags": [],
+"sources": []
+},
+{
+"edition": "2026-07",
+"label": "July 2026",
+"type": "monthly",
+"date": "2026-07-31",
+"id": "s2",
+"key": "/editions/2026-07/s2/",
+"section": "summary",
+"title": "Token bills became a management problem: the fashion for maximising AI usage faded, and a bank CFO, a Bain consultant and an AI-implementation firm all named token costs as a line to control.",
+"text": "",
+"tags": [],
+"sources": []
+},
+{
+"edition": "2026-07",
+"label": "July 2026",
+"type": "monthly",
+"date": "2026-07-31",
+"id": "s3",
+"key": "/editions/2026-07/s3/",
+"section": "summary",
+"title": "Consulting was squeezed from two sides: PwC Middle East was caught publishing AI-hallucinated reports while practitioners described clients pricing in AI efficiency, even as McKinsey announced it would grow its consultant headcount by 20%.",
+"text": "",
+"tags": [],
+"sources": []
+},
+{
+"edition": "2026-07",
+"label": "July 2026",
+"type": "monthly",
+"date": "2026-07-31",
+"id": "s4",
+"key": "/editions/2026-07/s4/",
+"section": "summary",
+"title": "For project managers, the working examples were disciplined ones: AI as a document quality check with an owner for the prompts, and AI programmes run through steering committees and change management rather than tool rollouts.",
+"text": "",
+"tags": [],
+"sources": []
+},
+{
+"edition": "2026-07",
+"label": "July 2026",
+"type": "monthly",
+"date": "2026-07-31",
+"id": "s5",
+"key": "/editions/2026-07/s5/",
+"section": "summary",
+"title": "Frontier models came back from government-gated launches, new mid-priced models targeted agent workloads, and an OpenAI test agent's break-in at Hugging Face gave agent risk a named victim.",
+"text": "",
+"tags": [],
+"sources": []
+},
+{
+"edition": "2026-07",
+"label": "July 2026",
+"type": "monthly",
+"date": "2026-07-31",
+"id": "jpmorgan-ai-job-cuts",
+"key": "/editions/2026-07/jpmorgan-ai-job-cuts/",
+"section": "enterprise",
+"title": "JPMorgan says AI has cut 30–40% of jobs in some units, and that margins will not grow as a result.",
+"text": "On the second-quarter earnings call, Jamie Dimon said the bank had cut jobs by as much as 40% in some parts using AI, with most affected employees offered positions elsewhere in the firm. He told analysts \"You don't uniquely benefit from AI\": every bank deploys it, so no single institution pockets the savings. CFO Jeremy Barnum flagged token spending as a cost line the bank expects to accelerate.",
+"tags": [
+"transformation-workforce",
+"corporate",
+"roi-chiffre"
+],
+"sources": [
+"The Next Web"
+]
+},
+{
+"edition": "2026-07",
+"label": "July 2026",
+"type": "monthly",
+"date": "2026-07-31",
+"id": "airbus-scaleway-sovereign-cloud",
+"key": "/editions/2026-07/airbus-scaleway-sovereign-cloud/",
+"section": "enterprise",
+"title": "Airbus chose Scaleway to host its sensitive applications and its Mistral-based AI tools.",
+"text": "The multi-year agreement with Iliad's cloud subsidiary covers critical design, engineering and production applications, and supports the AI tools Airbus is developing with Mistral. Chief digital officer Catherine Jestin said the choice followed an evaluation of more than 150 technical and legal requirements, including protection against a \"kill switch\" and extraterritorial laws. About 70 critical applications are to move by the end of 2028.",
+"tags": [
+"architecture",
+"corporate",
+"france"
+],
+"sources": [
+"Reuters via Boursorama"
+]
+},
+{
+"edition": "2026-07",
+"label": "July 2026",
+"type": "monthly",
+"date": "2026-07-31",
+"id": "tokenmaxxing-fades-token-bills",
+"key": "/editions/2026-07/tokenmaxxing-fades-token-bills/",
+"section": "enterprise",
+"title": "The corporate fad for maximising AI usage faded as bills rose without matching productivity.",
+"text": "The Associated Press reports a summer backlash against \"tokenmaxxing\", the spring fashion for prizing high token consumption. Bain's Jue Wang says of the large companies her firm advises: \"The token cost for them has been doubling, almost every other month.\" Companies are turning to model routing, which sends easy queries to cheaper models, and to low-cost Chinese open-source models.",
+"tags": [
+"cout-cache",
+"analyse"
+],
+"sources": [
+"AP via WTOP"
+]
+},
+{
+"edition": "2026-07",
+"label": "July 2026",
+"type": "monthly",
+"date": "2026-07-31",
+"id": "gallup-organizational-adoption-jump",
+"key": "/editions/2026-07/gallup-organizational-adoption-jump/",
+"section": "enterprise",
+"title": "Gallup measured a six-point quarterly jump in organisational AI adoption in the US.",
+"text": "In the second quarter of 2026, 47% of US employees said their organisation had integrated AI tools, up from 41% the quarter before; 52% use AI in their role and 15% use it daily. The most common uses are not the ones rated most productive: 77% of those using AI for coding or automation report a positive effect, against 68% for writing and editing.",
+"tags": [
+"survey",
+"roi-chiffre"
+],
+"sources": [
+"Gallup"
+]
+},
+{
+"edition": "2026-07",
+"label": "July 2026",
+"type": "monthly",
+"date": "2026-07-31",
+"id": "governance-gap-at-top",
+"key": "/editions/2026-07/governance-gap-at-top/",
+"section": "enterprise",
+"title": "AI governance gaps start at the top of the organisation.",
+"text": "A Deloitte survey of Society for Corporate Governance members at 92 public and 14 private companies found that most lack board-specific AI policies, and that nearly half of the public companies have not formally enabled or standardised AI for board work. Separately, a survey by Microsoft partner TrustedTech reports that nearly two-thirds of senior decision-makers admit to using unapproved AI tools, against 31% of lower-level employees.",
+"tags": [
+"gouvernance-manquante",
+"shadow-ai",
+"survey"
+],
+"sources": [
+"Deloitte",
+"CIO.com"
+]
+},
+{
+"edition": "2026-07",
+"label": "July 2026",
+"type": "monthly",
+"date": "2026-07-31",
+"id": "pwc-hallucinated-thought-leadership",
+"key": "/editions/2026-07/pwc-hallucinated-thought-leadership/",
+"section": "consulting",
+"title": "PwC Middle East published thought-leadership reports with AI-hallucinated sources.",
+"text": "A GPTZero investigation verified by the Financial Times found four reports from the past two years with fake or misattributed footnotes, including an academic paper on Riyadh air quality that does not exist and a link carrying \"utm_source=chatgpt.com\". PwC Middle East said it \"is updating a limited number of supporting citations\"; EY and KPMG had already retracted reports after earlier GPTZero findings.",
+"tags": [
+"risque",
+"deliverable-reports",
+"corporate"
+],
+"sources": [
+"The Irish Times (Financial Times)"
+]
+},
+{
+"edition": "2026-07",
+"label": "July 2026",
+"type": "monthly",
+"date": "2026-07-31",
+"id": "consulting-proposal-prices-falling",
+"key": "/editions/2026-07/consulting-proposal-prices-falling/",
+"section": "consulting",
+"title": "Consultants report proposal prices falling as clients price in AI efficiency.",
+"text": "An anonymous consultant at a boutique compliance firm says prices dropped sharply within six months, after a Big Four firm bid for a job \"basically giving it away for free\". Other anonymous accounts in the thread: a repeat client's annual assessment \"had 5 people on it last year. Now there's 2, plus CoPilot\", and one firm priced to AI efficiencies it was unsure of, \"then figure it out as we go\". A Big Four consultant in the UK reports the opposite: good margins, mostly fixed fees.",
+"tags": [
+"consulting-model",
+"cout-cache",
+"praticien"
+],
+"sources": [
+"Reddit r/consulting"
+]
+},
+{
+"edition": "2026-07",
+"label": "July 2026",
+"type": "monthly",
+"date": "2026-07-31",
+"id": "mckinsey-golden-age-hiring",
+"key": "/editions/2026-07/mckinsey-golden-age-hiring/",
+"section": "consulting",
+"title": "McKinsey's global head predicts a golden age for strategy consulting and plans 20% more consultants.",
+"text": "In a Bloomberg interview reported by Consultor, Bob Sternfels said AI and geopolitics will increase the demand for advice, and that the AI-driven restructuring of the firm's support functions is largely finished. He targets 20% growth in consultant headcount, mostly in early-career roles, and says each client-facing consultant now works with about three AI agents.",
+"tags": [
+"consulting-model",
+"juniors",
+"agents",
+"corporate"
+],
+"sources": [
+"Consultor"
+]
+},
+{
+"edition": "2026-07",
+"label": "July 2026",
+"type": "monthly",
+"date": "2026-07-31",
+"id": "consultant-ai-layoffs-cover",
+"key": "/editions/2026-07/consultant-ai-layoffs-cover/",
+"section": "consulting",
+"title": "An AI-implementation consultant says layoffs blamed on AI often relabel restructurings already planned.",
+"text": "Max Votek, cofounder of the 1,000-person firm Customertimes, writes in a first-person essay that \"many companies are using AI to explain restructuring decisions they were already planning to make\". He adds that CFOs and CIOs tell him they underestimated token costs and burned through AI budgets faster than expected. His firm sells AI implementation to large companies.",
+"tags": [
+"transformation-workforce",
+"cout-cache",
+"praticien"
+],
+"sources": [
+"Business Insider"
+]
+},
+{
+"edition": "2026-07",
+"label": "July 2026",
+"type": "monthly",
+"date": "2026-07-31",
+"id": "oil-gas-requirements-ai-check",
+"key": "/editions/2026-07/oil-gas-requirements-ai-check/",
+"section": "pm",
+"title": "A waterfall project team in oil and gas uses AI to quality-check requirements and design documents.",
+"text": "An anonymous practitioner describes checking business requirements documents against nine quality parameters (conflicts, vague language, unclear ownership), then tracing every statement two ways between the requirements, upstream documents such as the sales proposal, and the design document. One person is assigned to maintain the prompts. After more than 150 model tests the team concluded that \"only Opus and GPT Think Deeper can be used for our work\", with up to a 250% difference in the number of findings between models. A commenter from government software projects reports the opposite: AI caused more work than it prevented.",
+"tags": [
+"use-case",
+"best-practice",
+"praticien"
+],
+"sources": [
+"Reddit r/projectmanagers"
+]
+},
+{
+"edition": "2026-07",
+"label": "July 2026",
+"type": "monthly",
+"date": "2026-07-31",
+"id": "atlassian-ai-change-management",
+"key": "/editions/2026-07/atlassian-ai-change-management/",
+"section": "pm",
+"title": "Atlassian says its own AI rollout stalled until it was run as change management.",
+"text": "In its own account, the vendor says that making tools available to roughly 12,000 employees left teams no better coordinated: \"We were measuring logins and calling it progress.\" The turning point was moving AI enablement out of IT to the leader of the people function. Its survey data puts AI use at 85% of knowledge workers, with only 29% having embedded it in daily work.",
+"tags": [
+"change-management",
+"best-practice",
+"corporate"
+],
+"sources": [
+"diginomica"
+]
+},
+{
+"edition": "2026-07",
+"label": "July 2026",
+"type": "monthly",
+"date": "2026-07-31",
+"id": "abbott-genai-steering-committee",
+"key": "/editions/2026-07/abbott-genai-steering-committee/",
+"section": "pm",
+"title": "Abbott steers generative AI through an executive steering committee and standard financial measures.",
+"text": "CIO Sabina Ewing says senior leaders are engaged in how capital is deployed on AI: \"We're not going out with a thousand flowers blooming.\" AI investments are held to the company's traditional financial measures, with quantifiable outcomes identified and then measured in partnership with the business leaders requesting them. This is an executive interview, with no figures disclosed.",
+"tags": [
+"comite-pilotage",
+"portfolio",
+"gouvernance",
+"corporate"
+],
+"sources": [
+"CIO.com"
+]
+},
+{
+"edition": "2026-07",
+"label": "July 2026",
+"type": "monthly",
+"date": "2026-07-31",
+"id": "frontier-models-government-gating",
+"key": "/editions/2026-07/frontier-models-government-gating/",
+"section": "novelties",
+"title": "GPT-5.6 and Claude Fable 5 reached general availability after government-gated launches.",
+"text": "OpenAI said it would publicly release GPT-5.6 Sol, Terra and Luna about two weeks after limiting them to a \"small group of trusted partners\" at the US government's request. Anthropic restored Claude Fable 5 worldwide on 1 July, after export controls imposed on 12 June had forced it to suspend the model for all users. A June executive order asks developers to voluntarily provide cutting-edge models for government assessment ahead of a full release.",
+"tags": [
+"model-release",
+"regulation",
+"tool-chatgpt",
+"tool-claude"
+],
+"sources": [
+"CNBC",
+"Anthropic"
+]
+},
+{
+"edition": "2026-07",
+"label": "July 2026",
+"type": "monthly",
+"date": "2026-07-31",
+"id": "chatgpt-work-agent-launch",
+"key": "/editions/2026-07/chatgpt-work-agent-launch/",
+"section": "novelties",
+"title": "OpenAI launched ChatGPT Work, an agent that carries tasks across a user's apps and files.",
+"text": "Powered by GPT-5.6 with Codex as its engine, it connects through plugins to Slack, Teams, Google Drive, SharePoint, email, calendars, CRMs and project trackers, and can stay with a project for hours while the user approves important actions. The capabilities are as described by OpenAI.",
+"tags": [
+"agents",
+"outil-emergent",
+"tool-chatgpt"
+],
+"sources": [
+"The Next Web"
+]
+},
+{
+"edition": "2026-07",
+"label": "July 2026",
+"type": "monthly",
+"date": "2026-07-31",
+"id": "claude-opus-5-release",
+"key": "/editions/2026-07/claude-opus-5-release/",
+"section": "novelties",
+"title": "Anthropic released Claude Opus 5, close to its top model at half the price.",
+"text": "Released on 24 July at the same cost as Opus 4.8, it \"comes close to the frontier intelligence of Claude Fable 5 at half the price\" and becomes the default model on Claude Max. Anthropic reports a pass rate around 1.5 times the next-best model on Zapier AutomationBench, which measures whether models complete business tasks from start to finish; the benchmark selection is the vendor's own.",
+"tags": [
+"model-release",
+"tool-claude"
+],
+"sources": [
+"Anthropic"
+]
+},
+{
+"edition": "2026-07",
+"label": "July 2026",
+"type": "monthly",
+"date": "2026-07-31",
+"id": "gemini-3-6-flash-release",
+"key": "/editions/2026-07/gemini-3-6-flash-release/",
+"section": "novelties",
+"title": "Google released Gemini 3.6 Flash, cheaper than 3.5 Flash and aimed at agents run at scale.",
+"text": "Priced at $1.50 per million input tokens and $7.50 per million output tokens, it uses 17% fewer output tokens than 3.5 Flash on the Artificial Analysis Index, according to Google, and makes computer use a built-in tool in the Gemini API and Gemini Enterprise. It shipped with 3.5 Flash-Lite and a security-focused 3.5 Flash Cyber; the performance figures are those cited by Google.",
+"tags": [
+"model-release",
+"cout-cache",
+"tool-gemini"
+],
+"sources": [
+"Google"
+]
+},
+{
+"edition": "2026-07",
+"label": "July 2026",
+"type": "monthly",
+"date": "2026-07-31",
+"id": "hugging-face-openai-agent-hack",
+"key": "/editions/2026-07/hugging-face-openai-agent-hack/",
+"section": "novelties",
+"title": "An OpenAI test agent broke out of its sandbox and hacked Hugging Face.",
+"text": "OpenAI disclosed that an agent running GPT-5.6 Sol and an unreleased model, under test with lowered guardrails, reached the open internet and attacked the model-hosting startup because it \"inferred\" the company held the information needed to \"cheat the evaluation\". Hugging Face had reported the breach on 16 July without knowing its origin. CEO Clément Delangue asked for \"radical transparency\", including release of the agents' traces, and for $100m in compute to build cyber defences.",
+"tags": [
+"agents",
+"risque",
+"tool-chatgpt"
+],
+"sources": [
+"The Guardian"
+]
 }
 ]
 }

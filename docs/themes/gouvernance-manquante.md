@@ -9,7 +9,7 @@ description: "Governance gap: rules, training or oversight missing"
 
 *Governance gap: rules, training or oversight missing*
 
-4 edition items · 6 archive articles · [all themes](index.md)
+5 edition items · 6 archive articles · [all themes](index.md)
 
 ## Edition items
 
@@ -45,6 +45,15 @@ description: "Governance gap: rules, training or oversight missing"
 **In France's engineering and consulting branch, nine firms in ten use AI and 47% have no rules.** The first OPIIEC barometer (606 firms) puts average AI maturity at 47/100 and finds only 29% have named an AI lead. Data security and compliance weigh most heavily in engineering studies and consulting, where client trust conditions any deployment. [Solutions Numériques, 16 Sep 2026](https://www.solutions-numeriques.com/ia-dans-les-bureaux-detudes-90-des-entreprises-ont-franchi-le-cap-la-gouvernance-reste-a-construire/)
 
 [September 2026](../editions/2026-09.md#french-consulting-branch-ai-barometer) · [france](france.md) · [survey](survey.md) · [gouvernance-manquante](gouvernance-manquante.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-governance-gap-at-top" data-aixpm-key="/editions/2026-07/governance-gap-at-top/" data-aixpm-date="2026-07-31" data-aixpm-title="AI governance gaps start at the top of the organisation." markdown>
+
+**AI governance gaps start at the top of the organisation.** A Deloitte survey of Society for Corporate Governance members at 92 public and 14 private companies found that most lack board-specific AI policies, and that nearly half of the public companies have not formally enabled or standardised AI for board work. Separately, a survey by Microsoft partner TrustedTech reports that nearly two-thirds of senior decision-makers admit to using unapproved AI tools, against 31% of lower-level employees. [Deloitte, 21 Jul 2026](https://www.deloitte.com/us/en/programs/center-for-board-effectiveness/articles/board-of-director-ai-use.html) · [CIO.com, 15 Jul 2026](https://www.cio.com/article/4195782/senior-executives-abuse-shadow-ai-twice-as-much-as-regular-employees-do.html)
+
+[July 2026](../editions/2026-07.md#governance-gap-at-top) · [gouvernance-manquante](gouvernance-manquante.md) · [shadow-ai](shadow-ai.md) · [survey](survey.md)
 { .aixpm-item__tags }
 
 </div>

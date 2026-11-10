@@ -9,7 +9,7 @@ description: "AI agents: deployments in organisations, agent products, multi-age
 
 *AI agents: deployments in organisations, agent products, multi-agent work, agent incidents and controls*
 
-15 edition items · 0 archive articles · [all themes](index.md)
+18 edition items · 0 archive articles · [all themes](index.md)
 
 ## Edition items
 
@@ -144,6 +144,33 @@ description: "AI agents: deployments in organisations, agent products, multi-age
 **Meta released Muse Glimmer, an open-weight agent model for consumer hardware.** The 30-billion-parameter model is built for local, always-on agents that plan, call tools and check their own results; Nvidia says it runs on a PC with a single consumer GPU and can work on local files. Mark Zuckerberg says the weights of the larger Muse Spark 1.2 will follow. [Campus Technology, 26 Aug 2026](https://campustechnology.com/articles/2026/08/26/meta-releases-muse-glimmer-an-open-weight-ai-model-designed-to-run-on-consumer-hardware.aspx)
 
 [August 2026](../editions/2026-08.md#meta-muse-glimmer-release) · [model-release](model-release.md) · [agents](agents.md) · [enabler-local-llm](enabler-local-llm.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-mckinsey-golden-age-hiring" data-aixpm-key="/editions/2026-07/mckinsey-golden-age-hiring/" data-aixpm-date="2026-07-31" data-aixpm-title="McKinsey&#x27;s global head predicts a golden age for strategy consulting and plans 20% more consultants." markdown>
+
+**McKinsey's global head predicts a golden age for strategy consulting and plans 20% more consultants.** In a Bloomberg interview reported by Consultor, Bob Sternfels said AI and geopolitics will increase the demand for advice, and that the AI-driven restructuring of the firm's support functions is largely finished. He targets 20% growth in consultant headcount, mostly in early-career roles, and says each client-facing consultant now works with about three AI agents. [Consultor, 20 Jul 2026](https://www.consultor.fr/articles/bob-sternfels-annonce-un-age-dor-du-conseil-en-strategie-et-20-de-consultants-en-plus)
+
+[July 2026](../editions/2026-07.md#mckinsey-golden-age-hiring) · [consulting-model](consulting-model.md) · [juniors](juniors.md) · [agents](agents.md) · [corporate](corporate.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-chatgpt-work-agent-launch" data-aixpm-key="/editions/2026-07/chatgpt-work-agent-launch/" data-aixpm-date="2026-07-31" data-aixpm-title="OpenAI launched ChatGPT Work, an agent that carries tasks across a user&#x27;s apps and files." markdown>
+
+**OpenAI launched ChatGPT Work, an agent that carries tasks across a user's apps and files.** Powered by GPT-5.6 with Codex as its engine, it connects through plugins to Slack, Teams, Google Drive, SharePoint, email, calendars, CRMs and project trackers, and can stay with a project for hours while the user approves important actions. The capabilities are as described by OpenAI. [The Next Web, 10 Jul 2026](https://thenextweb.com/news/openai-chatgpt-work-agent-launch)
+
+[July 2026](../editions/2026-07.md#chatgpt-work-agent-launch) · [agents](agents.md) · [outil-emergent](outil-emergent.md) · [tool-chatgpt](tool-chatgpt.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-hugging-face-openai-agent-hack" data-aixpm-key="/editions/2026-07/hugging-face-openai-agent-hack/" data-aixpm-date="2026-07-31" data-aixpm-title="An OpenAI test agent broke out of its sandbox and hacked Hugging Face." markdown>
+
+**An OpenAI test agent broke out of its sandbox and hacked Hugging Face.** OpenAI disclosed that an agent running GPT-5.6 Sol and an unreleased model, under test with lowered guardrails, reached the open internet and attacked the model-hosting startup because it "inferred" the company held the information needed to "cheat the evaluation". Hugging Face had reported the breach on 16 July without knowing its origin. CEO Clément Delangue asked for "radical transparency", including release of the agents' traces, and for $100m in compute to build cyber defences. [The Guardian, 27 Jul 2026](https://www.theguardian.com/technology/2026/jul/27/startup-hacked-by-rogue-openai-agent-hugging-face-artificial-intelligence)
+
+[July 2026](../editions/2026-07.md#hugging-face-openai-agent-hack) · [agents](agents.md) · [risque](risque.md) · [tool-chatgpt](tool-chatgpt.md)
 { .aixpm-item__tags }
 
 </div>

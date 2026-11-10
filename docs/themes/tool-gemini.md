@@ -9,7 +9,7 @@ description: "Gemini (Google)"
 
 *Gemini (Google)*
 
-3 edition items · 0 archive articles · [all themes](index.md)
+4 edition items · 0 archive articles · [all themes](index.md)
 
 ## Edition items
 
@@ -36,6 +36,15 @@ description: "Gemini (Google)"
 **Google released Gemini 3.7 Flash at half its predecessor's launch price.** Arriving three weeks after 3.6 Flash, it costs $0.75 per million input tokens and $3.75 per million output tokens until the end of 2026. Google reports gains on complex document processing (34.0% vs 22.0% on GDP.pdf) and business-workflow automation (30.4% vs 17.0% on AutomationBench); these are its own benchmarks. [9to5Google, 13 Aug 2026](https://9to5google.com/2026/08/13/gemini-3-7-flash-launch/)
 
 [August 2026](../editions/2026-08.md#gemini-3-7-flash-release) · [model-release](model-release.md) · [tool-gemini](tool-gemini.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-gemini-3-6-flash-release" data-aixpm-key="/editions/2026-07/gemini-3-6-flash-release/" data-aixpm-date="2026-07-31" data-aixpm-title="Google released Gemini 3.6 Flash, cheaper than 3.5 Flash and aimed at agents run at scale." markdown>
+
+**Google released Gemini 3.6 Flash, cheaper than 3.5 Flash and aimed at agents run at scale.** Priced at $1.50 per million input tokens and $7.50 per million output tokens, it uses 17% fewer output tokens than 3.5 Flash on the Artificial Analysis Index, according to Google, and makes computer use a built-in tool in the Gemini API and Gemini Enterprise. It shipped with 3.5 Flash-Lite and a security-focused 3.5 Flash Cyber; the performance figures are those cited by Google. [Google, 21 Jul 2026](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/)
+
+[July 2026](../editions/2026-07.md#gemini-3-6-flash-release) · [model-release](model-release.md) · [cout-cache](cout-cache.md) · [tool-gemini](tool-gemini.md)
 { .aixpm-item__tags }
 
 </div>

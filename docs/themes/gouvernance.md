@@ -9,7 +9,7 @@ description: "AI governance in place: policy, controls, accountability"
 
 *AI governance in place: policy, controls, accountability*
 
-4 edition items · 12 archive articles · [all themes](index.md)
+5 edition items · 12 archive articles · [all themes](index.md)
 
 ## Edition items
 
@@ -45,6 +45,15 @@ description: "AI governance in place: policy, controls, accountability"
 **"Human review" is not a control in an AI risk register.** A UK public-sector risk practitioner argues the entry says nothing about what the reviewer can see, verify and stop, citing court cases where a checked AI draft still went out wrong. He would send back any assessment listing it alone, and notes that the verification work lands on a few experienced staff rather than disappearing. [GovInsider, 24 Aug 2026](https://govinsider.asia/intl-en/article/if-your-ai-risk-register-says-human-review-send-it-back)
 
 [August 2026](../editions/2026-08.md#human-review-not-control) · [controle-pmo](controle-pmo.md) · [raid](raid.md) · [gouvernance](gouvernance.md) · [praticien](praticien.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-abbott-genai-steering-committee" data-aixpm-key="/editions/2026-07/abbott-genai-steering-committee/" data-aixpm-date="2026-07-31" data-aixpm-title="Abbott steers generative AI through an executive steering committee and standard financial measures." markdown>
+
+**Abbott steers generative AI through an executive steering committee and standard financial measures.** CIO Sabina Ewing says senior leaders are engaged in how capital is deployed on AI: "We're not going out with a thousand flowers blooming." AI investments are held to the company's traditional financial measures, with quantifiable outcomes identified and then measured in partnership with the business leaders requesting them. This is an executive interview, with no figures disclosed. [CIO.com, 29 Jul 2026](https://www.cio.com/article/4201873/exploring-abbotts-mission-lead-ai-strategy.html)
+
+[July 2026](../editions/2026-07.md#abbott-genai-steering-committee) · [comite-pilotage](comite-pilotage.md) · [portfolio](portfolio.md) · [gouvernance](gouvernance.md) · [corporate](corporate.md)
 { .aixpm-item__tags }
 
 </div>

@@ -9,7 +9,7 @@ description: "First-person practitioner account"
 
 *First-person practitioner account*
 
-24 edition items · 34 archive articles · [all themes](index.md)
+27 edition items · 34 archive articles · [all themes](index.md)
 
 ## Edition items
 
@@ -225,6 +225,33 @@ description: "First-person practitioner account"
 **"Human review" is not a control in an AI risk register.** A UK public-sector risk practitioner argues the entry says nothing about what the reviewer can see, verify and stop, citing court cases where a checked AI draft still went out wrong. He would send back any assessment listing it alone, and notes that the verification work lands on a few experienced staff rather than disappearing. [GovInsider, 24 Aug 2026](https://govinsider.asia/intl-en/article/if-your-ai-risk-register-says-human-review-send-it-back)
 
 [August 2026](../editions/2026-08.md#human-review-not-control) · [controle-pmo](controle-pmo.md) · [raid](raid.md) · [gouvernance](gouvernance.md) · [praticien](praticien.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-consulting-proposal-prices-falling" data-aixpm-key="/editions/2026-07/consulting-proposal-prices-falling/" data-aixpm-date="2026-07-31" data-aixpm-title="Consultants report proposal prices falling as clients price in AI efficiency." markdown>
+
+**Consultants report proposal prices falling as clients price in AI efficiency.** An anonymous consultant at a boutique compliance firm says prices dropped sharply within six months, after a Big Four firm bid for a job "basically giving it away for free". Other anonymous accounts in the thread: a repeat client's annual assessment "had 5 people on it last year. Now there's 2, plus CoPilot", and one firm priced to AI efficiencies it was unsure of, "then figure it out as we go". A Big Four consultant in the UK reports the opposite: good margins, mostly fixed fees. [Reddit r/consulting, 30 Jul 2026](https://www.reddit.com/r/consulting/comments/1vaz5ex/pricing_downward_trends/)
+
+[July 2026](../editions/2026-07.md#consulting-proposal-prices-falling) · [consulting-model](consulting-model.md) · [cout-cache](cout-cache.md) · [praticien](praticien.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-consultant-ai-layoffs-cover" data-aixpm-key="/editions/2026-07/consultant-ai-layoffs-cover/" data-aixpm-date="2026-07-31" data-aixpm-title="An AI-implementation consultant says layoffs blamed on AI often relabel restructurings already planned." markdown>
+
+**An AI-implementation consultant says layoffs blamed on AI often relabel restructurings already planned.** Max Votek, cofounder of the 1,000-person firm Customertimes, writes in a first-person essay that "many companies are using AI to explain restructuring decisions they were already planning to make". He adds that CFOs and CIOs tell him they underestimated token costs and burned through AI budgets faster than expected. His firm sells AI implementation to large companies. [Business Insider, 18 Jul 2026](https://www.businessinsider.com/im-an-enterprise-consultant-heres-the-truth-about-ai-layoffs-2026-7)
+
+[July 2026](../editions/2026-07.md#consultant-ai-layoffs-cover) · [transformation-workforce](transformation-workforce.md) · [cout-cache](cout-cache.md) · [praticien](praticien.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-oil-gas-requirements-ai-check" data-aixpm-key="/editions/2026-07/oil-gas-requirements-ai-check/" data-aixpm-date="2026-07-31" data-aixpm-title="A waterfall project team in oil and gas uses AI to quality-check requirements and design documents." markdown>
+
+**A waterfall project team in oil and gas uses AI to quality-check requirements and design documents.** An anonymous practitioner describes checking business requirements documents against nine quality parameters (conflicts, vague language, unclear ownership), then tracing every statement two ways between the requirements, upstream documents such as the sales proposal, and the design document. One person is assigned to maintain the prompts. After more than 150 model tests the team concluded that "only Opus and GPT Think Deeper can be used for our work", with up to a 250% difference in the number of findings between models. A commenter from government software projects reports the opposite: AI caused more work than it prevented. [Reddit r/projectmanagers, 16 Jul 2026](https://www.reddit.com/r/projectmanagers/comments/1uyagw2/whats_one_ai_task_you_stopped_doing_manually/)
+
+[July 2026](../editions/2026-07.md#oil-gas-requirements-ai-check) · [use-case](use-case.md) · [best-practice](best-practice.md) · [praticien](praticien.md)
 { .aixpm-item__tags }
 
 </div>

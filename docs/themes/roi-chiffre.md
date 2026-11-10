@@ -9,7 +9,7 @@ description: "Concrete figure cited"
 
 *Concrete figure cited*
 
-8 edition items · 22 archive articles · [all themes](index.md)
+10 edition items · 22 archive articles · [all themes](index.md)
 
 ## Edition items
 
@@ -81,6 +81,24 @@ description: "Concrete figure cited"
 **The UK government awarded KPMG and EY up to £456m to train civil servants, AI included.** According to Tussell data cited by the Financial Times, it is the largest single Big Four contract since records began in 2012, covering 2026 to 2028. The figure is a ceiling, not committed spend, and the Cabinet Office says it covers training rather than consultancy. [Consultancy.uk, 27 Aug 2026](https://www.consultancy.uk/news/45443/government-hands-kpmg-and-ey-huge-contract-for-ai-training-of-civil-servants)
 
 [August 2026](../editions/2026-08.md#uk-government-kpmg-ey-contract) · [consulting-model](consulting-model.md) · [corporate](corporate.md) · [roi-chiffre](roi-chiffre.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-jpmorgan-ai-job-cuts" data-aixpm-key="/editions/2026-07/jpmorgan-ai-job-cuts/" data-aixpm-date="2026-07-31" data-aixpm-title="JPMorgan says AI has cut 30–40% of jobs in some units, and that margins will not grow as a result." markdown>
+
+**JPMorgan says AI has cut 30–40% of jobs in some units, and that margins will not grow as a result.** On the second-quarter earnings call, Jamie Dimon said the bank had cut jobs by as much as 40% in some parts using AI, with most affected employees offered positions elsewhere in the firm. He told analysts "You don't uniquely benefit from AI": every bank deploys it, so no single institution pockets the savings. CFO Jeremy Barnum flagged token spending as a cost line the bank expects to accelerate. [The Next Web, 14 Jul 2026](https://thenextweb.com/news/jpmorgan-dimon-ai-jobs-cuts-margins-q2-earnings)
+
+[July 2026](../editions/2026-07.md#jpmorgan-ai-job-cuts) · [transformation-workforce](transformation-workforce.md) · [corporate](corporate.md) · [roi-chiffre](roi-chiffre.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-gallup-organizational-adoption-jump" data-aixpm-key="/editions/2026-07/gallup-organizational-adoption-jump/" data-aixpm-date="2026-07-31" data-aixpm-title="Gallup measured a six-point quarterly jump in organisational AI adoption in the US." markdown>
+
+**Gallup measured a six-point quarterly jump in organisational AI adoption in the US.** In the second quarter of 2026, 47% of US employees said their organisation had integrated AI tools, up from 41% the quarter before; 52% use AI in their role and 15% use it daily. The most common uses are not the ones rated most productive: 77% of those using AI for coding or automation report a positive effect, against 68% for writing and editing. [Gallup, 20 Jul 2026](https://www.gallup.com/workplace/712736/organizational-adoption-jumps-six-points.aspx)
+
+[July 2026](../editions/2026-07.md#gallup-organizational-adoption-jump) · [survey](survey.md) · [roi-chiffre](roi-chiffre.md)
 { .aixpm-item__tags }
 
 </div>

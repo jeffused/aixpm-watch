@@ -9,7 +9,7 @@ description: "Concrete workflow someone actually runs"
 
 *Concrete workflow someone actually runs*
 
-6 edition items · 14 archive articles · [all themes](index.md)
+7 edition items · 14 archive articles · [all themes](index.md)
 
 ## Edition items
 
@@ -63,6 +63,15 @@ description: "Concrete workflow someone actually runs"
 **An architecture firm automated bid pricing under one rule: the AI never produces a number.** In its n8n workflow, AI extracts facts from RFP documents into strict JSON and writes the prose, while every fee is computed by deterministic code from auditable rate tables; below 0.6 confidence the flow stops and emails a human. Draft bid packages arrive within two hours instead of days. Commenters called the threshold too low; the author says all output stays internal for review. [Reddit r/projectmanagement, 4 Aug 2026](https://www.reddit.com/r/projectmanagement/comments/1vfod7l/i_built_an_n8n_workflow_that_prices_architecture/)
 
 [August 2026](../editions/2026-08.md#architecture-firm-automated-bid) · [use-case](use-case.md) · [best-practice](best-practice.md) · [praticien](praticien.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-oil-gas-requirements-ai-check" data-aixpm-key="/editions/2026-07/oil-gas-requirements-ai-check/" data-aixpm-date="2026-07-31" data-aixpm-title="A waterfall project team in oil and gas uses AI to quality-check requirements and design documents." markdown>
+
+**A waterfall project team in oil and gas uses AI to quality-check requirements and design documents.** An anonymous practitioner describes checking business requirements documents against nine quality parameters (conflicts, vague language, unclear ownership), then tracing every statement two ways between the requirements, upstream documents such as the sales proposal, and the design document. One person is assigned to maintain the prompts. After more than 150 model tests the team concluded that "only Opus and GPT Think Deeper can be used for our work", with up to a 250% difference in the number of findings between models. A commenter from government software projects reports the opposite: AI caused more work than it prevented. [Reddit r/projectmanagers, 16 Jul 2026](https://www.reddit.com/r/projectmanagers/comments/1uyagw2/whats_one_ai_task_you_stopped_doing_manually/)
+
+[July 2026](../editions/2026-07.md#oil-gas-requirements-ai-check) · [use-case](use-case.md) · [best-practice](best-practice.md) · [praticien](praticien.md)
 { .aixpm-item__tags }
 
 </div>

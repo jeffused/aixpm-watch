@@ -9,7 +9,7 @@ description: "Job cuts, role redesign, delayering, staffing shifts"
 
 *Job cuts, role redesign, delayering, staffing shifts*
 
-7 edition items · 14 archive articles · [all themes](index.md)
+9 edition items · 14 archive articles · [all themes](index.md)
 
 ## Edition items
 
@@ -72,6 +72,24 @@ description: "Job cuts, role redesign, delayering, staffing shifts"
 **EY and KPMG want juniors back in the office as AI takes over technical work.** EY's UK head of consulting, Sayeh Ghanbari, told the Financial Times that remote-heavy careers are "just not the route to success in the world of AI" and that flexibility will have to be reduced to build human skills. KPMG's UK advisory head made the same point about juniors learning directly from others. [Scottish Financial News, 27 Aug 2026](https://www.scottishfinancialnews.com/articles/junior-staff-to-return-to-office-to-sharpen-human-skills-as-ai-advances)
 
 [August 2026](../editions/2026-08.md#ey-kpmg-want-juniors) · [juniors](juniors.md) · [corporate](corporate.md) · [transformation-workforce](transformation-workforce.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-jpmorgan-ai-job-cuts" data-aixpm-key="/editions/2026-07/jpmorgan-ai-job-cuts/" data-aixpm-date="2026-07-31" data-aixpm-title="JPMorgan says AI has cut 30–40% of jobs in some units, and that margins will not grow as a result." markdown>
+
+**JPMorgan says AI has cut 30–40% of jobs in some units, and that margins will not grow as a result.** On the second-quarter earnings call, Jamie Dimon said the bank had cut jobs by as much as 40% in some parts using AI, with most affected employees offered positions elsewhere in the firm. He told analysts "You don't uniquely benefit from AI": every bank deploys it, so no single institution pockets the savings. CFO Jeremy Barnum flagged token spending as a cost line the bank expects to accelerate. [The Next Web, 14 Jul 2026](https://thenextweb.com/news/jpmorgan-dimon-ai-jobs-cuts-margins-q2-earnings)
+
+[July 2026](../editions/2026-07.md#jpmorgan-ai-job-cuts) · [transformation-workforce](transformation-workforce.md) · [corporate](corporate.md) · [roi-chiffre](roi-chiffre.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-consultant-ai-layoffs-cover" data-aixpm-key="/editions/2026-07/consultant-ai-layoffs-cover/" data-aixpm-date="2026-07-31" data-aixpm-title="An AI-implementation consultant says layoffs blamed on AI often relabel restructurings already planned." markdown>
+
+**An AI-implementation consultant says layoffs blamed on AI often relabel restructurings already planned.** Max Votek, cofounder of the 1,000-person firm Customertimes, writes in a first-person essay that "many companies are using AI to explain restructuring decisions they were already planning to make". He adds that CFOs and CIOs tell him they underestimated token costs and burned through AI budgets faster than expected. His firm sells AI implementation to large companies. [Business Insider, 18 Jul 2026](https://www.businessinsider.com/im-an-enterprise-consultant-heres-the-truth-about-ai-layoffs-2026-7)
+
+[July 2026](../editions/2026-07.md#consultant-ai-layoffs-cover) · [transformation-workforce](transformation-workforce.md) · [cout-cache](cout-cache.md) · [praticien](praticien.md)
 { .aixpm-item__tags }
 
 </div>

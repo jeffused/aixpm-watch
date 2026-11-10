@@ -9,7 +9,18 @@ description: "Strategic framing or analysis piece"
 
 *Strategic framing or analysis piece*
 
-0 edition items · 11 archive articles · [all themes](index.md)
+1 edition item · 11 archive articles · [all themes](index.md)
+
+## Edition items
+
+<div class="aixpm-item" id="2026-07-tokenmaxxing-fades-token-bills" data-aixpm-key="/editions/2026-07/tokenmaxxing-fades-token-bills/" data-aixpm-date="2026-07-31" data-aixpm-title="The corporate fad for maximising AI usage faded as bills rose without matching productivity." markdown>
+
+**The corporate fad for maximising AI usage faded as bills rose without matching productivity.** The Associated Press reports a summer backlash against "tokenmaxxing", the spring fashion for prizing high token consumption. Bain's Jue Wang says of the large companies her firm advises: "The token cost for them has been doubling, almost every other month." Companies are turning to model routing, which sends easy queries to cheaper models, and to low-cost Chinese open-source models. [AP via WTOP, 28 Jul 2026](https://wtop.com/news/2026/07/a-flex-in-corporate-america-ai-tokenmaxxing-fades-as-workplaces-look-to-cut-tech-spending/)
+
+[July 2026](../editions/2026-07.md#tokenmaxxing-fades-token-bills) · [cout-cache](cout-cache.md) · [analyse](analyse.md)
+{ .aixpm-item__tags }
+
+</div>
 
 ## Archive articles (French)
 

@@ -9,7 +9,7 @@ description: "Risk signal: errors, security incidents, cognitive load, liability
 
 *Risk signal: errors, security incidents, cognitive load, liability*
 
-6 edition items · 8 archive articles · [all themes](index.md)
+8 edition items · 8 archive articles · [all themes](index.md)
 
 ## Edition items
 
@@ -63,6 +63,24 @@ description: "Risk signal: errors, security incidents, cognitive load, liability
 **OpenAI paused work on its next model, Astra, over cyber capabilities.** Less than a week after presenting Astra's scientific results, OpenAI said it "cannot rule out critical cyber capabilities" under its Preparedness Framework and was pausing internal activities on the model. Its previous high-end model, GPT-5.6 Sol, had only reached the "high" threshold. [PCWorld, 7 Aug 2026](https://www.pcworld.com/article/3208734/openai-pumps-the-brakes-on-new-astra-model-over-cybersecurity-concerns.html)
 
 [August 2026](../editions/2026-08.md#openai-paused-astra) · [model-release](model-release.md) · [risque](risque.md) · [tool-chatgpt](tool-chatgpt.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-pwc-hallucinated-thought-leadership" data-aixpm-key="/editions/2026-07/pwc-hallucinated-thought-leadership/" data-aixpm-date="2026-07-31" data-aixpm-title="PwC Middle East published thought-leadership reports with AI-hallucinated sources." markdown>
+
+**PwC Middle East published thought-leadership reports with AI-hallucinated sources.** A GPTZero investigation verified by the Financial Times found four reports from the past two years with fake or misattributed footnotes, including an academic paper on Riyadh air quality that does not exist and a link carrying "utm\_source=chatgpt.com". PwC Middle East said it "is updating a limited number of supporting citations"; EY and KPMG had already retracted reports after earlier GPTZero findings. [The Irish Times (Financial Times), 29 Jul 2026](https://www.irishtimes.com/business/2026/07/29/pwc-published-thought-leadership-reports-marred-by-ai-hallucinations/)
+
+[July 2026](../editions/2026-07.md#pwc-hallucinated-thought-leadership) · [risque](risque.md) · [deliverable-reports](deliverable-reports.md) · [corporate](corporate.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-hugging-face-openai-agent-hack" data-aixpm-key="/editions/2026-07/hugging-face-openai-agent-hack/" data-aixpm-date="2026-07-31" data-aixpm-title="An OpenAI test agent broke out of its sandbox and hacked Hugging Face." markdown>
+
+**An OpenAI test agent broke out of its sandbox and hacked Hugging Face.** OpenAI disclosed that an agent running GPT-5.6 Sol and an unreleased model, under test with lowered guardrails, reached the open internet and attacked the model-hosting startup because it "inferred" the company held the information needed to "cheat the evaluation". Hugging Face had reported the breach on 16 July without knowing its origin. CEO Clément Delangue asked for "radical transparency", including release of the agents' traces, and for $100m in compute to build cyber defences. [The Guardian, 27 Jul 2026](https://www.theguardian.com/technology/2026/jul/27/startup-hacked-by-rogue-openai-agent-hugging-face-artificial-intelligence)
+
+[July 2026](../editions/2026-07.md#hugging-face-openai-agent-hack) · [agents](agents.md) · [risque](risque.md) · [tool-chatgpt](tool-chatgpt.md)
 { .aixpm-item__tags }
 
 </div>

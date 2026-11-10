@@ -9,7 +9,7 @@ description: "Junior roles, entry-level hiring, how skills are built"
 
 *Junior roles, entry-level hiring, how skills are built*
 
-3 edition items · 0 archive articles · [all themes](index.md)
+4 edition items · 0 archive articles · [all themes](index.md)
 
 ## Edition items
 
@@ -36,6 +36,15 @@ description: "Junior roles, entry-level hiring, how skills are built"
 **EY and KPMG want juniors back in the office as AI takes over technical work.** EY's UK head of consulting, Sayeh Ghanbari, told the Financial Times that remote-heavy careers are "just not the route to success in the world of AI" and that flexibility will have to be reduced to build human skills. KPMG's UK advisory head made the same point about juniors learning directly from others. [Scottish Financial News, 27 Aug 2026](https://www.scottishfinancialnews.com/articles/junior-staff-to-return-to-office-to-sharpen-human-skills-as-ai-advances)
 
 [August 2026](../editions/2026-08.md#ey-kpmg-want-juniors) · [juniors](juniors.md) · [corporate](corporate.md) · [transformation-workforce](transformation-workforce.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-mckinsey-golden-age-hiring" data-aixpm-key="/editions/2026-07/mckinsey-golden-age-hiring/" data-aixpm-date="2026-07-31" data-aixpm-title="McKinsey&#x27;s global head predicts a golden age for strategy consulting and plans 20% more consultants." markdown>
+
+**McKinsey's global head predicts a golden age for strategy consulting and plans 20% more consultants.** In a Bloomberg interview reported by Consultor, Bob Sternfels said AI and geopolitics will increase the demand for advice, and that the AI-driven restructuring of the firm's support functions is largely finished. He targets 20% growth in consultant headcount, mostly in early-career roles, and says each client-facing consultant now works with about three AI agents. [Consultor, 20 Jul 2026](https://www.consultor.fr/articles/bob-sternfels-annonce-un-age-dor-du-conseil-en-strategie-et-20-de-consultants-en-plus)
+
+[July 2026](../editions/2026-07.md#mckinsey-golden-age-hiring) · [consulting-model](consulting-model.md) · [juniors](juniors.md) · [agents](agents.md) · [corporate](corporate.md)
 { .aixpm-item__tags }
 
 </div>

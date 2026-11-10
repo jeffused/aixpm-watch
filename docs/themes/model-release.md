@@ -9,7 +9,7 @@ description: "New model or model family released"
 
 *New model or model family released*
 
-8 edition items · 0 archive articles · [all themes](index.md)
+11 edition items · 0 archive articles · [all themes](index.md)
 
 ## Edition items
 
@@ -81,6 +81,33 @@ description: "New model or model family released"
 **OpenAI paused work on its next model, Astra, over cyber capabilities.** Less than a week after presenting Astra's scientific results, OpenAI said it "cannot rule out critical cyber capabilities" under its Preparedness Framework and was pausing internal activities on the model. Its previous high-end model, GPT-5.6 Sol, had only reached the "high" threshold. [PCWorld, 7 Aug 2026](https://www.pcworld.com/article/3208734/openai-pumps-the-brakes-on-new-astra-model-over-cybersecurity-concerns.html)
 
 [August 2026](../editions/2026-08.md#openai-paused-astra) · [model-release](model-release.md) · [risque](risque.md) · [tool-chatgpt](tool-chatgpt.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-frontier-models-government-gating" data-aixpm-key="/editions/2026-07/frontier-models-government-gating/" data-aixpm-date="2026-07-31" data-aixpm-title="GPT-5.6 and Claude Fable 5 reached general availability after government-gated launches." markdown>
+
+**GPT-5.6 and Claude Fable 5 reached general availability after government-gated launches.** OpenAI said it would publicly release GPT-5.6 Sol, Terra and Luna about two weeks after limiting them to a "small group of trusted partners" at the US government's request. Anthropic restored Claude Fable 5 worldwide on 1 July, after export controls imposed on 12 June had forced it to suspend the model for all users. A June executive order asks developers to voluntarily provide cutting-edge models for government assessment ahead of a full release. [CNBC, 8 Jul 2026](https://www.cnbc.com/2026/07/08/openai-expanding-gpt-5point6-ai-model-release-ending-government-limits.html) · [Anthropic, 30 Jun 2026](https://www.anthropic.com/news/redeploying-fable-5)
+
+[July 2026](../editions/2026-07.md#frontier-models-government-gating) · [model-release](model-release.md) · [regulation](regulation.md) · [tool-chatgpt](tool-chatgpt.md) · [tool-claude](tool-claude.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-claude-opus-5-release" data-aixpm-key="/editions/2026-07/claude-opus-5-release/" data-aixpm-date="2026-07-31" data-aixpm-title="Anthropic released Claude Opus 5, close to its top model at half the price." markdown>
+
+**Anthropic released Claude Opus 5, close to its top model at half the price.** Released on 24 July at the same cost as Opus 4.8, it "comes close to the frontier intelligence of Claude Fable 5 at half the price" and becomes the default model on Claude Max. Anthropic reports a pass rate around 1.5 times the next-best model on Zapier AutomationBench, which measures whether models complete business tasks from start to finish; the benchmark selection is the vendor's own. [Anthropic, 24 Jul 2026](https://www.anthropic.com/news/claude-opus-5)
+
+[July 2026](../editions/2026-07.md#claude-opus-5-release) · [model-release](model-release.md) · [tool-claude](tool-claude.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-gemini-3-6-flash-release" data-aixpm-key="/editions/2026-07/gemini-3-6-flash-release/" data-aixpm-date="2026-07-31" data-aixpm-title="Google released Gemini 3.6 Flash, cheaper than 3.5 Flash and aimed at agents run at scale." markdown>
+
+**Google released Gemini 3.6 Flash, cheaper than 3.5 Flash and aimed at agents run at scale.** Priced at $1.50 per million input tokens and $7.50 per million output tokens, it uses 17% fewer output tokens than 3.5 Flash on the Artificial Analysis Index, according to Google, and makes computer use a built-in tool in the Gemini API and Gemini Enterprise. It shipped with 3.5 Flash-Lite and a security-focused 3.5 Flash Cyber; the performance figures are those cited by Google. [Google, 21 Jul 2026](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/)
+
+[July 2026](../editions/2026-07.md#gemini-3-6-flash-release) · [model-release](model-release.md) · [cout-cache](cout-cache.md) · [tool-gemini](tool-gemini.md)
 { .aixpm-item__tags }
 
 </div>

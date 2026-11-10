@@ -9,7 +9,7 @@ description: "Reports and documents"
 
 *Reports and documents*
 
-1 edition item · 5 archive articles · [all themes](index.md)
+2 edition items · 5 archive articles · [all themes](index.md)
 
 ## Edition items
 
@@ -18,6 +18,15 @@ description: "Reports and documents"
 **AI-generated project documents shift the review work onto the team.** A thread complains of project managers handing over AI-written documentation as finished deliverables. The consensus in the replies: AI for a rough draft only, reviewed before it circulates, because otherwise "we are not really saving time. We are just shifting the work to someone else." [Reddit r/projectmanagers, 2 Nov 2026](https://www.reddit.com/r/projectmanagers/comments/1xlmx5n/is_anyone_else_frustrated_with_project_managers/)
 
 [Week 46 (2–10 Nov 2026)](../editions/2026-w46.md#ai-generated-project-documents) · [friction-praticien](friction-praticien.md) · [deliverable-reports](deliverable-reports.md) · [praticien](praticien.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-pwc-hallucinated-thought-leadership" data-aixpm-key="/editions/2026-07/pwc-hallucinated-thought-leadership/" data-aixpm-date="2026-07-31" data-aixpm-title="PwC Middle East published thought-leadership reports with AI-hallucinated sources." markdown>
+
+**PwC Middle East published thought-leadership reports with AI-hallucinated sources.** A GPTZero investigation verified by the Financial Times found four reports from the past two years with fake or misattributed footnotes, including an academic paper on Riyadh air quality that does not exist and a link carrying "utm\_source=chatgpt.com". PwC Middle East said it "is updating a limited number of supporting citations"; EY and KPMG had already retracted reports after earlier GPTZero findings. [The Irish Times (Financial Times), 29 Jul 2026](https://www.irishtimes.com/business/2026/07/29/pwc-published-thought-leadership-reports-marred-by-ai-hallucinations/)
+
+[July 2026](../editions/2026-07.md#pwc-hallucinated-thought-leadership) · [risque](risque.md) · [deliverable-reports](deliverable-reports.md) · [corporate](corporate.md)
 { .aixpm-item__tags }
 
 </div>

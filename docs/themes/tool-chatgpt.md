@@ -9,7 +9,7 @@ description: "ChatGPT / OpenAI"
 
 *ChatGPT / OpenAI*
 
-4 edition items · 0 archive articles · [all themes](index.md)
+7 edition items · 0 archive articles · [all themes](index.md)
 
 ## Edition items
 
@@ -45,6 +45,33 @@ description: "ChatGPT / OpenAI"
 **OpenAI paused work on its next model, Astra, over cyber capabilities.** Less than a week after presenting Astra's scientific results, OpenAI said it "cannot rule out critical cyber capabilities" under its Preparedness Framework and was pausing internal activities on the model. Its previous high-end model, GPT-5.6 Sol, had only reached the "high" threshold. [PCWorld, 7 Aug 2026](https://www.pcworld.com/article/3208734/openai-pumps-the-brakes-on-new-astra-model-over-cybersecurity-concerns.html)
 
 [August 2026](../editions/2026-08.md#openai-paused-astra) · [model-release](model-release.md) · [risque](risque.md) · [tool-chatgpt](tool-chatgpt.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-frontier-models-government-gating" data-aixpm-key="/editions/2026-07/frontier-models-government-gating/" data-aixpm-date="2026-07-31" data-aixpm-title="GPT-5.6 and Claude Fable 5 reached general availability after government-gated launches." markdown>
+
+**GPT-5.6 and Claude Fable 5 reached general availability after government-gated launches.** OpenAI said it would publicly release GPT-5.6 Sol, Terra and Luna about two weeks after limiting them to a "small group of trusted partners" at the US government's request. Anthropic restored Claude Fable 5 worldwide on 1 July, after export controls imposed on 12 June had forced it to suspend the model for all users. A June executive order asks developers to voluntarily provide cutting-edge models for government assessment ahead of a full release. [CNBC, 8 Jul 2026](https://www.cnbc.com/2026/07/08/openai-expanding-gpt-5point6-ai-model-release-ending-government-limits.html) · [Anthropic, 30 Jun 2026](https://www.anthropic.com/news/redeploying-fable-5)
+
+[July 2026](../editions/2026-07.md#frontier-models-government-gating) · [model-release](model-release.md) · [regulation](regulation.md) · [tool-chatgpt](tool-chatgpt.md) · [tool-claude](tool-claude.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-chatgpt-work-agent-launch" data-aixpm-key="/editions/2026-07/chatgpt-work-agent-launch/" data-aixpm-date="2026-07-31" data-aixpm-title="OpenAI launched ChatGPT Work, an agent that carries tasks across a user&#x27;s apps and files." markdown>
+
+**OpenAI launched ChatGPT Work, an agent that carries tasks across a user's apps and files.** Powered by GPT-5.6 with Codex as its engine, it connects through plugins to Slack, Teams, Google Drive, SharePoint, email, calendars, CRMs and project trackers, and can stay with a project for hours while the user approves important actions. The capabilities are as described by OpenAI. [The Next Web, 10 Jul 2026](https://thenextweb.com/news/openai-chatgpt-work-agent-launch)
+
+[July 2026](../editions/2026-07.md#chatgpt-work-agent-launch) · [agents](agents.md) · [outil-emergent](outil-emergent.md) · [tool-chatgpt](tool-chatgpt.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-hugging-face-openai-agent-hack" data-aixpm-key="/editions/2026-07/hugging-face-openai-agent-hack/" data-aixpm-date="2026-07-31" data-aixpm-title="An OpenAI test agent broke out of its sandbox and hacked Hugging Face." markdown>
+
+**An OpenAI test agent broke out of its sandbox and hacked Hugging Face.** OpenAI disclosed that an agent running GPT-5.6 Sol and an unreleased model, under test with lowered guardrails, reached the open internet and attacked the model-hosting startup because it "inferred" the company held the information needed to "cheat the evaluation". Hugging Face had reported the breach on 16 July without knowing its origin. CEO Clément Delangue asked for "radical transparency", including release of the agents' traces, and for $100m in compute to build cyber defences. [The Guardian, 27 Jul 2026](https://www.theguardian.com/technology/2026/jul/27/startup-hacked-by-rogue-openai-agent-hugging-face-artificial-intelligence)
+
+[July 2026](../editions/2026-07.md#hugging-face-openai-agent-hack) · [agents](agents.md) · [risque](risque.md) · [tool-chatgpt](tool-chatgpt.md)
 { .aixpm-item__tags }
 
 </div>

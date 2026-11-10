@@ -9,7 +9,7 @@ description: "Claude (Anthropic)"
 
 *Claude (Anthropic)*
 
-9 edition items · 0 archive articles · [all themes](index.md)
+11 edition items · 0 archive articles · [all themes](index.md)
 
 ## Edition items
 
@@ -90,6 +90,24 @@ description: "Claude (Anthropic)"
 **Claude text now carries an invisible watermark as AI Act Article 50 takes effect.** Since 2 August, providers must mark synthetic content in machine-readable form, and professional users must flag AI-generated text published to inform the public on matters of general interest, unless it is under real human editorial control and responsibility. Anthropic's answer is a statistical watermark based on SynthID-Text, applied worldwide to supported Claude models. [Campus Technology, 24 Aug 2026](https://campustechnology.com/articles/2026/08/24/anthropic-adding-invisible-watermarks-to-claude-generated-text.aspx) · [Journal du Net, 3 Aug 2026](https://www.journaldunet.com/intelligence-artificielle/1553327-ai-act-a-compter-du-2-aout-2026-le-droit-de-savoir-qui-ou-quoi-a-produit-l-information/)
 
 [August 2026](../editions/2026-08.md#claude-watermark-ai-act) · [regulation](regulation.md) · [tool-claude](tool-claude.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-frontier-models-government-gating" data-aixpm-key="/editions/2026-07/frontier-models-government-gating/" data-aixpm-date="2026-07-31" data-aixpm-title="GPT-5.6 and Claude Fable 5 reached general availability after government-gated launches." markdown>
+
+**GPT-5.6 and Claude Fable 5 reached general availability after government-gated launches.** OpenAI said it would publicly release GPT-5.6 Sol, Terra and Luna about two weeks after limiting them to a "small group of trusted partners" at the US government's request. Anthropic restored Claude Fable 5 worldwide on 1 July, after export controls imposed on 12 June had forced it to suspend the model for all users. A June executive order asks developers to voluntarily provide cutting-edge models for government assessment ahead of a full release. [CNBC, 8 Jul 2026](https://www.cnbc.com/2026/07/08/openai-expanding-gpt-5point6-ai-model-release-ending-government-limits.html) · [Anthropic, 30 Jun 2026](https://www.anthropic.com/news/redeploying-fable-5)
+
+[July 2026](../editions/2026-07.md#frontier-models-government-gating) · [model-release](model-release.md) · [regulation](regulation.md) · [tool-chatgpt](tool-chatgpt.md) · [tool-claude](tool-claude.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-claude-opus-5-release" data-aixpm-key="/editions/2026-07/claude-opus-5-release/" data-aixpm-date="2026-07-31" data-aixpm-title="Anthropic released Claude Opus 5, close to its top model at half the price." markdown>
+
+**Anthropic released Claude Opus 5, close to its top model at half the price.** Released on 24 July at the same cost as Opus 4.8, it "comes close to the frontier intelligence of Claude Fable 5 at half the price" and becomes the default model on Claude Max. Anthropic reports a pass rate around 1.5 times the next-best model on Zapier AutomationBench, which measures whether models complete business tasks from start to finish; the benchmark selection is the vendor's own. [Anthropic, 24 Jul 2026](https://www.anthropic.com/news/claude-opus-5)
+
+[July 2026](../editions/2026-07.md#claude-opus-5-release) · [model-release](model-release.md) · [tool-claude](tool-claude.md)
 { .aixpm-item__tags }
 
 </div>

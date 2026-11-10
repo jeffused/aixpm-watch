@@ -9,7 +9,7 @@ description: "New tool, product feature or tool comparison"
 
 *New tool, product feature or tool comparison*
 
-5 edition items · 2 archive articles · [all themes](index.md)
+6 edition items · 2 archive articles · [all themes](index.md)
 
 ## Edition items
 
@@ -54,6 +54,15 @@ description: "New tool, product feature or tool comparison"
 **OpenAI introduced "dots", always-on personal agents.** Dots are powered by GPT-6 Astra, have their own cloud computer, connect to over 4,000 apps through plugins, and can be reached through ChatGPT, Slack or Teams. Rollout starts on Pro, Business Premium and Enterprise plans in eligible markets, with action review and approvals among the stated controls. [OpenAI, 29 Sep 2026](https://openai.com/index/introducing-dots/)
 
 [September 2026](../editions/2026-09.md#openai-dots-personal-agents) · [agents](agents.md) · [outil-emergent](outil-emergent.md) · [tool-chatgpt](tool-chatgpt.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-chatgpt-work-agent-launch" data-aixpm-key="/editions/2026-07/chatgpt-work-agent-launch/" data-aixpm-date="2026-07-31" data-aixpm-title="OpenAI launched ChatGPT Work, an agent that carries tasks across a user&#x27;s apps and files." markdown>
+
+**OpenAI launched ChatGPT Work, an agent that carries tasks across a user's apps and files.** Powered by GPT-5.6 with Codex as its engine, it connects through plugins to Slack, Teams, Google Drive, SharePoint, email, calendars, CRMs and project trackers, and can stay with a project for hours while the user approves important actions. The capabilities are as described by OpenAI. [The Next Web, 10 Jul 2026](https://thenextweb.com/news/openai-chatgpt-work-agent-launch)
+
+[July 2026](../editions/2026-07.md#chatgpt-work-agent-launch) · [agents](agents.md) · [outil-emergent](outil-emergent.md) · [tool-chatgpt](tool-chatgpt.md)
 { .aixpm-item__tags }
 
 </div>

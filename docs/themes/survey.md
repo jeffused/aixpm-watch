@@ -9,7 +9,7 @@ description: "Survey or statistical data"
 
 *Survey or statistical data*
 
-10 edition items · 0 archive articles · [all themes](index.md)
+12 edition items · 0 archive articles · [all themes](index.md)
 
 ## Edition items
 
@@ -99,6 +99,24 @@ description: "Survey or statistical data"
 **Half of euro-area employees now use AI, but the productivity gain is conditional.** An ECB note of 26 August puts usage at 52% of employees, up from 26% in 2024, with users reporting three hours saved per week. The bank warns that the gain only materialises if firms convert that time into output, service quality or innovation, a shift not all of them have started. [La Tribune, 26 Aug 2026](https://www.latribune.fr/article/tech/intelligence-artificielle/32821203213850/ia-au-bureau-trois-heures-gagnees-par-semaine-mais-le-miracle-productif-attendra)
 
 [August 2026](../editions/2026-08.md#half-euro-area-employees) · [survey](survey.md) · [roi-chiffre](roi-chiffre.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-gallup-organizational-adoption-jump" data-aixpm-key="/editions/2026-07/gallup-organizational-adoption-jump/" data-aixpm-date="2026-07-31" data-aixpm-title="Gallup measured a six-point quarterly jump in organisational AI adoption in the US." markdown>
+
+**Gallup measured a six-point quarterly jump in organisational AI adoption in the US.** In the second quarter of 2026, 47% of US employees said their organisation had integrated AI tools, up from 41% the quarter before; 52% use AI in their role and 15% use it daily. The most common uses are not the ones rated most productive: 77% of those using AI for coding or automation report a positive effect, against 68% for writing and editing. [Gallup, 20 Jul 2026](https://www.gallup.com/workplace/712736/organizational-adoption-jumps-six-points.aspx)
+
+[July 2026](../editions/2026-07.md#gallup-organizational-adoption-jump) · [survey](survey.md) · [roi-chiffre](roi-chiffre.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-governance-gap-at-top" data-aixpm-key="/editions/2026-07/governance-gap-at-top/" data-aixpm-date="2026-07-31" data-aixpm-title="AI governance gaps start at the top of the organisation." markdown>
+
+**AI governance gaps start at the top of the organisation.** A Deloitte survey of Society for Corporate Governance members at 92 public and 14 private companies found that most lack board-specific AI policies, and that nearly half of the public companies have not formally enabled or standardised AI for board work. Separately, a survey by Microsoft partner TrustedTech reports that nearly two-thirds of senior decision-makers admit to using unapproved AI tools, against 31% of lower-level employees. [Deloitte, 21 Jul 2026](https://www.deloitte.com/us/en/programs/center-for-board-effectiveness/articles/board-of-director-ai-use.html) · [CIO.com, 15 Jul 2026](https://www.cio.com/article/4195782/senior-executives-abuse-shadow-ai-twice-as-much-as-regular-employees-do.html)
+
+[July 2026](../editions/2026-07.md#governance-gap-at-top) · [gouvernance-manquante](gouvernance-manquante.md) · [shadow-ai](shadow-ai.md) · [survey](survey.md)
 { .aixpm-item__tags }
 
 </div>

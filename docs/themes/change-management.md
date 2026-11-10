@@ -9,7 +9,18 @@ description: "Change management"
 
 *Change management*
 
-0 edition items · 33 archive articles · [all themes](index.md)
+1 edition item · 33 archive articles · [all themes](index.md)
+
+## Edition items
+
+<div class="aixpm-item" id="2026-07-atlassian-ai-change-management" data-aixpm-key="/editions/2026-07/atlassian-ai-change-management/" data-aixpm-date="2026-07-31" data-aixpm-title="Atlassian says its own AI rollout stalled until it was run as change management." markdown>
+
+**Atlassian says its own AI rollout stalled until it was run as change management.** In its own account, the vendor says that making tools available to roughly 12,000 employees left teams no better coordinated: "We were measuring logins and calling it progress." The turning point was moving AI enablement out of IT to the leader of the people function. Its survey data puts AI use at 85% of knowledge workers, with only 29% having embedded it in daily work. [diginomica, 23 Jul 2026](https://diginomica.com/most-ai-rollouts-fail-due-change-management-not-tech-we-learned)
+
+[July 2026](../editions/2026-07.md#atlassian-ai-change-management) · [change-management](change-management.md) · [best-practice](best-practice.md) · [corporate](corporate.md)
+{ .aixpm-item__tags }
+
+</div>
 
 ## Archive articles (French)
 

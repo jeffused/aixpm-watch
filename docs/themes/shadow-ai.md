@@ -9,7 +9,7 @@ description: "Unapproved AI use by employees"
 
 *Unapproved AI use by employees*
 
-1 edition item · 0 archive articles · [all themes](index.md)
+2 edition items · 0 archive articles · [all themes](index.md)
 
 ## Edition items
 
@@ -18,6 +18,15 @@ description: "Unapproved AI use by employees"
 **PwC Korea reportedly blocks external AI tools after document leaks.** A consultant there says ChatGPT now triggers a "harmful website" warning, after staff uploaded internal documents to external tools. The internal alternative "has the confidence of a partner and the research skills of me on my first day." The cause is relayed as "the explanation making the rounds" and is not confirmed by PwC. [Reddit r/consulting, 9 Nov 2026](https://www.reddit.com/r/consulting/comments/1xre1bw/pwc_korea_blocked_chatgpt_apparently_desk/)
 
 [Week 46 (2–10 Nov 2026)](../editions/2026-w46.md#pwc-korea-blocks-external-ai) · [enabler-confidentialite](enabler-confidentialite.md) · [shadow-ai](shadow-ai.md) · [gouvernance](gouvernance.md) · [corporate](corporate.md) · [praticien](praticien.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-governance-gap-at-top" data-aixpm-key="/editions/2026-07/governance-gap-at-top/" data-aixpm-date="2026-07-31" data-aixpm-title="AI governance gaps start at the top of the organisation." markdown>
+
+**AI governance gaps start at the top of the organisation.** A Deloitte survey of Society for Corporate Governance members at 92 public and 14 private companies found that most lack board-specific AI policies, and that nearly half of the public companies have not formally enabled or standardised AI for board work. Separately, a survey by Microsoft partner TrustedTech reports that nearly two-thirds of senior decision-makers admit to using unapproved AI tools, against 31% of lower-level employees. [Deloitte, 21 Jul 2026](https://www.deloitte.com/us/en/programs/center-for-board-effectiveness/articles/board-of-director-ai-use.html) · [CIO.com, 15 Jul 2026](https://www.cio.com/article/4195782/senior-executives-abuse-shadow-ai-twice-as-much-as-regular-employees-do.html)
+
+[July 2026](../editions/2026-07.md#governance-gap-at-top) · [gouvernance-manquante](gouvernance-manquante.md) · [shadow-ai](shadow-ai.md) · [survey](survey.md)
 { .aixpm-item__tags }
 
 </div>

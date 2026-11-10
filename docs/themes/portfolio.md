@@ -9,7 +9,7 @@ description: "Portfolio management"
 
 *Portfolio management*
 
-2 edition items · 4 archive articles · [all themes](index.md)
+3 edition items · 4 archive articles · [all themes](index.md)
 
 ## Edition items
 
@@ -27,6 +27,15 @@ description: "Portfolio management"
 **Gartner: the organisations getting returns from AI manage it as a portfolio.** In a survey of 1,303 respondents, only 22% of organisations had scaled AI across multiple business units. High performers track returns continuously, manage initiatives as a portfolio and stop underperforming projects; they report positive returns on 81% of initiatives. [TechInformed, 4 Sep 2026](https://techinformed.com/gartner-finds-only-22-have-successfully-scaled-ai/)
 
 [September 2026](../editions/2026-09.md#gartner-ai-portfolio-returns) · [portfolio](portfolio.md) · [survey](survey.md) · [best-practice](best-practice.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-abbott-genai-steering-committee" data-aixpm-key="/editions/2026-07/abbott-genai-steering-committee/" data-aixpm-date="2026-07-31" data-aixpm-title="Abbott steers generative AI through an executive steering committee and standard financial measures." markdown>
+
+**Abbott steers generative AI through an executive steering committee and standard financial measures.** CIO Sabina Ewing says senior leaders are engaged in how capital is deployed on AI: "We're not going out with a thousand flowers blooming." AI investments are held to the company's traditional financial measures, with quantifiable outcomes identified and then measured in partnership with the business leaders requesting them. This is an executive interview, with no figures disclosed. [CIO.com, 29 Jul 2026](https://www.cio.com/article/4201873/exploring-abbotts-mission-lead-ai-strategy.html)
+
+[July 2026](../editions/2026-07.md#abbott-genai-steering-committee) · [comite-pilotage](comite-pilotage.md) · [portfolio](portfolio.md) · [gouvernance](gouvernance.md) · [corporate](corporate.md)
 { .aixpm-item__tags }
 
 </div>

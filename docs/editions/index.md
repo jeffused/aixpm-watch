@@ -20,3 +20,4 @@ What happened in AI for enterprise adoption, consulting and project management �
 - [**October 2026**](2026-10.md) — 18 items. AI value stays scarce, and what separates the leaders is a rule for stopping pilots, not a bigger budget.
 - [**September 2026**](2026-09.md) — 16 items. European banks put numbers on AI: Société Générale and Danske Bank both tied cost and headcount trajectories to company-wide rollouts.
 - [**August 2026**](2026-08.md) — 20 items. A named tech giant walked back an AI-premised workforce plan: Meta cancelled its second layoff wave after internal data showed output not following activity.
+- [**July 2026**](2026-07.md) — 17 items. A large bank put a number on AI job cuts: JPMorgan reported reductions of 30–40% in some units, while its CEO said competition will pass the savings on to customers rather than to margins.

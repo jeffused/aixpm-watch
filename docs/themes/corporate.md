@@ -9,7 +9,7 @@ description: "Named large organisation"
 
 *Named large organisation*
 
-12 edition items · 47 archive articles · [all themes](index.md)
+18 edition items · 47 archive articles · [all themes](index.md)
 
 ## Edition items
 
@@ -117,6 +117,60 @@ description: "Named large organisation"
 **IBM and OpenAI formed a consulting partnership.** Announced on 13 August, it embeds GPT-5.6, Codex and ChatGPT Work into IBM Consulting Advantage, IBM's delivery platform. IBM is also launching a dedicated OpenAI Practice with "thousands of consultants and engineers" and forward-deployed units working directly with clients. This is a vendor announcement. [IBM Newsroom, 13 Aug 2026](https://newsroom.ibm.com/2026-08-13-IBM-Partners-with-OpenAI-to-Accelerate-Secure-AI-Deployment-for-Enterprises-Across-Core-Operations)
 
 [August 2026](../editions/2026-08.md#ibm-openai-consulting-partnership) · [consulting-model](consulting-model.md) · [corporate](corporate.md) · [tool-chatgpt](tool-chatgpt.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-jpmorgan-ai-job-cuts" data-aixpm-key="/editions/2026-07/jpmorgan-ai-job-cuts/" data-aixpm-date="2026-07-31" data-aixpm-title="JPMorgan says AI has cut 30–40% of jobs in some units, and that margins will not grow as a result." markdown>
+
+**JPMorgan says AI has cut 30–40% of jobs in some units, and that margins will not grow as a result.** On the second-quarter earnings call, Jamie Dimon said the bank had cut jobs by as much as 40% in some parts using AI, with most affected employees offered positions elsewhere in the firm. He told analysts "You don't uniquely benefit from AI": every bank deploys it, so no single institution pockets the savings. CFO Jeremy Barnum flagged token spending as a cost line the bank expects to accelerate. [The Next Web, 14 Jul 2026](https://thenextweb.com/news/jpmorgan-dimon-ai-jobs-cuts-margins-q2-earnings)
+
+[July 2026](../editions/2026-07.md#jpmorgan-ai-job-cuts) · [transformation-workforce](transformation-workforce.md) · [corporate](corporate.md) · [roi-chiffre](roi-chiffre.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-airbus-scaleway-sovereign-cloud" data-aixpm-key="/editions/2026-07/airbus-scaleway-sovereign-cloud/" data-aixpm-date="2026-07-31" data-aixpm-title="Airbus chose Scaleway to host its sensitive applications and its Mistral-based AI tools." markdown>
+
+**Airbus chose Scaleway to host its sensitive applications and its Mistral-based AI tools.** The multi-year agreement with Iliad's cloud subsidiary covers critical design, engineering and production applications, and supports the AI tools Airbus is developing with Mistral. Chief digital officer Catherine Jestin said the choice followed an evaluation of more than 150 technical and legal requirements, including protection against a "kill switch" and extraterritorial laws. About 70 critical applications are to move by the end of 2028. [Reuters via Boursorama, 16 Jul 2026](https://www.boursorama.com/bourse/actualites-amp/airbus-choisit-scaleway-filiale-d-iliad-pour-ses-projets-d-ia-et-de-defense-dans-le-cadre-de-sa-strategie-de-souverainete-1f13931f0c120e376d9ed32c30be6179)
+
+[July 2026](../editions/2026-07.md#airbus-scaleway-sovereign-cloud) · [architecture](architecture.md) · [corporate](corporate.md) · [france](france.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-pwc-hallucinated-thought-leadership" data-aixpm-key="/editions/2026-07/pwc-hallucinated-thought-leadership/" data-aixpm-date="2026-07-31" data-aixpm-title="PwC Middle East published thought-leadership reports with AI-hallucinated sources." markdown>
+
+**PwC Middle East published thought-leadership reports with AI-hallucinated sources.** A GPTZero investigation verified by the Financial Times found four reports from the past two years with fake or misattributed footnotes, including an academic paper on Riyadh air quality that does not exist and a link carrying "utm\_source=chatgpt.com". PwC Middle East said it "is updating a limited number of supporting citations"; EY and KPMG had already retracted reports after earlier GPTZero findings. [The Irish Times (Financial Times), 29 Jul 2026](https://www.irishtimes.com/business/2026/07/29/pwc-published-thought-leadership-reports-marred-by-ai-hallucinations/)
+
+[July 2026](../editions/2026-07.md#pwc-hallucinated-thought-leadership) · [risque](risque.md) · [deliverable-reports](deliverable-reports.md) · [corporate](corporate.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-mckinsey-golden-age-hiring" data-aixpm-key="/editions/2026-07/mckinsey-golden-age-hiring/" data-aixpm-date="2026-07-31" data-aixpm-title="McKinsey&#x27;s global head predicts a golden age for strategy consulting and plans 20% more consultants." markdown>
+
+**McKinsey's global head predicts a golden age for strategy consulting and plans 20% more consultants.** In a Bloomberg interview reported by Consultor, Bob Sternfels said AI and geopolitics will increase the demand for advice, and that the AI-driven restructuring of the firm's support functions is largely finished. He targets 20% growth in consultant headcount, mostly in early-career roles, and says each client-facing consultant now works with about three AI agents. [Consultor, 20 Jul 2026](https://www.consultor.fr/articles/bob-sternfels-annonce-un-age-dor-du-conseil-en-strategie-et-20-de-consultants-en-plus)
+
+[July 2026](../editions/2026-07.md#mckinsey-golden-age-hiring) · [consulting-model](consulting-model.md) · [juniors](juniors.md) · [agents](agents.md) · [corporate](corporate.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-atlassian-ai-change-management" data-aixpm-key="/editions/2026-07/atlassian-ai-change-management/" data-aixpm-date="2026-07-31" data-aixpm-title="Atlassian says its own AI rollout stalled until it was run as change management." markdown>
+
+**Atlassian says its own AI rollout stalled until it was run as change management.** In its own account, the vendor says that making tools available to roughly 12,000 employees left teams no better coordinated: "We were measuring logins and calling it progress." The turning point was moving AI enablement out of IT to the leader of the people function. Its survey data puts AI use at 85% of knowledge workers, with only 29% having embedded it in daily work. [diginomica, 23 Jul 2026](https://diginomica.com/most-ai-rollouts-fail-due-change-management-not-tech-we-learned)
+
+[July 2026](../editions/2026-07.md#atlassian-ai-change-management) · [change-management](change-management.md) · [best-practice](best-practice.md) · [corporate](corporate.md)
+{ .aixpm-item__tags }
+
+</div>
+
+<div class="aixpm-item" id="2026-07-abbott-genai-steering-committee" data-aixpm-key="/editions/2026-07/abbott-genai-steering-committee/" data-aixpm-date="2026-07-31" data-aixpm-title="Abbott steers generative AI through an executive steering committee and standard financial measures." markdown>
+
+**Abbott steers generative AI through an executive steering committee and standard financial measures.** CIO Sabina Ewing says senior leaders are engaged in how capital is deployed on AI: "We're not going out with a thousand flowers blooming." AI investments are held to the company's traditional financial measures, with quantifiable outcomes identified and then measured in partnership with the business leaders requesting them. This is an executive interview, with no figures disclosed. [CIO.com, 29 Jul 2026](https://www.cio.com/article/4201873/exploring-abbotts-mission-lead-ai-strategy.html)
+
+[July 2026](../editions/2026-07.md#abbott-genai-steering-committee) · [comite-pilotage](comite-pilotage.md) · [portfolio](portfolio.md) · [gouvernance](gouvernance.md) · [corporate](corporate.md)
 { .aixpm-item__tags }
 
 </div>
